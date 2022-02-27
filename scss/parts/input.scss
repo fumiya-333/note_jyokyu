@@ -1,0 +1,25 @@
+@import "../common/mixin.scss";
+
+.base-btn {
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.btn-yellow {
+  background-color: #F5A623;
+  color: white;
+  border: none;
+}
+
+.btn-navy-blue {
+  background-color: #1B224C;
+  color: white;
+  border: none;
+}
+
+@mixin btn-lg($width, $height, $font-size, $font-wight, $border-radius) {
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  font-weight: $font-wight;
+  border-radius: $border-radius;
+}

@@ -1,0 +1,79 @@
+@import "../common/mixin.scss";
+@import "../parts/input.scss";
+
+$btn-height: 50px;
+$font-size: 14px;
+$font-weight: bold;
+$border-radius: 5px;
+
+header {
+  padding: 15px 10px 15px 15px;
+  .header-wrap {
+    display: flex;
+    .wrap-left {
+      display: flex;
+      .logo {
+        padding-top: 12px;
+        padding-bottom: 11px;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        ul {
+          li {
+            font-weight: bold;
+            &:first-child {
+              padding-left: 28px;
+            }
+            &:nth-child(2) {
+              padding-left: 24px;
+            }
+            &:nth-child(3) {
+              padding-left: 22px;
+            }
+            &:nth-child(4) {
+              padding-left: 24px;
+            }
+          }
+        }
+      }
+    }
+    .wrap-right {
+      display: flex;
+      margin-left: auto;
+      .text-area {
+        padding-top: 10px;
+        padding-right: 23px;
+        .active-time {
+          height: 12px;
+          text-align: right;
+          font-size: 12px;
+          font-weight: 500;
+        }
+        .phone-number {
+          margin-top: 6px;
+          font-weight: bold;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 15px;
+            margin-top: 2px;
+            padding-right: 5px;
+            background-image: url("../img/phone.png");
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .btn-doc-req {
+        @extend .btn-yellow;
+        @include btn-lg(142px, $btn-height, $font-size, $font-weight, $border-radius);
+        margin-right: 10px;
+      }
+      .btn-contact {
+        @extend .btn-navy-blue;
+        @include btn-lg(137px, $btn-height, $font-size, $font-weight, $border-radius);
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../common/mixin.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 16px;
+  ul, p {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+  }
+  @include mq(sp) {
+
+  }
+}

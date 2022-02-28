@@ -1,0 +1,28 @@
+@import "../common/mixin.scss";
+@import "../common/common.scss";
+
+.rate-plan {
+  padding-top: 54px;
+  .rate-plan-contents {
+    text-align: center;
+    width: 906px;
+    height: 217px;
+    margin: 0 auto;
+    background-image: url("../img/price.png");
+    background-repeat: no-repeat;
+    .rate-plan-title {
+      padding-top: 55px;
+      padding-right: 14px;
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+    }
+    .btn-more-rate-plan-area {
+      padding-top: 20px;
+      .btn-more-rate-plan {
+        @extend .btn-border-white;
+        @include el-prop(200px, 50px, 16px, bold, 30px);
+      }
+    }
+  }
+}

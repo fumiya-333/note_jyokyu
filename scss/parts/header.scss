@@ -1,5 +1,5 @@
 @import "../common/mixin.scss";
-@import "../parts/input.scss";
+@import "../common/common.scss";
 
 $btn-height: 50px;
 $font-size: 14px;
@@ -67,12 +67,12 @@ header {
       }
       .btn-doc-req {
         @extend .btn-yellow;
-        @include btn-lg(142px, $btn-height, $font-size, $font-weight, $border-radius);
+        @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
         margin-right: 10px;
       }
       .btn-contact {
         @extend .btn-navy-blue;
-        @include btn-lg(137px, $btn-height, $font-size, $font-weight, $border-radius);
+        @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
       }
     }
   }

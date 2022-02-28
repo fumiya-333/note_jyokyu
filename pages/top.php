@@ -9,6 +9,9 @@
     <div class="wrapper">
       <?php get_header(); ?>
       <?php get_template_part('parts/hero'); ?>
+      <?php get_template_part('parts/toefl_study'); ?>
+      <?php get_template_part('parts/toefl_strong'); ?>
+      <?php get_template_part('parts/rate_plan'); ?>
       <?php get_footer(); ?>
   </div>
   </body>

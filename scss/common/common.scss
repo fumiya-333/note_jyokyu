@@ -5,21 +5,40 @@
 }
 
 .btn-yellow {
+  @extend .base-btn;
   background-color: #F5A623;
   color: white;
   border: none;
 }
 
 .btn-navy-blue {
+  @extend .base-btn;
   background-color: #1B224C;
   color: white;
   border: none;
 }
 
-@mixin btn-lg($width, $height, $font-size, $font-wight, $border-radius) {
+.tip-yellow {
+  background-color: #F5A623;
+  color: white;
+}
+
+.btn-border-white {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+@mixin el-prop($width, $height, $font-size, $font-wight, $border-radius) {
   width: $width;
   height: $height;
   font-size: $font-size;
   font-weight: $font-wight;
   border-radius: $border-radius;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

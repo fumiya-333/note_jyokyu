@@ -1,5 +1,5 @@
 @import "../common/mixin.scss";
-@import "../parts/input.scss";
+@import "../common/common.scss";
 
 .hero {
   width: 100%;
@@ -11,7 +11,7 @@
   .hero-contents {
     padding-top: 103px;
     text-align: center;
-    color: white;
+    color: white!important;
     .hero-title {
       font-size: 48px;
       font-weight: bold;
@@ -28,14 +28,14 @@
       padding-top: 45px;
       .btn-doc-req {
         @extend .btn-yellow;
-        @include btn-lg(260px, 60px, 16px, bold, 31px);
+        @include el-prop(260px, 60px, 16px, bold, 31px);
       }
     }
     .contact-link-area {
       padding-top: 18px;
       a {
         font-weight: 500;
-        color: white;
+        color: white!important;
       }
     }
   }

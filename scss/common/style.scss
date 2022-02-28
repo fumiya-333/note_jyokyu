@@ -3,8 +3,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #1B224C;
   font-size: 16px;
+  * {
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  }
   ul, p {
     padding: 0;
     margin: 0;

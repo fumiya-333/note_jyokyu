@@ -12,6 +12,7 @@
       <?php get_template_part('parts/toefl_study'); ?>
       <?php get_template_part('parts/toefl_strong'); ?>
       <?php get_template_part('parts/rate_plan'); ?>
+      <?php get_template_part('parts/toefl_success_stories'); ?>
       <?php get_footer(); ?>
   </div>
   </body>

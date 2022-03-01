@@ -5,8 +5,14 @@ body {
   margin: 0;
   color: #1B224C;
   font-size: 16px;
+  line-height: 1;
   * {
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
   }
   ul, p {
     padding: 0;

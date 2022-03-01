@@ -1,0 +1,60 @@
+@import "../common/mixin.scss";
+@import "../common/common.scss";
+
+.use-flow {
+  .use-flow-contents {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 58px;
+    .use-flow-title {
+      height: 34px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 34px;
+    }
+    .use-flow-box {
+      margin-top: 53px;
+      .use-flow-row {
+        display: flex;
+        &:not(:first-child){
+          padding-top: 8px;
+        }
+        .use-flow-no {
+          display: inline-block;
+          padding: 24px 23px;
+          font-weight: bold;
+          background-color: #F5A623;
+          color: white;
+        }
+        .use-flow-col-1 {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 214.5px;
+          padding-left: 21px;
+          font-size: 18px;
+          font-weight: bold;
+          background-color: #F8F8F8;
+          &::after {
+            position: absolute;
+            top: 13px;
+            left: 100%;
+            content: "";
+            width: 1px;
+            height: 29px;
+            background-color: #C3C3C3;
+          }
+        }
+        .use-flow-col-2 {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          padding-left: 53.5px;
+          font-weight: 500;
+          background-color: #F8F8F8;
+        }
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@
       <?php get_template_part('parts/rate_plan'); ?>
       <?php get_template_part('parts/toefl_success_stories'); ?>
       <?php get_template_part('parts/use_flow'); ?>
+      <?php get_template_part('parts/qa'); ?>
       <?php get_footer(); ?>
   </div>
   </body>

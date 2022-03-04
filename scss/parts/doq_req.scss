@@ -16,10 +16,10 @@
       color: white;
     }
     .btn-doq-req-area {
-      padding-top: 16px;
+      padding-top: 24px;
       .btn-doq-req {
         @extend .btn-yellow;
-        @include el-prop(260px, 60px, 16px, bold, 31px);
+        @include el-prop(280px, 50px, 16px, bold, 25px);
       }
     }
     .contact-link-area {

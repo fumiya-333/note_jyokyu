@@ -1,0 +1,34 @@
+@import "../common/mixin.scss";
+@import "../common/common.scss";
+
+.contact-phone-number {
+  padding-top: 20.3px;
+  padding-bottom: 23.7px;
+  .contact-phone-number-contents {
+    display: flex;
+    max-width: 670px;
+    margin: 0 auto;
+    .contact-phone-number-title {
+      display: flex;
+      padding-right: 20px;
+      font-weight: bold;
+      span {
+        margin-top: auto;
+        margin-bottom: 3px;
+      }
+    }
+    .phone-number-title {
+      padding-right: 20px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .phone-number-time {
+      display: flex;
+      font-weight: 500;
+      span {
+        margin-top: auto;
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

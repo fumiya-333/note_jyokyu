@@ -16,6 +16,8 @@
       <?php get_template_part('parts/use_flow'); ?>
       <?php get_template_part('parts/qa'); ?>
       <?php get_template_part('parts/post'); ?>
+      <?php get_template_part('parts/doq_req'); ?>
+      <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>
   </div>
   </body>

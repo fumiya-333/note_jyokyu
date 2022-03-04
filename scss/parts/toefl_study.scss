@@ -14,20 +14,21 @@
   }
   .toefl-study-sub-title-box {
     display: flex;
+    max-width: 582px;
     padding-top: 63px;
+    margin: 0 auto;
     text-align: center;
     ul {
-      margin: 0 auto;
       li {
         text-align: center;
         height: 57px;
         font-size: 18px;
         font-weight: bold;
         &:first-child {
-          margin-right: 57px;
+          margin-right: 53px;
         }
         &:nth-child(2) {
-          margin-right: 30px;
+          margin-right: 24px;
         }
         br {
           display: block;
@@ -57,7 +58,7 @@
         }
       }
       .toefl-study-box-text {
-        padding-top: 22px;
+        padding-top: 18px;
         padding-bottom: 24px;
         font-size: 18px;
         font-weight: 500;

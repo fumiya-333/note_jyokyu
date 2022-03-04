@@ -7,7 +7,7 @@
       0123-456-7890
     </div>
     <div class="phone-number-time">
-      <span>平日  08:00~20:00</span>
+      <span>平日&nbsp;&nbsp;08:00~20:00</span>
     </div>
   </div>
 </div>

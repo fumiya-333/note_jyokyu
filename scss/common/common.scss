@@ -42,3 +42,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin line-clump($line-clump) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clump;
+  overflow: hidden; 
+}

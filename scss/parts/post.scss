@@ -1,0 +1,92 @@
+@import "../common/mixin.scss";
+@import "../common/common.scss";
+
+.post {
+  padding-top: 60.2px;
+  .post-contents {
+    display: flex;
+    max-width: 927px;
+    margin: 0 auto;
+    .blog-contents {
+      width: 430px;
+      margin-right: 67px;
+      .blog-title {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .blog-list {
+        padding-top: 35.3px;
+        padding-bottom: 119px;
+        .blog-row {
+          display: flex;
+          &:not(:last-child) {
+            margin-bottom: 31px;
+          }
+          .blog-img-box {
+            position: relative;
+            width: 150px;
+            height: 110px;
+            .blog-category {
+              position: absolute;
+              height: 23px;
+              padding: 0 9px;
+              font-size: 12px;
+              font-weight: 500;
+              background-color: #1B224C;
+              border: 1px solid #707070;
+              color: white;
+              @include flex-center;
+            }
+          }
+          .blog-text-box {
+            display: flex;
+            flex-flow: column;
+            max-width: 260px;
+            margin-left: 20px;
+            .blog-row-title {
+              a {
+                margin-top: -6px;
+                font-weight: bold;
+                color: #1B224C;
+                line-height: 1.7;
+                @include line-clump(3);
+              }
+            }
+            .blog-date {
+              margin-top: auto;
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .correct-contents {
+      width: 430px;
+      .correct-title {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .correct-list {
+        width: 402px;
+        padding-top: 35.2px;
+        .correct-row {
+          padding-bottom: 24px;
+          font-weight: 500;
+          .correct-date {
+            font-size: 12px;
+          }
+          .correct-row-title {
+            height: 59px;
+            margin-top: 16px;
+            a {
+              margin-top: -6px;
+              @include line-clump(3);
+              line-height: 1.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

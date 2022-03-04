@@ -24,6 +24,9 @@ body {
       list-style: none;
     }
   }
+  a {
+    color: #1B224C;
+  }
   @include mq(sp) {
 
   }

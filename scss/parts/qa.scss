@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/common.scss";
 
 $toggle-btn-top: 47%;
 
@@ -17,7 +16,7 @@ $toggle-btn-top: 47%;
     .qa-accordion {
       margin-top: 30px;
       border-bottom: 1px solid #1B224C;
-      .qa-accordion-row {
+      @mixin qa-accordion-row {
         position: relative;
         height: 74px;
         border-top: 1px solid #1B224C;
@@ -39,7 +38,7 @@ $toggle-btn-top: 47%;
         }
       }
       .qa-accordion-row-passive {
-        @extend .qa-accordion-row;
+        @include qa-accordion-row;
         .toggle-btn {
           &::after {
             content: "";
@@ -55,7 +54,7 @@ $toggle-btn-top: 47%;
         }
       }
       .qa-accordion-row-active {
-        @extend .qa-accordion-row;
+        @include qa-accordion-row;
         height: 65.5px!important;
       }
       .qa-accordion-row-open {

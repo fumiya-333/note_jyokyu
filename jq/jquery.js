@@ -11,6 +11,11 @@ window.onload = function(){
   }
 
   function addEvent() {
+    $('#btn-hamburger').on('click', function(){
+      // $('#nav').css('display', $('#hamburger').hasClass('hamburger-open') ? 'none' : 'block');
+      $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
+    });
+
     $('.qa-accordion-row-passive').on("click",function(){
       if($(this).hasClass('qa-accordion-row-passive')) {
         $(this).removeClass('qa-accordion-row-passive');

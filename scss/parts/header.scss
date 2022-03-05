@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/common.scss";
 
 $btn-height: 50px;
 $font-size: 14px;
@@ -19,6 +18,9 @@ header {
       .menu {
         display: flex;
         align-items: center;
+        @include mq(sp) {
+          display: none;
+        }
         ul {
           li {
             font-weight: bold;
@@ -41,6 +43,9 @@ header {
     .wrap-right {
       display: flex;
       margin-left: auto;
+      @include mq(sp) {
+        display: none;
+      }
       .text-area {
         padding-top: 13px;
         padding-right: 23px;
@@ -66,13 +71,67 @@ header {
         }
       }
       .btn-doc-req {
-        @extend .btn-yellow;
+        @include btn-yellow;
         @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
         margin-right: 10px;
       }
       .btn-contact {
-        @extend .btn-navy-blue;
+        @include btn-navy-blue;
         @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
+      }
+    }
+    .hamburger {
+      display: none;
+      @include mq(sp) {
+        display: flex;
+        margin-left: auto;
+      }
+      .btn-hamburger {
+        @include base-btn;
+        width: 58px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        .open {
+          transform: rotate(180deg);
+        }
+        .btn-hamburger-line {
+          width: 100%;
+          height: 4px;
+          background-color: #333;
+          position: relative;
+          transition: .2s;
+          // .open {
+          //   background-color: transparent;
+          //   &::before, &::after {
+          //     content: "";
+          //     transition: .2s;
+          //   }
+          //   &::before {
+          //     transform: rotate(45deg);
+          //   }
+          //   &::after {
+          //     transform: rotate(-45deg);
+          //   }
+          // }
+          &::before, &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            transition: .2s;
+          }
+          &::before {
+            transform: translateY(-16px);
+          }
+          &::after {
+            transform: translateY(16px);
+          }
+        }
       }
     }
   }

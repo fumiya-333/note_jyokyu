@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/common.scss";
 
 .doq-req {
   .doq-req-contents {
@@ -18,7 +17,7 @@
     .btn-doq-req-area {
       padding-top: 24px;
       .btn-doq-req {
-        @extend .btn-yellow;
+        @include btn-yellow;
         @include el-prop(280px, 50px, 16px, bold, 25px);
       }
     }

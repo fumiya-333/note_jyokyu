@@ -21,5 +21,10 @@
       <button class="btn-doc-req">資料請求</button>
       <button class="btn-contact">お問い合わせ</button>
     </div>
+    <div class="hamburger">
+      <button class="btn-hamburger" id="btn-hamburger">
+        <span class="btn-hamburger-line" id="btn-hamburger-line"></span>
+      </button>
+    </div>
   </div>
 </header>

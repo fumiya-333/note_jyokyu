@@ -9,3 +9,55 @@ $breakpoint: (
     @content;
   }
 }
+
+@mixin base-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin btn-yellow {
+  @include base-btn;
+  background-color: #F5A623;
+}
+
+@mixin btn-navy-blue {
+  @include base-btn;
+  background-color: #1B224C;
+}
+
+@mixin btn-border-white {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+@mixin tip-yellow {
+  background-color: #F5A623;
+  color: white;
+}
+
+@mixin el-prop($width, $height, $font-size, $font-wight, $border-radius) {
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  font-weight: $font-wight;
+  border-radius: $border-radius;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin line-clump($line-clump) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clump;
+  overflow: hidden; 
+}

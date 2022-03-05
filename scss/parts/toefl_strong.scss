@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/common.scss";
 
 $tip-yellow-width: 90px;
 $tip-yellow-height: 30px;
@@ -32,7 +31,7 @@ $toefl-strong-img-height: 240px;
       }
       @mixin toefl-optimization-text-box {
         .tip-lol-1 {
-          @extend .tip-yellow;
+          @include tip-yellow;
           @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
           @include flex-center;
         }

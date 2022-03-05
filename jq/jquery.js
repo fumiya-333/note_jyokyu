@@ -12,7 +12,7 @@ window.onload = function(){
 
   function addEvent() {
     $('#btn-hamburger').on('click', function(){
-      // $('#nav').css('display', $('#hamburger').hasClass('hamburger-open') ? 'none' : 'block');
+      $('#nav').css('display', $('#btn-hamburger, #btn-hamburger-line').hasClass('open') ? 'none' : 'block');
       $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
     });
 

@@ -6,131 +6,137 @@ $font-weight: bold;
 $border-radius: 5px;
 
 header {
+  display: flex;
   padding: 15px 10px 15px 15px;
-  .header-wrap {
+  .wrap-left {
     display: flex;
-    .wrap-left {
-      display: flex;
-      .logo {
-        padding-top: 12px;
-        padding-bottom: 11px;
-      }
-      .menu {
-        display: flex;
-        align-items: center;
-        @include mq(sp) {
-          display: none;
-        }
-        ul {
-          li {
-            font-weight: bold;
-            &:first-child {
-              padding-left: 28px;
-            }
-            &:nth-child(2) {
-              padding-left: 24px;
-            }
-            &:nth-child(3) {
-              padding-left: 22px;
-            }
-            &:nth-child(4) {
-              padding-left: 24px;
-            }
-          }
-        }
-      }
+    .logo {
+      padding-top: 12px;
+      padding-bottom: 11px;
     }
-    .wrap-right {
+    .nav {
       display: flex;
-      margin-left: auto;
+      align-items: center;
       @include mq(sp) {
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1B224C;
+        color: white;
+        z-index: 1;
       }
-      .text-area {
-        padding-top: 13px;
-        padding-right: 23px;
-        .active-time {
-          height: 12px;
-          text-align: right;
-          font-size: 12px;
-          font-weight: 500;
+      ul {
+        @include mq(sp) {
+          flex-flow: column;
+          height: 100vh;
+          @include flex-center;
         }
-        .phone-number {
-          margin-top: 6px;
+        li {
           font-weight: bold;
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 10px;
-            height: 15px;
-            margin-top: 2px;
-            padding-right: 5px;
-            background-image: url("../img/phone.png");
-            background-repeat: no-repeat;
+          @include mq(sp) {
+            padding-left: 0!important;
+          }
+          &:first-child {
+            padding-left: 28px;
+          }
+          &:nth-child(2) {
+            padding-left: 24px;
+          }
+          &:nth-child(3) {
+            padding-left: 22px;
+          }
+          &:nth-child(4) {
+            padding-left: 24px;
           }
         }
-      }
-      .btn-doc-req {
-        @include btn-yellow;
-        @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
-        margin-right: 10px;
-      }
-      .btn-contact {
-        @include btn-navy-blue;
-        @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
       }
     }
-    .hamburger {
+  }
+  .wrap-right {
+    display: flex;
+    margin-left: auto;
+    @include mq(sp) {
       display: none;
-      @include mq(sp) {
-        display: flex;
-        margin-left: auto;
+    }
+    .text-area {
+      padding-top: 13px;
+      padding-right: 23px;
+      .active-time {
+        height: 12px;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 500;
       }
-      .btn-hamburger {
-        @include base-btn;
-        width: 58px;
-        height: 48px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        .open {
-          transform: rotate(180deg);
+      .phone-number {
+        margin-top: 6px;
+        font-weight: bold;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 15px;
+          margin-top: 2px;
+          padding-right: 5px;
+          background-image: url("../img/phone.png");
+          background-repeat: no-repeat;
         }
-        .btn-hamburger-line {
+      }
+    }
+    .btn-doc-req {
+      @include btn-yellow;
+      @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
+      margin-right: 10px;
+    }
+    .btn-contact {
+      @include btn-navy-blue;
+      @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
+    }
+  }
+  .hamburger {
+    display: none;
+    @include mq(sp) {
+      display: flex;
+      margin-left: auto;
+    }
+    .btn-hamburger {
+      @include base-btn;
+      width: 48px;
+      z-index: 10;
+      .open {
+        background-color: transparent!important;
+        &::before {
+          transform: rotate(45deg)!important;
+        }
+        &::after {
+          transform: rotate(-45deg)!important;
+        }
+      }
+      .btn-hamburger-line {
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #1B224C;
+        position: relative;
+        transition: all 0.5s;
+        &::before, &::after {
+          content: '';
+          display: block;
           width: 100%;
           height: 4px;
-          background-color: #333;
-          position: relative;
-          transition: .2s;
-          // .open {
-          //   background-color: transparent;
-          //   &::before, &::after {
-          //     content: "";
-          //     transition: .2s;
-          //   }
-          //   &::before {
-          //     transform: rotate(45deg);
-          //   }
-          //   &::after {
-          //     transform: rotate(-45deg);
-          //   }
-          // }
-          &::before, &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #333;
-            transition: .2s;
-          }
-          &::before {
-            transform: translateY(-16px);
-          }
-          &::after {
-            transform: translateY(16px);
-          }
+          border-radius: 4px;
+          background-color: #1B224C;
+          position: absolute;
+          transition: all 0.5s;
+        }
+        &::before {
+          transform: translateY(-12px);
+        }
+        &::after {
+          transform: translateY(12px);
         }
       }
     }

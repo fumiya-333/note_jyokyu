@@ -2,21 +2,37 @@
 
 .rate-plan {
   padding-top: 52px;
+  @include mq(sp) {
+    padding-top: 0;
+  }
   .rate-plan-contents {
     text-align: center;
     width: 906px;
     height: 217px;
     margin: 0 auto;
     @include bg-img(url("../img/price.png"), no-repeat);
+    @include mq(sp) {
+      width: auto;
+      height: auto;
+      @include bg-img(url("../img/price.png"), no-repeat, 80% 20%, cover);
+    }
     .rate-plan-title {
       padding-top: 62px;
       padding-right: 14px;
       font-size: 26px;
       font-weight: bold;
       color: white;
+      @include mq(sp) {
+        // padding-top: 54px;
+        padding-right: 0;
+        font-size: 24px;
+      }
     }
     .btn-more-rate-plan-area {
       padding-top: 25px;
+      @include mq(sp) {
+        padding-bottom: 48px;
+      }
       .btn-more-rate-plan {
         @include btn-border-white;
         @include el-prop(200px, 50px, 16px, bold, 30px);

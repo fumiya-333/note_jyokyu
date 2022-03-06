@@ -17,8 +17,7 @@ $tip-yellow-border-radius: 0;
     padding-left: 5px;
     margin: 0 auto;
     @include mq(sp) {
-      padding-top: 39px;
-      padding-left: 0;
+      padding: 39px 0 0 0;
     }
     .toefl-strong-title {
       text-align: center;

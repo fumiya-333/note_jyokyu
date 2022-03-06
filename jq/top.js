@@ -23,6 +23,8 @@ Top.prototype.responsiveView = function(){
 
     $('#toefl-optimization-title').html('TOEFLに最適化された無駄のないカリキュラム');
     $('#toefl-teacher-title').html('日本人指導歴10年以上の経験豊富な講師陣');
+
+    $('#doq-req-title').html('お気軽にお問い合わせください');
   }else{
     $('#toefl-study-title').html('TOEFL学習でこんな悩みありませんか？');
     $('#toefl-study-sub-title-box').html('<ul><li>勉強の習慣が<br>身についていない</li><li>勉強しているはず<br>なのに点数が伸びない</li><li>正しい勉強方法が<br>わからない</li></ul>');
@@ -30,6 +32,8 @@ Top.prototype.responsiveView = function(){
 
     $('#toefl-optimization-title').html('TOEFLに最適化された<br>無駄のないカリキュラム');
     $('#toefl-teacher-title').html('日本人指導歴10年以上の<br>経験豊富な講師陣');
+
+    $('#doq-req-title').html('まずは無料で資料請求から');
   }
 };
 

@@ -10,6 +10,9 @@
       font-size: 32px;
       font-weight: bold;
       color: white;
+      @include mq(sp) {
+        font-size: 24px;
+      }
     }
     .btn-doq-req-area {
       padding-top: 24px;

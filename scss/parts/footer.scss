@@ -10,22 +10,55 @@ footer {
       display: flex;
       max-width: 935.5px;
       margin: 0 auto;
+      @include mq(sp) {
+        display: block;
+      }
       .inner-contents-left {
         padding-left: 23px;
         padding-top: 13px;
+        @include mq(sp) {
+          width: 200px;
+          padding: 0;
+          margin: 0 auto;
+        }
         ul {
           li {
             position: relative;
-            &:not(:first-child){
-              padding-left: 43px;
-              &::before {
-                content: "";
-                width: 1px;
-                height: 23px;
-                background-color: white;
-                position: absolute;
-                top: -3px;
-                left: 17px;
+            @include mq(sp) {
+              text-align: center;
+              &:first-child, &:nth-child(2) {
+                padding-bottom: 18px;
+              }
+              &:nth-child(2), &:nth-child(4) {
+                &::before {
+                  content: "";
+                  width: 1px;
+                  height: 23px;
+                  background-color: white;
+                  position: absolute;
+                  top: -3px;
+                  left: 38px;
+                }
+              }
+              &:nth-child(2) {
+                padding-left: 84px;
+              }
+              &:nth-child(4) {
+                padding-left: 70px;
+              }
+            }
+            @include mq(tab-and-pc) {
+              &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                padding-left: 43px;
+                &::before {
+                  content: "";
+                  width: 1px;
+                  height: 23px;
+                  background-color: white;
+                  position: absolute;
+                  top: -3px;
+                  left: 17px;
+                }
               }
             }
             a {
@@ -38,25 +71,45 @@ footer {
       }
       .inner-contents-right {
         margin-left: auto;
-        .phone-number {
-          text-align: right;
-          padding-top: 20px;
-          font-weight: bold;
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 10px;
-            height: 15px;
-            margin-top: 5px;
-            padding-right: 9px;
-            @include bg-img(url("../img/footer_phone.png"), no-repeat);
+        @include mq(sp) {
+          display: flex;
+          max-width: 248px;
+          padding-top: 60px;
+          margin: 0 auto;
+          img {
+            width: 120px;
           }
         }
-        .active-time {
-          text-align: right;
-          padding-top: 14px;
-          font-size: 12px;
-          font-weight: 500;
+        .number-box {
+          @include mq(sp) {
+            padding-left: 8px;
+          }
+          .phone-number {
+            text-align: right;
+            padding-top: 20px;
+            font-weight: bold;
+            @include mq(sp) {
+              padding-top: 0;
+            }
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 10px;
+              height: 15px;
+              margin-top: 5px;
+              padding-right: 9px;
+              @include bg-img(url("../img/footer_phone.png"), no-repeat);
+            }
+          }
+          .active-time {
+            text-align: right;
+            padding-top: 14px;
+            font-size: 12px;
+            font-weight: 500;
+            @include mq(sp) {
+              padding-top: 8px;
+            }
+          }
         }
       }
     }
@@ -71,6 +124,9 @@ footer {
       margin-left: auto;
       font-size: 12px;
       font-weight: bold;
+      @include mq(sp) {
+        margin: 0 auto;
+      }
     }
   }
 }

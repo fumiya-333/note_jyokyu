@@ -6,6 +6,7 @@
     display: flex;
     max-width: 900.5px;
     margin: 0 auto;
+    @include flex-wrap;
     .blog-contents {
       width: 430px;
       margin-right: 67px;

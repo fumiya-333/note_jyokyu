@@ -5,6 +5,10 @@
   margin-top: 39px;
   background-color: #1B224C;
   border: 1px solid #707070;
+  @include mq(sp) {
+    height: auto;
+    margin-top: 0;
+  }
   .toefl-success-stories-contents {
     .toefl-success-stories-title {
       text-align: center;
@@ -16,14 +20,31 @@
       font-weight: bold;
       color: white;
       line-height: 34px;
+      @include mq(sp) {
+        width: auto;
+        height: auto;
+        font-size: 28px;
+        line-height: 1;
+      }
     }
     .toefl-success-content {
       display: flex;
       max-width: 902px;
       padding-top: 164px;
       margin: 0 auto;
+      @include flex-wrap;
+      @include mq(sp) {
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 74px;
+      }
       .toefl-success-box {
         max-width: 280px;
+        @include mq(sp) {
+          max-width: 330px;
+          padding-top: 74px;
+          margin-right: 0!important;
+        }
         &:first-child {
           margin-right: 30px;
         }
@@ -35,42 +56,79 @@
           line-height: 1.8;
           color: white;
         }
-        .toefl-success-img {
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-          height: 171px;
-          margin-top: 6px;
-          background-color: white;
-        }
-        .toefl-success-el-name {
-          display: flex;
-          .toefl-success-el, .toefl-success-name {
-            height: 32px;
-            margin-top: 16px;
+        .toefl-success-individual {
+          position: relative;
+          .toefl-success-img {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 171px;
+            margin-top: 6px;
             background-color: white;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 32px;
+            @include mq(sp) {
+              justify-content: left;
+              height: 241px;
+              img {
+                height: 190px;
+              }
+            }
           }
-          .toefl-success-el {
-            width: 100px;
-            padding-left: 10px;
-            margin-right: 8px;
+          .toefl-success-el-wrap {
+            @include mq(sp) {
+              width: 150px;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+            .toefl-success-el-name {
+              display: flex;
+              @include mq(sp) {
+                display: block;
+              }
+              .toefl-success-el, .toefl-success-name {
+                height: 32px;
+                margin-top: 16px;
+                background-color: white;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 32px;
+                @include mq(sp) {
+                  text-align: center;
+                  width: auto!important;
+                  height: auto;
+                  padding-left: 0!important;
+                  margin-top: 12px;
+                  background-color: #F8F8F8;
+                  line-height: 2;
+                }
+              }
+              .toefl-success-el {
+                width: 100px;
+                padding-left: 10px;
+                margin-right: 8px;
+              }
+              .toefl-success-name {
+                width: 172px;
+                padding-left: 14px;
+              }
+            }
+            .toefl-success-result {
+              height: 32px;
+              padding-left: 14px;
+              margin-top: 10px;
+              background-color: white;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 32px;
+              @include mq(sp) {
+                text-align: center;
+                height: auto;
+                padding-left: 0;
+                background-color: #F8F8F8;
+                line-height: 2;
+              }
+            } 
           }
-          .toefl-success-name {
-            width: 172px;
-            padding-left: 14px;
-          }
-        }
-        .toefl-success-result {
-          height: 32px;
-          padding-left: 14px;
-          margin-top: 10px;
-          background-color: white;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 32px;
         }
       }
     }

@@ -2,23 +2,38 @@
 
 .post {
   padding-top: 60.2px;
+  @include mq(sp) {
+    padding-top: 30.2px;
+  }
   .post-contents {
     display: flex;
     max-width: 900.5px;
     margin: 0 auto;
     @include mq(sp) {
       @include flex-wrap;
+      padding: 0 16px;
     }
     .blog-contents {
       width: 430px;
       margin-right: 67px;
+      @include mq(sp) {
+        width: 343px;
+        margin-right: 0;
+      }
       .blog-title {
         font-size: 32px;
         font-weight: bold;
+        @include mq(sp) {
+          text-align: center;
+          font-size: 28px;
+        }
       }
       .blog-list {
         padding-top: 35.3px;
         padding-bottom: 119px;
+        @include mq(sp) {
+          padding-bottom: 60.2px;
+        }
         .blog-row {
           display: flex;
           &:not(:last-child) {
@@ -46,6 +61,10 @@
             flex-flow: column;
             width: 260px;
             margin-left: 20px;
+            @include mq(sp) {
+              width: 183px;
+              margin-left: 10px;
+            }
             .blog-row-title {
               a {
                 margin-top: -6px;
@@ -69,10 +88,17 @@
       .correct-title {
         font-size: 32px;
         font-weight: bold;
+        @include mq(sp) {
+          text-align: center;
+          font-size: 28px;
+        }
       }
       .correct-list {
         width: 402px;
         padding-top: 35.2px;
+        @include mq(sp) {
+          width: auto;
+        }
         .correct-row {
           padding-bottom: 24px;
           font-weight: 500;

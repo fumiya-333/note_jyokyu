@@ -34,13 +34,13 @@ Top.prototype.responsiveView = function(){
 };
 
 Top.prototype.addEvent = function(){
-  $('.qa-accordion-row-passive').on("click",function(){
-    if($(this).hasClass('qa-accordion-row-passive')) {
-      $(this).removeClass('qa-accordion-row-passive');
-      $(this).addClass('qa-accordion-row-active');
-    }else{
-      $(this).addClass('qa-accordion-row-passive');
+  $('.qa-accordion-row').on("click",function(){
+    if($(this).hasClass('qa-accordion-row-active')) {
       $(this).removeClass('qa-accordion-row-active');
+      $(this).addClass('qa-accordion-row');
+    }else{
+      $(this).removeClass('qa-accordion-row');
+      $(this).addClass('qa-accordion-row-active');
     }
     $(this).next().fadeToggle(200);
   });

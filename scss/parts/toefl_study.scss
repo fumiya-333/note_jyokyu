@@ -4,6 +4,9 @@
   height: 604px;
   background-color: #1B224C;
   color: white;
+  @include mq(sp) {
+    height: auto;
+  }
   .toefl-study-title {
     max-width: 900px;
     padding-top: 63px;
@@ -11,6 +14,11 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
+    @include mq(sp) {
+      max-width: 290px;
+      font-size: 24px;
+      line-height: 1.7;
+    }
   }
   .toefl-study-sub-title-box {
     display: flex;
@@ -19,11 +27,25 @@
     margin: 0 auto;
     text-align: center;
     ul {
+      @include mq(sp) {
+        width: 100%;
+      }
       li {
         text-align: center;
         height: 57px;
         font-size: 18px;
         font-weight: bold;
+        @include mq(sp) {
+          display: block;
+          height: auto;
+          margin-right: 0!important;
+          &:first-child {
+            margin-bottom: 28px;
+          }
+          &:nth-child(2) {
+            margin-bottom: 28px;
+          }
+        }
         &:first-child {
           margin-right: 53px;
         }
@@ -45,6 +67,9 @@
     margin: 83px auto 0 auto;
     background-color: white;
     color: #1B224C;
+    @include mq(sp) {
+      padding: 11px 8px 12px 8px;
+    }
     .toefl-study-border-box {
       border: 5px solid #1B224C;
       .toefl-study-box-title {
@@ -52,9 +77,15 @@
         font-size: 36px;
         font-weight: bold;
         line-height: 1.4;
+        @include mq(sp) {
+          font-size: 20px;
+        }
         span {
           font-size: 36px;
           background: linear-gradient(transparent 80%, #F5A623 0%);
+          @include mq(sp) {
+            font-size: 20px;
+          }
         }
       }
       .toefl-study-box-text {
@@ -63,6 +94,9 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 1.7;
+        @include mq(sp) {
+          font-size: 14px;
+        }
       }
     }
   }

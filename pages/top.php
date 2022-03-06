@@ -23,4 +23,5 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/jq/jquery.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/jq/top.js"></script>
 </html>

@@ -41,6 +41,13 @@ $breakpoint: (
   color: white;
 }
 
+@mixin bg-img($bg-img-url, $bg-repeat: null, $bg-position: null, $bg-size: null) {
+  background-image: url($bg-img-url);
+  background-repeat: $bg-repeat;
+  background-position: $bg-position;
+  background-size: $bg-size;
+}
+
 @mixin el-prop($width, $height, $font-size, $font-wight, $border-radius) {
   width: $width;
   height: $height;

@@ -9,6 +9,47 @@ $tip-yellow-border-radius: 0;
 $toefl-strong-img-width: 350px;
 $toefl-strong-img-height: 240px;
 
+@mixin toefl {
+  display: flex;
+}
+@mixin toefl-left {
+  max-width: 500px;
+}
+@mixin toefl-right {
+  flex: 1;
+  padding-left: 50px;
+}
+@mixin toefl-img {
+  img {
+    width: $toefl-strong-img-width;
+    height: $toefl-strong-img-height;
+  }
+}
+@mixin tip-lol {
+  @include tip-yellow;
+  @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
+  @include flex-center;
+}
+@mixin toefl-title {
+  padding-top: 27px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.5;
+  @include mq(sp) {
+    padding-top: 0;
+    color: white;
+  }
+}
+@mixin toefl-text {
+  padding-top: 27px;
+  font-weight: 500;
+  line-height: 1.7;
+  @include mq(sp) {
+    padding-top: 0;
+    color: white;
+  }
+}
+
 .toefl-strong {
   .toefl-strong-contents {
     max-width: 910px;
@@ -16,59 +57,107 @@ $toefl-strong-img-height: 240px;
     padding-bottom: 39px;
     padding-left: 5px;
     margin: 0 auto;
+    @include mq(sp) {
+      padding-top: 39px;
+    }
     .toefl-strong-title {
       text-align: center;
       font-size: 36px;
       font-weight: bold;
-    }
-    .toefl-optimization, .toefl-teacher, .toefl-grades-up {
-      display: flex;
-      @mixin toefl-optimization-img-box {
-        img {
-          width: $toefl-strong-img-width;
-          height: $toefl-strong-img-height;
-        }
-      }
-      @mixin toefl-optimization-text-box {
-        .tip-lol-1 {
-          @include tip-yellow;
-          @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
-          @include flex-center;
-        }
-        .toefl-optimization-title {
-          padding-top: 27px;
-          font-size: 26px;
-          font-weight: bold;
-          line-height: 1.5;
-        }
-        .toefl-optimization-text {
-          padding-top: 27px;
-          font-weight: 500;
-          line-height: 1.7;
-        }
-      }
-      .toefl-optimization-left {
-        max-width: 500px;
-        @include toefl-optimization-img-box;
-        @include toefl-optimization-text-box;
-      }
-      .toefl-optimization-right {
-        flex: 1;
-        padding-left: 50px;
-        @include toefl-optimization-img-box;
-        @include toefl-optimization-text-box;
+      @include mq(sp) {
+        font-size: 28px;
       }
     }
     .toefl-optimization {
+      @include toefl;
       padding-top: 59px;
+      @include mq(sp) {
+        padding-top: 39px;
+      }
+      .tip-lol-1 {
+        @include tip-lol; 
+      }
+      .toefl-optimization-title {
+        @include toefl-title;
+      }
+      .toefl-optimization-text {
+        @include toefl-text;
+      }
+      .toefl-optimization-left {
+        @include toefl-img;
+        @include toefl-left;
+        @include mq(sp) {
+          @include bg-img("../img/feature01.jpg", no-repeat, center, cover);
+        }
+      }
+      .toefl-optimization-right {
+        @include toefl-img;
+        @include toefl-right;
+        @include mq(sp) {
+          display: none;
+        }
+      }
     }
     .toefl-teacher {
+      @include toefl;
       padding-top: 55px;
+      @include mq(sp) {
+        padding-top: 0;
+      }
+      .tip-lol-2 {
+        @include tip-lol; 
+      }
+      .toefl-teacher-title{
+        @include toefl-title;
+      }
+      .toefl-teacher-text {
+        @include toefl-text;
+      }
+      .toefl-teacher-left {
+        @include toefl-img;
+        @include toefl-left;
+        @include mq(sp) {
+          display: none;
+        }
+      }
+      .toefl-teacher-right {
+        @include toefl-img;
+        @include toefl-right;
+        @include mq(sp) {
+          padding-left: 0px;
+          @include bg-img("../img/feature02.jpg", no-repeat, center, cover);
+        }
+      }
     }
     .toefl-grades-up {
+      @include toefl;
       padding-top: 58px;
-      .toefl-optimization-text {
-        padding-top: 36px!important;
+      @include mq(sp) {
+        padding-top: 0;
+      }
+      .tip-lol-3 {
+        @include tip-lol; 
+      }
+      .toefl-grades-title {
+        @include toefl-title;
+      }
+      .toefl-grades-text {
+        @include toefl-text;
+      }
+      .toefl-grades-left {
+        @include toefl-left;
+        @include mq(sp) {
+          @include bg-img("../img/feature03.png", no-repeat, center, cover);
+        }
+        .toefl-grades-text {
+          padding-top: 36px!important;
+        }
+      }
+      .toefl-grades-right {
+        @include toefl-right;
+        @include mq(sp) {
+          display: none;
+        }
       }
     }
   }

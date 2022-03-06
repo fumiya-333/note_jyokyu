@@ -6,6 +6,7 @@
   color: white;
   @include mq(sp) {
     height: auto;
+    padding-bottom: 59px;
   }
   .toefl-study-title {
     max-width: 900px;
@@ -47,10 +48,10 @@
           }
         }
         &:first-child {
-          margin-right: 53px;
+          margin-right: 57px;
         }
         &:nth-child(2) {
-          margin-right: 24px;
+          margin-right: 30px;
         }
         br {
           display: block;

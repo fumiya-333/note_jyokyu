@@ -49,8 +49,7 @@ footer {
             height: 15px;
             margin-top: 5px;
             padding-right: 9px;
-            background-image: url("../img/footer_phone.png");
-            background-repeat: no-repeat;
+            @include bg-img("../img/footer_phone.png", no-repeat);
           }
         }
         .active-time {

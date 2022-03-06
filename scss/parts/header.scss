@@ -80,7 +80,7 @@ header {
           height: 15px;
           margin-top: 2px;
           padding-right: 5px;
-          @include bg-img("../img/phone.png", no-repeat);
+          @include bg-img(url("../img/phone.png"), no-repeat);
         }
       }
     }

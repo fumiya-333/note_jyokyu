@@ -7,7 +7,7 @@
     width: 906px;
     height: 217px;
     margin: 0 auto;
-    @include bg-img("../img/price.png", no-repeat);
+    @include bg-img(url("../img/price.png"), no-repeat);
     .rate-plan-title {
       padding-top: 62px;
       padding-right: 14px;

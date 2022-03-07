@@ -1,9 +1,9 @@
 const WINDOW_TYPE_SP = 0;
-const WINDOW_TYPE_TB = 1;
+const WINDOW_TYPE_TAB = 1;
 const WINDOW_TYPE_PC = 2;
 
 const WINDOW_SIZE_SP = 768;
-const WINDOW_SIZE_TB = 1025;
+const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function(){
   $('#btn-hamburger').on('click', function(){
@@ -23,12 +23,12 @@ $(window).on('resize', function(){
 });
 
 function getWindowType(){
-  if($(window).innerWidth() < WINDOW_SIZE_SP){
+  if($(window).outerWidth() < WINDOW_SIZE_SP){
     // スマートフォン
     return WINDOW_TYPE_SP;
-  }else if($(window).innerWidth() < WINDOW_SIZE_TB){
+  }else if($(window).outerWidth() < WINDOW_SIZE_TAB){
     // タブレット
-    return WINDOW_TYPE_TB;
+    return WINDOW_TYPE_TAB;
   }else{
     // PC
     return WINDOW_TYPE_PC;

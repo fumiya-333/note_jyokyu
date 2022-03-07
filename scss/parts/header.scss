@@ -17,7 +17,7 @@ header {
     .nav {
       display: flex;
       align-items: center;
-      @include mq(sp) {
+      @include mq(sp-and-tab) {
         display: none;
         position: fixed;
         top: 0;
@@ -99,6 +99,10 @@ header {
     @include mq(sp) {
       display: flex;
       margin-left: auto;
+    }
+    @include mq(tab) {
+      display: flex;
+      padding-left: 10px;
     }
     .btn-hamburger {
       @include base-btn;

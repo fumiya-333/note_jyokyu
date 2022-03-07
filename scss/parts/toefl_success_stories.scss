@@ -1,7 +1,7 @@
 @import "../common/mixin.scss";
 
 .toefl-success-stories {
-  height: 608px;
+  // height: 608px;
   margin-top: 39px;
   background-color: #1B224C;
   border: 1px solid #707070;
@@ -10,6 +10,7 @@
     margin-top: 0;
   }
   .toefl-success-stories-contents {
+    padding-bottom: 59px;
     .toefl-success-stories-title {
       text-align: center;
       width: 900px;
@@ -35,6 +36,8 @@
       @include flex-wrap;
       @include mq(sp) {
         justify-content: center;
+        flex-flow: column;
+        max-width: 330px;
         padding-top: 0;
         padding-bottom: 74px;
       }

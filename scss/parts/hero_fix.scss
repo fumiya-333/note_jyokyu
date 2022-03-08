@@ -1,0 +1,15 @@
+@import "../common/mixin.scss";
+
+.hero-fix {
+  height: 221px;
+  @include bg-img(url("../img/plan.jpeg"), no-repeat, center, 100%);
+  .hero-fix-contents {
+    .hero-fix-title {
+      height: 100%;
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      @include flex-center;
+    }
+  }
+}

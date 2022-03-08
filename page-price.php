@@ -1,3 +1,8 @@
+<?php
+  $args = [
+    "hero_fix_title" => "コース・料金"
+  ];
+?>
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,8 +13,11 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <?php get_template_part('breadcrumbs'); ?>
+      <?php get_template_part('parts/hero_fix', null, $args); ?>
+      <?php get_template_part('parts/breadcrumbs'); ?>
       <?php get_template_part('parts/price'); ?>
+      <?php get_template_part('parts/doq_req'); ?>
+      <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>
   </div>
   </body>

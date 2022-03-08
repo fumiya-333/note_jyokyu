@@ -5,4 +5,12 @@
   font-size: 12px;
   font-weight: 500;
   background-color: #F8F8F8;
+  span {
+    &:nth-child(odd){
+      padding-right: 2px;
+    }
+    &:nth-child(even){
+      padding-left: 4px;
+    }
+  }
 }

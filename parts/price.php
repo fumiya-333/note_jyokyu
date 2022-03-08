@@ -51,6 +51,7 @@
                   <div class="price-table-text">カリキュラム作成</div>
                   <div class="price-table-text">TOEFL学習サポート</div>
                   <div class="price-table-text">週一回のビデオMTG</div>
+                  <div class="price-table-text">月二回の模試（解説<br>付き）</div>
                 </div>
               </div>
             </div>
@@ -70,6 +71,8 @@
                   <div class="price-table-text">カリキュラム作成</div>
                   <div class="price-table-text">TOEFL学習サポート</div>
                   <div class="price-table-text">週一回のビデオMTG</div>
+                  <div class="price-table-text">月二回の模試（解説<br>付き）</div>
+                  <div class="price-table-text">週一の英語面接対策</div>
                 </div>
               </div>
             </div>
@@ -85,9 +88,7 @@
                   *月額（税抜価格）
                 </div>
                 <div class="price-table-text-box">
-                  <div class="price-table-text">カリキュラム作成</div>
-                  <div class="price-table-text">TOEFL学習サポート</div>
-                  <div class="price-table-text">週一回のビデオMTG</div>
+                  <div class="price-table-text-off">＊別途ご相談ください</div>
                 </div>
               </div>
             </div>

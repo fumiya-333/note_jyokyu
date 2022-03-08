@@ -3,6 +3,9 @@
 .hero-fix {
   height: 221px;
   @include bg-img(url("../img/plan.jpeg"), no-repeat, center, 100%);
+  @include mq(sp) {
+    height: 65px;
+  }
   .hero-fix-contents {
     .hero-fix-title {
       height: 100%;

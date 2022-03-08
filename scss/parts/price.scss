@@ -6,6 +6,10 @@ $toggle-btn-top: 50%;
   .price-contents {
     padding-top: 58px;
     padding-bottom: 61.6px;
+    @include mq(sp) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     .price-box {
       max-width: 900px;
       margin: 0 auto;
@@ -17,10 +21,16 @@ $toggle-btn-top: 50%;
         }
         .price-system-items-box {
           padding-top: 62.2px;
+          @include mq(sp) {
+            padding-top: 42.2px;
+          }
           .price-system-items {
             display: flex;
             max-width: 669px;
             margin: 0 auto;
+            @include mq(sp) {
+              display: block;
+            }
             .price-system-item1 {
               width: 280px;
               height: 90px;
@@ -30,6 +40,9 @@ $toggle-btn-top: 50%;
               font-size: 22px;
               font-weight: bold;
               @include flex-center;
+              @include mq(sp) {
+                margin: 0 auto;
+              }
             }
             .price-system-item2 {
               position: relative;
@@ -37,6 +50,9 @@ $toggle-btn-top: 50%;
               margin-top: 3px;
               margin-left: 35.7px;
               margin-right: 35.5px;
+              @include mq(sp) {
+                margin: 32px auto 64px auto;
+              }
               &::before {
                 content: "";
                 position: absolute;
@@ -74,6 +90,10 @@ $toggle-btn-top: 50%;
           .price-table-items {
             display: flex;
             padding-top: 70px;
+            overflow-x: auto;
+            @include mq(sp) {
+              padding-top: 60px;
+            }
             .price-table-item {
               width: 220px;
               &:not(:last-child) {

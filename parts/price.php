@@ -17,7 +17,7 @@
       <div class="price-table-box">
         <div class="price-table-title">料金表</div>
         <div class="price-table-items-box">
-          <div class="price-table-items">
+          <div class="price-table-items js-scrollable">
             <div class="price-table-item">
               <div class="price-table-head">
                 基礎プラン

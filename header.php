@@ -1,14 +1,14 @@
 <header>
   <div class="wrap-left">
     <div class="logo">
-      <a href=""><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+      <a href="<?php echo HOME_URL ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
     </div>
     <nav class="nav" id="nav">
       <ul>
-        <li>ホーム</li>
-        <li>お知らせ</li>
-        <li>ブログ</li>
-        <li>コース・料金</li>
+        <li><a href="<?php echo HOME_URL ?>">ホーム</a></li>
+        <li><a href="<?php echo NOTICE_URL ?>">お知らせ</a></li>
+        <li><a href="<?php echo BLOG_URL ?>">ブログ</a></li>
+        <li><a href="<?php echo PRICE_URL ?>">コース・料金</a></li>
       </ul>
     </nav>
   </div>

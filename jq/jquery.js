@@ -11,7 +11,7 @@ window.onload = function(){
     $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
   });
 
-  if(load){
+  if(typeof load == 'function'){
     load();
   }
 };

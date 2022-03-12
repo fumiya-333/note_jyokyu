@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name=”description“ content=“日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール“>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/single.css">
+    <title><?php echo Constants::TITLE ?></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <?php get_header(); ?>
+      <?php get_template_part('parts/breadcrumbs'); ?>
+      <div class="single">
+        <div class="single-contents">
+          <div class="single-left">
+            <?php get_template_part('parts/article'); ?>
+            <?php get_template_part('parts/article_pickup'); ?>
+          </div>
+          <div class="single-right">
+            <?php get_sidebar(); ?>
+          </div>
+        </div>
+      </div>
+      <?php get_template_part('parts/doq_req'); ?>
+      <?php get_template_part('parts/contact_phone_number'); ?>
+      <?php get_footer(); ?>
+    </div>
+  </body>
+  <script></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/jq/jquery.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/jq/single.js"></script>
+</html>

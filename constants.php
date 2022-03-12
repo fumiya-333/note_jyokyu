@@ -11,6 +11,8 @@ class Constants {
   const PAGE_ID_PRICE_TABLE = 2149;
   const PAGE_ID_TOEFL_SUCCESS_STORIES = 2126;
 
+  const BREADCLUMB_TITLE_BLOG = "ブログ";
+
   /**
    * 定数を配列として全て取得する
    */

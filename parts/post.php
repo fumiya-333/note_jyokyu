@@ -2,7 +2,7 @@
 <div class="post">
   <div class="post-contents">
     <div class="blog-contents">
-      <div class="blog-title">ブログ</div>
+      <div class="blog-title"><?= Constants::BREADCLUMB_TITLE_BLOG ?></div>
       <?php
         echo "<div class='blog-list'>" . $bl_helper->execGetWpQuery(
           "",

@@ -4,9 +4,9 @@
       <div class="inner-contents-left">
         <ul>
           <li><a href="<?php echo HOME_URL ?>">ホーム</a></li>
-          <li><a href="<?php echo NOTICE_URL ?>">お知らせ</a></li>
-          <li><a href="<?php echo BLOG_URL ?>">ブログ</a></li>
-          <li><a href="<?php echo PRICE_URL ?>">コース・料金</a></li>
+          <li><a href="<?php echo Constants::NOTICE_URL ?>">お知らせ</a></li>
+          <li><a href="<?php echo Constants::BLOG_URL ?>">ブログ</a></li>
+          <li><a href="<?php echo Constants::PRICE_URL ?>">コース・料金</a></li>
         </ul>
       </div>
       <div class="inner-contents-right">

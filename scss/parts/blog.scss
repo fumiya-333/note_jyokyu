@@ -1,0 +1,93 @@
+@import "../common/mixin.scss";
+
+.blog {
+  .blog-contents {
+    max-width: 900px;
+    padding: 58px 0 53px 0;
+    margin: 0 auto;
+    .blog-title {
+      text-align: center;
+      padding-bottom: 60px;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .blog-list {
+      padding-bottom: 61px;
+      @include mq(sp) {
+        padding: 0 16px 60.2px 16px;
+      }
+      .blog-row {
+        display: flex;
+        @include mq(sp) {
+          display: block;
+        }
+        &:not(:last-child) {
+          margin-bottom: 61px;
+        }
+        .blog-img-box {
+          position: relative;
+          min-width: 240px;
+          max-width: 240px;
+          min-height: 140px;
+          @include mq(sp) {
+            min-width: auto;
+            max-width: none;
+          }
+          .blog-category {
+            position: absolute;
+            min-width: 80px;
+            height: 28px;
+            padding: 0 9px;
+            font-size: 12px;
+            font-weight: 500;
+            background-color: #1B224C;
+            color: white;
+            @include flex-center;
+          }
+        }
+        .blog-text-box {
+          display: flex;
+          flex-flow: column;
+          max-width: 609px;
+          margin-left: 50.1px;
+          @include mq(sp) {
+            margin-left: 0;
+          }
+          .blog-date {
+            padding-bottom: 20px;
+            font-weight: 500;
+          }
+          .blog-row-title {
+            padding-bottom: 20px;
+            a {
+              margin-top: -6px;
+              font-size: 26px;
+              font-weight: bold;
+              color: #1B224C;
+              line-height: 1.7;
+              @include line-clump(3);
+            }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    .pnavi {
+      text-align: center;
+      padding-bottom: 45px;
+      .page-numbers {
+        padding: 17px 20px;
+        border: 1px solid #1B224C;
+        text-decoration: none;
+      }
+      .page-numbers.current {
+        background-color: #1B224C;
+        color: white;
+      }
+      .page-numbers.dots {
+        border: none;
+      }
+    }
+  }
+}

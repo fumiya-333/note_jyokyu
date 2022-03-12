@@ -48,4 +48,7 @@ Top.prototype.addEvent = function(){
     }
     $(this).next().fadeToggle(200);
   });
+  $('#btn-more-rate-plan').on("click", function(){
+    window.location.href = Constants.PRICE_URL;
+  });
 };

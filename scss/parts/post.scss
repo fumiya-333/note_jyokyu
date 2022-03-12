@@ -1,13 +1,14 @@
 @import "../common/mixin.scss";
 
 .post {
-  padding-top: 60.2px;
+  padding-top: 57.2px;
   @include mq(sp) {
     padding-top: 30.2px;
   }
   .post-contents {
     display: flex;
     max-width: 900.5px;
+    padding-bottom: 117px;
     margin: 0 auto;
     @include mq(sp) {
       @include flex-wrap;
@@ -21,6 +22,7 @@
         margin-right: 0;
       }
       .blog-title {
+        margin-bottom: 4px;
         font-size: 32px;
         font-weight: bold;
         @include mq(sp) {
@@ -29,10 +31,11 @@
         }
       }
       .blog-list {
-        padding-top: 35.3px;
-        padding-bottom: 119px;
         @include mq(sp) {
           padding-bottom: 60.2px;
+        }
+        &:not(:first-child) {
+          padding-top: 32px;
         }
         .blog-row {
           display: flex;
@@ -86,6 +89,7 @@
     .correct-contents {
       width: 430px;
       .correct-title {
+        margin-bottom: 36px;
         font-size: 32px;
         font-weight: bold;
         @include mq(sp) {
@@ -95,7 +99,6 @@
       }
       .correct-list {
         width: 402px;
-        padding-top: 35.2px;
         @include mq(sp) {
           width: auto;
         }

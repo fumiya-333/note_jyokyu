@@ -17,7 +17,7 @@ window.onload = function(){
 };
 
 $(window).on('resize', function(){
-  if(resize){
+  if(typeof resize == 'function'){
     resize();
   }
 });

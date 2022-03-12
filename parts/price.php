@@ -24,7 +24,7 @@
               </div>
               <div class="price-table-body">
                 <div class="price-table-price">
-                  <?php the_field("price_1", PAGE_ID_PRICE_TABLE); ?>
+                  <?php the_field("price_1", Constants::PAGE_ID_PRICE_TABLE); ?>
                 </div>
                 <div class="price-table-caption">
                   *月額（税抜価格）
@@ -42,7 +42,7 @@
               </div>
               <div class="price-table-body">
                 <div class="price-table-price">
-                  <?php the_field("price_2", PAGE_ID_PRICE_TABLE); ?>
+                  <?php the_field("price_2", Constants::PAGE_ID_PRICE_TABLE); ?>
                 </div>
                 <div class="price-table-caption">
                   *月額（税抜価格）
@@ -62,7 +62,7 @@
               </div>
               <div class="price-table-body">
                 <div class="price-table-price price-table-recommendation">
-                  <?php the_field("price_3", PAGE_ID_PRICE_TABLE); ?>
+                  <?php the_field("price_3", Constants::PAGE_ID_PRICE_TABLE); ?>
                 </div>
                 <div class="price-table-caption">
                   *月額（税抜価格）
@@ -82,7 +82,7 @@
               </div>
               <div class="price-table-body">
                 <div class="price-table-price">
-                  <?php the_field("price_4", PAGE_ID_PRICE_TABLE); ?>
+                  <?php the_field("price_4", Constants::PAGE_ID_PRICE_TABLE); ?>
                 </div>
                 <div class="price-table-caption">
                   *月額（税抜価格）

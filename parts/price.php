@@ -1,4 +1,4 @@
-<div class="price">
+<section class="price">
   <div class="price-contents">
     <div class="price-box">
       <div class="price-system-box">
@@ -97,4 +97,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

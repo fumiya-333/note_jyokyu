@@ -1,3 +1,11 @@
+<?php
+  $category = get_the_category();
+  $args = [
+    "category_name" => $category[0]->cat_name,
+    "article_title" => get_the_title(),
+    "article_date" => get_the_time(get_option('date_format'))
+  ];
+?>
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,17 +17,17 @@
     <div class="wrapper">
       <?php get_header(); ?>
       <?php get_template_part('parts/breadcrumbs'); ?>
-      <div class="single">
+      <section class="single">
         <div class="single-contents">
           <div class="single-left">
-            <?php get_template_part('parts/article'); ?>
+            <?php get_template_part('parts/article', null, $args); ?>
             <?php get_template_part('parts/article_pickup'); ?>
           </div>
           <div class="single-right">
             <?php get_sidebar(); ?>
           </div>
         </div>
-      </div>
+      </section>
       <?php get_template_part('parts/doq_req'); ?>
       <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>

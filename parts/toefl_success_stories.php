@@ -1,4 +1,4 @@
-<div class="toefl-success-stories">
+<section class="toefl-success-stories">
   <div class="toefl-success-stories-contents">
     <div class="toefl-success-stories-title">TOEFL成功事例</div>
     <div class="toefl-success-content">
@@ -43,4 +43,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

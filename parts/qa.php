@@ -1,4 +1,4 @@
-<div class="qa">
+<section class="qa">
   <div class="qa-contents">
     <div class="qa-title">よくある質問</div>
     <div class="qa-accordion">
@@ -32,4 +32,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

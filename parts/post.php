@@ -1,5 +1,5 @@
 <?php $bl_helper = new BlHelper() ?>
-<div class="post">
+<section class="post">
   <div class="post-contents">
     <div class="blog-contents">
       <div class="blog-title"><?= Constants::BREADCLUMB_TITLE_BLOG ?></div>
@@ -30,4 +30,4 @@
       ?>
     </div>
   </div>
-</div>
+</section>

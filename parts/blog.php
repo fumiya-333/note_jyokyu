@@ -2,7 +2,7 @@
   $bl_helper = new BlHelper();
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 ?>
-<div class="blog">
+<section class="blog">
   <div class="blog-contents">
     <div class="blog-title">新着一覧</div>
     <?php
@@ -19,4 +19,4 @@
     ?>
   </div>
   <?= ViewHelper::getPaginate($bl_helper->getWpQuery(), $paged); ?>
-</div>
+</section>

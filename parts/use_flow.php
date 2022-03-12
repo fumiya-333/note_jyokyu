@@ -1,4 +1,4 @@
-<div class="use-flow">
+<section class="use-flow">
   <div class="use-flow-contents">
     <div class="use-flow-title">ご利用の流れ</div>
     <div class="use-flow-box">
@@ -44,4 +44,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

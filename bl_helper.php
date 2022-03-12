@@ -57,7 +57,7 @@ class BlHelper {
         has_post_thumbnail() ? get_the_post_thumbnail_url() : null,
         get_the_permalink(),
         $post->post_title,
-        mysql2date("Y-N-J", $post->post_date)
+        mysql2date('Y-m-d', $post->post_date)
       );
     }
     wp_reset_postdata();

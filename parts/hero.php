@@ -1,4 +1,4 @@
-<div class="hero">
+<section class="hero">
   <div class="hero-contents">
     <div class="hero-title">TOEFL対策はEngress</div>
     <div class="hero-sub-title">日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール</div>
@@ -9,4 +9,4 @@
       <a href="">お問い合わせ</a>
     </div>
   </div>
-</div>
+</section>

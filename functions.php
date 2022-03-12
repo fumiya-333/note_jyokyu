@@ -20,27 +20,37 @@ function my_static_breadcrumb_adder($breadcrumb_trail) {
     if(is_archive()) {
       // カテゴリページでない場合
       if(!is_category()) {
-        // ブログ パンくずリスト追加
-        $item = new bcn_breadcrumb(Constants::BREADCLUMB_TITLE_BLOG, NULL, array('post'));
-        // トップ 一時退避
-        $stuck = array_pop($breadcrumb_trail->breadcrumbs);
-        // 投稿削除
-        array_pop($breadcrumb_trail->breadcrumbs);
-        $breadcrumb_trail->breadcrumbs[] = $item;
-        $breadcrumb_trail->breadcrumbs[] = $stuck;
+        delete_breadcrumb_title_post($breadcrumb_trail);
+      }else{
+        add_breadcrumb_title_blog($breadcrumb_trail);
       }
       return;
     }
     if(is_single()) {
-      // ブログ パンくずリスト追加
-      $item = new bcn_breadcrumb(Constants::BREADCLUMB_TITLE_BLOG, NULL, array('post'), Constants::BLOG_URL, null, true);
-      // トップ 一時退避
-      $stuck = array_pop($breadcrumb_trail->breadcrumbs);
-      $breadcrumb_trail->breadcrumbs[] = $item;
-      $breadcrumb_trail->breadcrumbs[] = $stuck;
+      add_breadcrumb_title_blog($breadcrumb_trail);
       return;
     }
   }
+}
+
+function delete_breadcrumb_title_post($breadcrumb_trail) {
+  // ブログ パンくずリスト追加
+  $item = new bcn_breadcrumb(Constants::BREADCLUMB_TITLE_BLOG, NULL, array('post'));
+  // トップ 一時退避
+  $stuck = array_pop($breadcrumb_trail->breadcrumbs);
+  // 投稿削除
+  array_pop($breadcrumb_trail->breadcrumbs);
+  $breadcrumb_trail->breadcrumbs[] = $item;
+  $breadcrumb_trail->breadcrumbs[] = $stuck;
+}
+
+function add_breadcrumb_title_blog($breadcrumb_trail) {
+  // ブログ パンくずリスト追加
+  $item = new bcn_breadcrumb(Constants::BREADCLUMB_TITLE_BLOG, NULL, array('post'), Constants::BLOG_URL, null, true);
+  // トップ 一時退避
+  $stuck = array_pop($breadcrumb_trail->breadcrumbs);
+  $breadcrumb_trail->breadcrumbs[] = $item;
+  $breadcrumb_trail->breadcrumbs[] = $stuck;
 }
 
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);

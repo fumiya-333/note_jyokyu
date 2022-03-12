@@ -2,7 +2,7 @@
   $toefl_strong_img_width = "350px";
   $toefl_strong_img_height = "240px";
 ?>
-<div class="toefl-strong">
+<section class="toefl-strong">
   <div class="toefl-strong-contents">
     <div class="toefl-strong-title">TOEFL対策に特化したEngress3つの強み</div>
     <div class="toefl-optimization">
@@ -42,4 +42,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

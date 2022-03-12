@@ -1,4 +1,4 @@
-<div class="toefl-study">
+<section class="toefl-study">
   <div class="toefl-study-title" id="toefl-study-title">TOEFL学習でこんな悩みありませんか？</div>
   <div class="toefl-study-sub-title-box" id="toefl-study-sub-title-box">
     <ul>
@@ -17,4 +17,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

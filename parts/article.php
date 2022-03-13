@@ -18,8 +18,11 @@
         <?= $args["article_date"] ?>
       </div>
     </div>
-    <div class="article-img-box" style="background-image: url(<?= $args['article_img'] ?>);">
-      
+    <div class="article-img-box">
+      <img src="<?= $args['article_img'] ?>" width="100%"/>
+    </div>
+    <div class="article-content">
+      <?= $args["article_content"] ?>
     </div>
   </div>
 </article>

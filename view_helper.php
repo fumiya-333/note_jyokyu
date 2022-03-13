@@ -15,7 +15,7 @@ class ViewHelper {
    */
   public static function getPostBlogList(string &$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
     $result .= <<< RESULT
-      <div class="blog-row">
+      <article class="blog-row">
         <div class="blog-img-box" style="background-image: url({$thumbnail_url});">
           <div class="blog-category">
             {$category[0]->cat_name}
@@ -27,7 +27,7 @@ RESULT;
           <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
           <div class="blog-date">{$time}</div>
         </div>
-      </div>
+      </article>
 RESULT;
   }
 
@@ -43,10 +43,10 @@ RESULT;
     */
   public static function getPostCorrectList(string &$result, $thumbnail_url, $permalink, $title, $time) {
     $result .= <<< RESULT
-      <div class="correct-row">
+      <article class="correct-row">
         <div class="correct-date">{$time}</div>
         <div class="correct-row-title"><a href="{$permalink}">{$title}</a></div>
-      </div>
+      </article>
 RESULT;
   }
 
@@ -64,7 +64,7 @@ RESULT;
     */
   public static function getBlogList(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
     $result .= <<< RESULT
-      <div class="blog-row">
+      <article class="blog-row">
         <div class="blog-img-box" style="background-image: url({$thumbnail_url});">
           <div class="blog-category">
             {$category[0]->cat_name}
@@ -77,7 +77,7 @@ RESULT;
           <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
           <div class="blog-content">{$content}</div>
         </div>
-      </div>
+      </article>
 RESULT;
   }
 

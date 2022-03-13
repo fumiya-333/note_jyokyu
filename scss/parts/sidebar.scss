@@ -1,7 +1,44 @@
 @import "../common/mixin.scss";
 
 .sidebar {
-  .sidebar-contents {
-    
+  .sidebar-title {
+    height: 63px;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #1B224C;
+    color: white;
+    border: 1px solid #707070;
+    @include flex-center;
+  }
+  .blog-connection-list {
+    margin-top: 30px;
+    margin-bottom: 27px;
+    .blog-connection-row {
+      display: flex;
+      margin-bottom: 42px;
+    }
+    .blog-connection-text-box {
+      max-width: 152px;
+      margin-left: 17px;
+      .blog-row-title {
+        a {
+          margin-top: -6px;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 2;
+          @include line-clump(3);
+        }
+      }
+    }
+  }
+  .category-list {
+    margin-top: 30px;
+    .category-name {
+      margin-bottom: 16px;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }

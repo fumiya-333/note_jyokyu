@@ -11,7 +11,19 @@
 
 .single {
   .single-contents {
+    display: flex;
     max-width: 895px;
+    padding-top: 60px;
+    padding-bottom: 36px;
     margin: 0 auto;
+    .single-left {
+      width: 100%;
+      max-width: 590px;
+      margin-right: 36px;
+    }
+    .single-right {
+      width: 100%;
+      max-width: 269px;
+    }
   }
 }

@@ -32,7 +32,7 @@ class BlHelper {
           get_the_permalink(),
           get_the_title(),
           get_the_time(get_option('date_format')),
-          get_the_content()
+          get_the_excerpt()
         );
       }
     }

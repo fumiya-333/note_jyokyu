@@ -20,8 +20,6 @@ class ViewHelper {
           <div class="blog-category">
             {$category[0]->cat_name}
           </div>
-RESULT;
-    $result .= <<< RESULT
         </div>
         <div class="blog-text-box">
           <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
@@ -69,8 +67,6 @@ RESULT;
           <div class="blog-category">
             {$category[0]->cat_name}
           </div>
-RESULT;
-    $result .= <<< RESULT
         </div>
         <div class="blog-text-box">
           <div class="blog-date">{$time}</div>
@@ -110,6 +106,19 @@ RESULT;
           {$paginate}
         </div>
       </div>
+RESULT;
+  }
+
+  public static function getConnectionBlogList(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
+    $result .= <<< RESULT
+      <article class="blog-connection-row">
+        <div class="blog-connection-img-box">
+          <img src="{$thumbnail_url}" width="100" height="70">
+        </div>
+        <div class="blog-connection-text-box">
+          <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
+        </div>
+      </article>
 RESULT;
   }
 }

@@ -6,22 +6,21 @@ class ViewHelper {
    *
    * @param string $result ブログ一覧
    * @param string $category カテゴリ
-   * @param string $thumbnail サムネイル
+   * @param string $thumbnail_url サムネイルURL
    * @param string $permalink パーマリンク
    * @param string $title タイトル
    * @param string $time 日時
    * @param string $content コンテンツ
    * @return void
    */
-  public static function getPostBlogList(string &$result, $category, $thumbnail, $permalink, $title, $time, $content) {
+  public static function getPostBlogList(string &$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
     $result .= <<< RESULT
       <div class="blog-row">
-        <div class="blog-img-box">
+        <div class="blog-img-box" style="background-image: url({$thumbnail_url});">
           <div class="blog-category">
             {$category[0]->cat_name}
           </div>
 RESULT;
-    $result .= $thumbnail ? "<img src='" . $thumbnail . "' width='150' height='110'>" : "";
     $result .= <<< RESULT
         </div>
         <div class="blog-text-box">
@@ -36,13 +35,13 @@ RESULT;
     * トップページ お知らせ一覧取得
     *
     * @param string $result お知らせ一覧
-    * @param string $thumbnail サムネイル
+    * @param string $thumbnail_url サムネイルURL
     * @param string $permalink パーマリンク
     * @param string $title タイトル
     * @param string $time 日時
     * @return void
     */
-  public static function getPostCorrectList(string &$result, $thumbnail, $permalink, $title, $time) {
+  public static function getPostCorrectList(string &$result, $thumbnail_url, $permalink, $title, $time) {
     $result .= <<< RESULT
       <div class="correct-row">
         <div class="correct-date">{$time}</div>
@@ -63,15 +62,14 @@ RESULT;
     * @param [type] $content コンテンツ
     * @return void
     */
-  public static function getBlogList(&$result, $category, $thumbnail, $permalink, $title, $time, $content) {
+  public static function getBlogList(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
     $result .= <<< RESULT
       <div class="blog-row">
-        <div class="blog-img-box">
+        <div class="blog-img-box" style="background-image: url({$thumbnail_url});">
           <div class="blog-category">
             {$category[0]->cat_name}
           </div>
 RESULT;
-    $result .= $thumbnail ? "<img src='" . $thumbnail . "' width='150' height='110'>" : "";
     $result .= <<< RESULT
         </div>
         <div class="blog-text-box">
@@ -86,10 +84,11 @@ RESULT;
   /**
    * ページネーションの取得
    *
-   * @param [type] $wp_query
+   * @param [type] $args
+   * @param [type] $paged
    * @return void
    */
-  public static function getPaginate($wp_query, $paged) {
+  public static function getPaginate($args) {
     global $wp_rewrite;
     $paginate_base = get_pagenum_link(1);
     if(strpos($paginate_base, '?') || !$wp_rewrite->using_permalinks()){
@@ -100,16 +99,10 @@ RESULT;
         user_trailingslashit('page/%#%/','paged');
         $paginate_base .= '%_%';
     }
-    $paginate = paginate_links(array(
-        'base' => $paginate_base,
-        'format' => $paginate_format,
-        'total' => $wp_query->max_num_pages,
-        'mid_size' => 2,
-        'current' => ($paged ? $paged : 1),
-        'prev_next' => false,
-        'prev_text' => '< 前へ',
-        'next_text' => '次へ >',
-    ));
+
+    $args["base"] = $paginate_base;
+    $args["format"] = $paginate_format;
+    $paginate = paginate_links($args);
 
     return <<< RESULT
       <div class="pagination">

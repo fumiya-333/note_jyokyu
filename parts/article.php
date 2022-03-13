@@ -1,8 +1,10 @@
 <article class="article">
   <div class="article-contents">
-    <div class="category-name">
-      <?= $args["category_name"] ?>
-    </div>
+    <?php
+      foreach($args["category_names"] as $category_name){
+        echo "<div class='category-name'>{$category_name->cat_name}</div>";
+      }
+    ?>
     <h1 class="article-title">
       <?= $args["article_title"] ?>
     </h1>
@@ -15,6 +17,9 @@
       <div class="article-date">
         <?= $args["article_date"] ?>
       </div>
+    </div>
+    <div class="article-img-box" style="background-image: url(<?= $args['article_img'] ?>);">
+      
     </div>
   </div>
 </article>

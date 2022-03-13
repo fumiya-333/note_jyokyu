@@ -28,7 +28,7 @@ class BlHelper {
         $this->wp_query->the_post();
         $callback($result,
           get_the_category(), 
-          has_post_thumbnail() ? get_the_post_thumbnail_url() : null,
+          has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png",
           get_the_permalink(),
           get_the_title(),
           get_the_time(get_option('date_format')),
@@ -54,7 +54,7 @@ class BlHelper {
     foreach ($this->my_posts as $post) {
       setup_postdata($post);
       $callback($result,
-        has_post_thumbnail() ? get_the_post_thumbnail_url() : null,
+        has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png",
         get_the_permalink(),
         $post->post_title,
         mysql2date('Y-m-d', $post->post_date)

@@ -1,9 +1,10 @@
 <?php
   $category = get_the_category();
   $args = [
-    "category_name" => $category[0]->cat_name,
+    "category_names" => $category,
     "article_title" => get_the_title(),
-    "article_date" => get_the_time(get_option('date_format'))
+    "article_date" => get_the_time(get_option('date_format')),
+    "article_img" => has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png",
   ];
 ?>
 <html>

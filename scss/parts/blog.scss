@@ -18,6 +18,7 @@
       }
       .blog-row {
         display: flex;
+        min-height: 180px;
         @include mq(sp) {
           display: block;
         }
@@ -26,9 +27,9 @@
         }
         .blog-img-box {
           position: relative;
-          min-width: 240px;
-          max-width: 240px;
-          min-height: 140px;
+          width: 240px;
+          background-repeat: no-repeat;
+          background-size: 100%;
           @include mq(sp) {
             min-width: auto;
             max-width: none;
@@ -67,6 +68,9 @@
               line-height: 1.7;
               @include line-clump(3);
             }
+          }
+          .blog-content {
+            line-height: 1.5;
           }
         }
       }

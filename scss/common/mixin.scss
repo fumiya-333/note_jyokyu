@@ -12,38 +12,6 @@ $breakpoint: (
   }
 }
 
-@mixin base-btn {
-  -webkit-appearance: none;
-  appearance: none;
-  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-@mixin btn-yellow {
-  @include base-btn;
-  background-color: #F5A623;
-}
-
-@mixin btn-navy-blue {
-  @include base-btn;
-  background-color: #1B224C;
-}
-
-@mixin btn-border-white {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-@mixin tip-yellow {
-  background-color: #F5A623;
-  color: white;
-}
-
 @mixin bg-img($bg, $bg-repeat: null, $bg-position: null, $bg-size: null) {
   background: $bg;
   background-repeat: $bg-repeat;

@@ -3,7 +3,7 @@ define("HOME_URL", esc_url(home_url()));
 
 class Constants {
   const TITLE = "Engress";
-  const NOTICE_URL = HOME_URL . "/notice";
+  const CORRECT_URL = HOME_URL . "/correct";
   const BLOG_URL = HOME_URL . "/blog";
   const PRICE_URL = HOME_URL . "/price";
   const CONTACT_URL = HOME_URL . "/contact";

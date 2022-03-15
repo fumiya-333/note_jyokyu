@@ -3,31 +3,53 @@
   <div class="post-contents">
     <div class="blog-contents">
       <div class="blog-title"><?= Constants::BREADCLUMB_TITLE_BLOG ?></div>
-      <?php
-        echo "<div class='blog-list'>" . $bl_helper->execGetWpQuery(
-          "",
-          array(
-            'posts_per_page' => 2,
-            'orderby' => 'date',
-            'order' => 'DESC'
-          ),
-          "ViewHelper::getPostBlogList"
-        ) . "</div>";
-    ?>
+        <div class="blog-list">
+          <?php
+            echo $bl_helper->execGetWpQuery(
+              array(
+                'posts_per_page' => 2,
+                'orderby' => 'date',
+                'order' => 'DESC'
+              ),
+              function(string &$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
+                $result .= <<< RESULT
+                  <article class="blog-row">
+                    <div class="blog-img-box" style="background-image: url({$thumbnail_url});">
+                      <div class="blog-category">
+                        {$category[0]->cat_name}
+                      </div>
+                    </div>
+                    <div class="blog-text-box">
+                      <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
+                      <div class="blog-date">{$time}</div>
+                    </div>
+                  </article>
+RESULT;
+              }
+            );
+        ?>
+      </div>
     </div>
     <div class="correct-contents">
       <div class="correct-title">お知らせ</div>
-      <?php
-        echo "<div class='correct-list'>" . $bl_helper->execGetCustomPosts(
-          "",
-          array(
-            'post_type' => 'correct',
-            'posts_per_page' => 3
-          ),
-          "2",
-          "ViewHelper::getPostCorrectList"
-        ) . "</div>";
-      ?>
+      <div class="correct-list">
+        <?php
+          echo $bl_helper->execGetCustomPosts(
+            array(
+              'post_type' => 'correct',
+              'posts_per_page' => 3
+            ),
+            function(string &$result, $permalink, $title, $time) {
+              $result .= <<< RESULT
+                <article class="correct-row">
+                  <div class="correct-date">{$time}</div>
+                  <div class="correct-row-title"><a href="{$permalink}">{$title}</a></div>
+                </article>
+RESULT;
+            }
+          );
+        ?>
+      </div>
     </div>
   </div>
 </section>

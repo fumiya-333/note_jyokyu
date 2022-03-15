@@ -1,12 +1,12 @@
 @import "../common/mixin.scss";
 
-.doq-req {
-  .doq-req-contents {
+.doc-req {
+  .doc-req-contents {
     height: 256.4px;
     padding-top: 70px;
     text-align: center;
     @include bg-img(url("../img/cta.jpeg"), no-repeat, center, cover);
-    .doq-req-title {
+    .doc-req-title {
       font-size: 32px;
       font-weight: bold;
       color: white;
@@ -14,9 +14,9 @@
         font-size: 24px;
       }
     }
-    .btn-doq-req-area {
+    .btn-doc-req-area {
       padding-top: 24px;
-      .btn-doq-req {
+      .btn-doc-req {
         @include btn-yellow;
         @include el-prop(280px, 50px, 16px, bold, 25px);
       }

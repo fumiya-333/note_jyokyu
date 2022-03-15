@@ -11,6 +11,10 @@ window.onload = function(){
     $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
   });
 
+  $('.btn-doc-req, .btn-contact').on('click', function(){
+    window.location.href = Constants.CONTACT_URL;
+  });
+
   if(typeof load == 'function'){
     load();
   }

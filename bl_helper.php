@@ -1,8 +1,21 @@
 <?php
 class BlHelper {
 
+  private static $instance = false;
   private $wp_query;
   private $my_posts;
+
+  /**
+   * インスタンス取得
+   *
+   * @return void
+   */
+  public static function getInstance() {
+    if (!self::$instance) {
+      self::$instance = new self();
+    }
+    return self::$instance;
+  }
 
   /**
    * クエリオブジェクト取得
@@ -35,28 +48,6 @@ class BlHelper {
           get_the_excerpt()
         );
       }
-    }
-    wp_reset_postdata();
-    return $result;
-  }
-
-  /**
-   * カスタム投稿一覧取得処理実行
-   *
-   * @param array $args 検索条件
-   * @param callable $callback コールバック
-   * @return void
-   */
-  public function execGetCustomPosts(array $args, callable $callback) {
-    $result = "";
-    $this->my_posts = get_posts($args);
-    foreach ($this->my_posts as $post) {
-      setup_postdata($post);
-      $callback($result,
-        $post->guid,
-        $post->post_title,
-        mysql2date('Y-m-d', $post->post_date)
-      );
     }
     wp_reset_postdata();
     return $result;

@@ -1,5 +1,5 @@
 <?php
-  $bl_helper = new BlHelper();
+  $bl_helper = BlHelper::getInstance();
   $category = get_the_category();
 ?>
 <aside class="sidebar">

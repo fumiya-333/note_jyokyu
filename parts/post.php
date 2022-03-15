@@ -1,4 +1,6 @@
-<?php $bl_helper = new BlHelper() ?>
+<?php
+  $bl_helper = BlHelper::getInstance();
+?>
 <section class="post">
   <div class="post-contents">
     <div class="blog-contents">
@@ -9,7 +11,8 @@
               array(
                 'posts_per_page' => 2,
                 'orderby' => 'date',
-                'order' => 'DESC'
+                'order' => 'DESC',
+                'post_type' => 'post'
               ),
               function(string &$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
                 $result .= <<< RESULT
@@ -34,12 +37,14 @@ RESULT;
       <div class="correct-title">お知らせ</div>
       <div class="correct-list">
         <?php
-          echo $bl_helper->execGetCustomPosts(
+          echo $bl_helper->execGetWpQuery(
             array(
+              'posts_per_page' => 3,
+              'orderby' => 'date',
+              'order' => 'DESC',
               'post_type' => 'correct',
-              'posts_per_page' => 3
             ),
-            function(string &$result, $permalink, $title, $time) {
+            function(string &$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
               $result .= <<< RESULT
                 <article class="correct-row">
                   <div class="correct-date">{$time}</div>

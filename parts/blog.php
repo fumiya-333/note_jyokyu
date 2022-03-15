@@ -1,5 +1,5 @@
 <?php 
-  $bl_helper = new BlHelper();
+  $bl_helper = BlHelper::getInstance();
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 ?>
 <section class="blog">
@@ -36,10 +36,12 @@ RESULT;
       ?>
     </div>
   </div>
-  <?= ViewHelper::getPaginate(array(
+  <?php 
+    echo ViewHelper::getPaginate(array(
         'total' => $bl_helper->getWpQuery()->max_num_pages,
         'mid_size' => 2,
         'current' => ($paged ? $paged : 1),
         'prev_next' => false,
-  )); ?>
+    ));
+  ?>
 </section>

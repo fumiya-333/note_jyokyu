@@ -1,0 +1,22 @@
+@import "../common/mixin.scss";
+
+.article-correct {
+  padding-top: 60px;
+  padding-bottom: 53px;
+  .article-correct-contents {
+    max-width: 900px;
+    margin: 0 auto;
+    .article-correct-title {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.7;
+    }
+    .article-correct-date {
+      @include flex-end;
+    }
+    .article-correct-content {
+      margin-top: 60px;
+      margin-bottom: 53px;
+    }
+  }
+}

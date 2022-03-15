@@ -1,5 +1,5 @@
 <?php
-  $bl_helper = new BlHelper();
+  $bl_helper = BlHelper::getInstance();
 ?>
 <div class="article-pickup">
   <div class="article-pickup-contents">
@@ -11,6 +11,7 @@
             'posts_per_page' => 3,
             'orderby' => 'date',
             'order' => 'DESC',
+            'post_type' => 'post',
             "tag_id" => "pickup"
           ),
           function(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {

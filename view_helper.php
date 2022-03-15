@@ -116,7 +116,21 @@ RESULT;
           <img src="{$thumbnail_url}" width="100" height="70">
         </div>
         <div class="blog-connection-text-box">
-          <div class="blog-row-title"><a href="{$permalink}">{$title}</a></div>
+          <div class="blog-connection-title"><a href="{$permalink}">{$title}</a></div>
+        </div>
+      </article>
+RESULT;
+  }
+
+  public static function getPickupList(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
+    $result .= <<< RESULT
+      <article class="blog-pickup-row">
+        <div class="blog-pickup-img-box">
+          <img src="{$thumbnail_url}" width="210" height="128">
+        </div>
+        <div class="blog-pickup-text-box">
+          <div class="blog-pickup-date">{$time}</div>
+          <div class="blog-pickup-title"><a href="{$permalink}">{$title}</a></div>
         </div>
       </article>
 RESULT;

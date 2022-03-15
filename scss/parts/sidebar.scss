@@ -1,5 +1,8 @@
 @import "../common/mixin.scss";
 
+$blog-connection-img-box-width: 100px;
+$blog-connection-text-box-margin-left: 17px;
+
 .sidebar {
   .sidebar-title {
     height: 63px;
@@ -16,17 +19,23 @@
     .blog-connection-row {
       display: flex;
       margin-bottom: 42px;
-    }
-    .blog-connection-text-box {
-      max-width: 152px;
-      margin-left: 17px;
-      .blog-row-title {
-        a {
+      .blog-connection-img-box {
+        width: $blog-connection-img-box-width;
+      }
+      .blog-connection-text-box {
+        width: 152px;
+        margin-left: $blog-connection-text-box-margin-left;
+        @include mq(sp) {
+          width: calc(100% - #{$blog-connection-img-box-width} - #{$blog-connection-text-box-margin-left});
+        }
+        .blog-connection-title {
           margin-top: -6px;
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 2;
-          @include line-clump(3);
+          a {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 2;
+            @include line-clump(3);
+          }
         }
       }
     }

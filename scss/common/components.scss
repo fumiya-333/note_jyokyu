@@ -8,6 +8,81 @@
   cursor: pointer;
 }
 
+@mixin base-text {
+  border: 0.5px solid #1B224C;
+}
+
+@mixin base-checkbox-label() {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -8px;
+    background: white;
+    border: 1px solid #707070;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 7px;
+    height: 14px;
+    margin-top: -7px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@mixin base-radio-label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -9px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    background: white;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-top: -6px;
+    background: #707070;
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
+
+@mixin base-textarea {
+  resize: none;
+  border: 0.5px solid #1B224C;
+}
+
 @mixin btn-yellow {
   @include base-btn;
   background-color: #F5A623;
@@ -28,13 +103,4 @@
 @mixin tip-yellow {
   background-color: #F5A623;
   color: white;
-}
-
-@mixin base-text {
-  border: 0.5px solid #1B224C;
-}
-
-@mixin base-textarea {
-  resize: none;
-  border: 0.5px solid #1B224C;
 }

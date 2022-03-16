@@ -2,12 +2,11 @@
 
 * {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  @include border-box;
   word-break: break-all;
+  &::before, &::after {
+    @include border-box;
+  }
 }
 
 body {

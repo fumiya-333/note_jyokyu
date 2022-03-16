@@ -1,3 +1,18 @@
 03/16/22 12:12:09: contact.scss - Undefined mixin base-text: parts/contact.scss on line 26, at column 9
 Call Stack:
 #0 import parts/contact.scss contact.scss on line 6
+03/16/22 2:48:23: contact.scss - Missing argument $before-width: parts/contact.scss on line 38, at column 13
+Call Stack:
+#0 import parts/contact.scss contact.scss on line 6
+03/16/22 2:50:23: contact.scss - Missing argument $after-background-color: parts/contact.scss on line 38, at column 13
+Call Stack:
+#0 import parts/contact.scss contact.scss on line 6
+03/16/22 2:52:24: contact.scss - Missing argument $after-background-color: parts/contact.scss on line 38, at column 13
+Call Stack:
+#0 import parts/contact.scss contact.scss on line 6
+03/16/22 11:19:21: contact.scss - Missing argument $after-background-color: parts/contact.scss on line 69, at column 11
+Call Stack:
+#0 import parts/contact.scss contact.scss on line 6
+03/16/22 11:29:26: contact.scss - Missing argument $before-width: parts/contact.scss on line 69, at column 11
+Call Stack:
+#0 import parts/contact.scss contact.scss on line 6

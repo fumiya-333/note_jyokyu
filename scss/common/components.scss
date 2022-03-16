@@ -29,3 +29,12 @@
   background-color: #F5A623;
   color: white;
 }
+
+@mixin base-text {
+  border: 0.5px solid #1B224C;
+}
+
+@mixin base-textarea {
+  resize: none;
+  border: 0.5px solid #1B224C;
+}

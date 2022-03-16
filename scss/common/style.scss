@@ -19,7 +19,7 @@ body {
   @include mq(sp) {
     font-size: 14px;
   }
-  ul, p, figure, h1, h2, h3, h4, h5, h6 {
+  ul, p, figure, h1, h2, h3, h4, h5, h6, input {
     padding: 0;
     margin: 0;
   }

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name=”description“ content=“日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール“>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/single.css">
-    <title><?php echo Constants::TITLE ?></title>
+    <title><?= Constants::TITLE ?></title>
   </head>
   <body>
     <div class="wrapper">
@@ -29,7 +29,7 @@
           </div>
         </div>
       </section>
-      <?php get_template_part('parts/doq_req'); ?>
+      <?php get_template_part('parts/doc_req'); ?>
       <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>
     </div>

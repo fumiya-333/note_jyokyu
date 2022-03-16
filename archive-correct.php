@@ -18,7 +18,7 @@
       <?php get_template_part('parts/hero_fix', null, $args); ?>
       <?php get_template_part('parts/breadcrumbs'); ?>
       <?php get_template_part('parts/correct', null, $args); ?>
-      <?php get_template_part('parts/doq_req'); ?>
+      <?php get_template_part('parts/doc_req'); ?>
       <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>
   </div>

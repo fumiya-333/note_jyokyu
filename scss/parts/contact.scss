@@ -8,23 +8,22 @@
     max-width: 700px;
     margin: 0 auto;
     font-weight: 500;
+    label, input ,textarea {
+      display: inline-block;
+    }
     .contact-explanation {
       line-height: 1.7;
     }
-    .contact-form {
+    form {
       margin-top: 41px;
-      label, input {
-        display: block;
-      }
-      .form-label, .form-label-top {
-        padding-bottom: 12px;
-      }
       .form-label-top {
         margin-top: 20px;
       }
       .form-text {
         width: 100%;
         padding: 19px 20px 18px 20px;
+        margin-top: 12px;
+        margin-bottom: 20px;
         @include base-text;
       }
       .form-label-radio, .form-label-contact {
@@ -39,6 +38,9 @@
           display: block!important;
           padding: 5px 39px;
           @include base-radio-label;
+          &:not(:last-child) {
+            margin-bottom: 14px;
+          }
         }
         .form-radio:checked + .form-radio-label::after {
           opacity: 1;

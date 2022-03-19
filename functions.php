@@ -10,7 +10,7 @@ require_once get_theme_file_path("/view_helper.php");
 function post_has_archive($args, $post_type) {
   if('post' == $post_type){
     $args['rewrite'] = true;
-    $args['has_archive'] = 'blog';
+    $args['has_archive'] = "blog";
   }
   return $args;
 }
@@ -54,5 +54,31 @@ function add_breadcrumb_title_blog($breadcrumb_trail) {
   $breadcrumb_trail->breadcrumbs[] = $stuck;
 }
 
-add_filter('register_post_type_args', 'post_has_archive', 10, 2);
-add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
+function error_message($error, $key, $rule){
+  if($key === Constants::KEY_COMPANY_NAME && $rule === "noempty"){
+    return Constants::COMPANY . Constants::INPUT_ERR_MSG;
+  }
+  if($key === Constants::KEY_NAME && $rule === "noempty"){
+    return Constants::NAME . Constants::INPUT_ERR_MSG;
+  }
+  if($key === Constants::KEY_EMAIL && $rule === "noempty"){
+    return Constants::EMAIL . Constants::INPUT_ERR_MSG;
+  }
+  if($key === Constants::KEY_PHONE_NUMBER && $rule === "noempty"){
+    return Constants::PHONE_NUMBER . Constants::INPUT_ERR_MSG;
+  }
+  if($key === Constants::KEY_CONTACT_KINDS && $rule === "required"){
+    return Constants::CONTACT_KINDS . Constants::SELECT_ERR_MSG;
+  }
+  if($key === Constants::KEY_CONTACT_CONTENT && $rule === "noempty"){
+    return Constants::CONTACT_CONTENT . Constants::INPUT_ERR_MSG;
+  }
+  if($key === Constants::KEY_PRIVACY_POLICY_AGREE && $rule === "required"){
+    return Constants::PRIVACY_POLICY_AGREE . Constants::CHECK_ERR_MSG;
+  }
+  return $error;
+}
+
+add_filter("register_post_type_args", "post_has_archive", 10, 2);
+add_action("bcn_after_fill", "my_static_breadcrumb_adder");
+add_filter("mwform_error_message_mw-wp-form-" . Constants::FORM_ID_CONTACT, "error_message", 10, 3);

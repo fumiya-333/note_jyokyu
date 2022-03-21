@@ -1,12 +1,12 @@
 <article class="article">
   <div class="article-contents">
     <?php
-      foreach($args["category_names"] as $category_name){
-        echo "<div class='category-name'>{$category_name->cat_name}</div>";
+      foreach(get_the_category() as $category){
+        echo "<div class='category-name'>{$category->cat_name}</div>";
       }
     ?>
     <h1 class="article-title">
-      <?= $args["article_title"] ?>
+      <?= get_the_title() ?>
     </h1>
     <div class="article-box-1">
       <?php
@@ -15,14 +15,14 @@
         }
       ?>
       <div class="article-date">
-        <?= $args["article_date"] ?>
+        <?= get_the_time(get_option('date_format')) ?>
       </div>
     </div>
     <div class="article-img-box">
-      <img src="<?= $args['article_img'] ?>" width="100%"/>
+      <img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png" ?>" width="100%"/>
     </div>
     <div class="article-content">
-      <?= $args["article_content"] ?>
+      <?= get_the_content() ?>
     </div>
   </div>
 </article>

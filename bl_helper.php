@@ -1,9 +1,10 @@
 <?php
 class BlHelper {
 
+  /** インスタンス */
   private static $instance = false;
+  /** クエリオブジェクト */
   private $wp_query;
-  private $my_posts;
 
   /**
    * インスタンス取得

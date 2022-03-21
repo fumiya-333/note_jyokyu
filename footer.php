@@ -21,5 +21,5 @@
   <div class="footer-bottom-contents">
     <div class="copy-right">© 2020 Engress. </div>
   </div>
-  <?php wp_footer();?>
 </footer>
+<?php wp_footer(); ?>

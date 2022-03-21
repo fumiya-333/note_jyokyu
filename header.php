@@ -25,5 +25,4 @@
       <span class="btn-hamburger-line" id="btn-hamburger-line"></span>
     </button>
   </div>
-  <?php wp_head();?>
 </header>

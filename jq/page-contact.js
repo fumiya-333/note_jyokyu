@@ -25,15 +25,20 @@ Contact.prototype.responsiveView = function(){
 
 Contact.prototype.addEvent = function(){
   const self = this;
-  $('.btn-send').on('click', function(){
-    if(self.inputCheckWithShowError()){
-      alert('入力内容に誤りがあります。');
-      return;
-    }
-    $('#mw_wp_form_mw-wp-form-2198 > form').submit();
-  });
+  // $('.btn-send').on('click', function(){
+  //   if(self.inputCheckWithShowError()){
+  //     alert('入力内容に誤りがあります。');
+  //     return;
+  //   }
+  //   $('#mw_wp_form_mw-wp-form-2198 > form').submit();
+  // });
 };
 
+/**
+ * 入力チェック・エラー表示
+ * 
+ * @returns 
+ */
 Contact.prototype.inputCheckWithShowError = function(){
   var retFlg = false;
 
@@ -113,10 +118,11 @@ Contact.prototype.execInputCheckWithShowError = function(selector, msg){
 }
 
 /**
+ * 入力チェックとエラー表示実行（ラジオボタン・チェックボックス）
  * 
- * @param {*} selector 
- * @param {*} msg 
- * @param {*} target 
+ * @param {*} selector セレクタ
+ * @param {*} msg エラーメッセージ
+ * @param {*} target 親要素のセレクタ
  * @returns 
  */
 Contact.prototype.execCheckWithShowError = function(selector, msg, target){

@@ -1,19 +1,5 @@
-<?php
-  $args = [
-    "category_names" => get_the_category(),
-    "article_title" => get_the_title(),
-    "article_date" => get_the_time(get_option('date_format')),
-    "article_img" => has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png",
-    "article_content" => get_the_content(),
-  ];
-?>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name=”description“ content=“日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール“>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/single.css">
-    <title><?= Constants::TITLE ?></title>
-  </head>
+  <?php get_template_part('head'); ?>
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
@@ -21,7 +7,7 @@
       <section class="single">
         <div class="single-contents">
           <div class="single-left">
-            <?php get_template_part('parts/article', null, $args); ?>
+            <?php get_template_part('parts/article'); ?>
             <?php get_template_part('parts/article_pickup'); ?>
           </div>
           <div class="single-right">
@@ -33,9 +19,6 @@
       <?php get_template_part('parts/contact_phone_number'); ?>
       <?php get_footer(); ?>
     </div>
+    <?php get_template_part('script'); ?>
   </body>
-  <script><?= CommonUtil::getAllConstants(); ?></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/jq/jquery.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/jq/single.js"></script>
 </html>

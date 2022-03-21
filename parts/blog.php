@@ -1,10 +1,18 @@
 <?php 
   $bl_helper = BlHelper::getInstance();
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+
+  $blog_title = "新着一覧";
+  $category_id = "";
+  if(is_category()){
+    $cat = get_category(get_query_var("cat"));
+    $blog_title = "{$cat->cat_name}一覧";
+    $category_id = $cat->cat_ID;
+  }
 ?>
 <section class="blog">
   <div class="blog-contents">
-    <div class="blog-title"><?= $args["blog_title"] ?></div>
+    <div class="blog-title"><?= $blog_title ?></div>
     <div class="blog-list">
       <?php
         echo $bl_helper->execGetWpQuery(
@@ -14,7 +22,7 @@
             'orderby' => 'date',
             'order' => 'DESC',
             'post_type' => 'post',
-            'cat' => $args["category_id"]
+            'cat' => $category_id
           ),
           function(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
             $result .= <<< RESULT

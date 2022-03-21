@@ -4,7 +4,7 @@
 ?>
 <section class="correct">
   <div class="correct-contents">
-    <div class="correct-title"><?= $args["correct_title"] ?></div>
+    <div class="correct-title">お知らせ一覧</div>
     <div class="correct-list">
       <?php
         echo $bl_helper->execGetWpQuery(

@@ -17,6 +17,63 @@
     .article-correct-content {
       margin-top: 60px;
       margin-bottom: 53px;
+      h1 {
+        margin-bottom: 30px;
+        font-size: 26px;
+      }
+      h2 {
+        padding: 3px 10px;
+        margin: 30px 0;
+        font-size: 22px;
+        border-left: 4px solid #000;
+      }
+      p {
+        line-height: 1.5;
+      }
+      blockquote {
+        position: relative;
+        margin: 30px 0;
+        padding: 27px 26px 17px 74px;
+        background-color: #F8F8F8;
+        &::before {
+          content: '“';
+          position: absolute;
+          top: 24px;
+          left: 17px;
+          font-size: 5rem;
+          color: #B4B4B4;
+        }
+        p {
+          margin-left: auto;
+        }
+      }
+      .wp-block-image {
+        margin: 0 0 36px 0!important;
+      }
+      ul {
+        min-height: 120px;
+        li {
+          position: relative;
+          display: block;
+          margin-left: 21px;
+          line-height: 1.5;
+          &::before {
+            content:  "";
+            position: absolute;
+            top: 6px;
+            left: -21px;
+            width: 11px;
+            height: 11px;
+            background-color: #F5A623;
+            border-radius:  50%; 
+          }
+        }
+      }
+      a {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #F5A623;
+      }
     }
   }
 }

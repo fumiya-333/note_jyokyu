@@ -48,7 +48,7 @@
         border-left: 4px solid #000;
       }
       p {
-        line-height: 1.7;
+        line-height: 1.5;
       }
       blockquote {
         position: relative;
@@ -74,6 +74,7 @@
       ul {
         li {
           position: relative;
+          display: block;
           margin-left: 21px;
           line-height: 1.5;
           &::before {

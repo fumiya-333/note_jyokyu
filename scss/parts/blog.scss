@@ -19,6 +19,7 @@
       .blog-row {
         display: flex;
         min-height: 180px;
+        cursor: pointer;
         @include mq(sp) {
           display: block;
         }

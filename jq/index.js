@@ -38,7 +38,7 @@ Top.prototype.responsiveView = function(){
 };
 
 Top.prototype.addEvent = function(){
-  $('.qa-accordion-row').on("click",function(){
+  $('.qa-accordion-row').on('click', function(){
     if($(this).hasClass('qa-accordion-row-active')) {
       $(this).removeClass('qa-accordion-row-active');
       $(this).addClass('qa-accordion-row');
@@ -48,7 +48,13 @@ Top.prototype.addEvent = function(){
     }
     $(this).next().fadeToggle(200);
   });
-  $('#btn-more-rate-plan').on("click", function(){
+  $('#btn-more-rate-plan').on('click', function(){
     window.location.href = Constants.PRICE_URL;
+  });
+  $('.blog-row').on('click', function(){
+    window.location.href = $(this).find('.blog-row-title > a').eq(0).attr('href');
+  });
+  $('.correct-date').on('click', function(){
+    window.location.href = $(this).next().find('a').eq(0).attr('href');
   });
 };

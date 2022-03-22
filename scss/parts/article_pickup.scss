@@ -15,6 +15,7 @@ $blog-pickup-img-box-margin-right: 16px;
       .blog-pickup-row {
         display: flex;
         margin-bottom: 28px;
+        cursor: pointer;
         .blog-pickup-img-box {
           margin-right: 32px;
           @include mq(sp) {

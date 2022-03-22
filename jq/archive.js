@@ -19,6 +19,15 @@ Blog.prototype.responsiveView = function(){
   if(getWindowType() === WINDOW_TYPE_SP) {
 
   }else{
+
+  }
+};
+
+Blog.prototype.addEvent = function(){
+  $('.blog-row').on('click', function(){
+    window.location.href = $(this).find('.blog-row-title > a').eq(0).attr('href');
+  });
+  if(getWindowType() !== WINDOW_TYPE_SP) {
     $('.page-numbers').each(function(idx, el){
       if(idx == 0){
         return true;
@@ -36,8 +45,4 @@ Blog.prototype.responsiveView = function(){
       $(el).css('margin-left', '19px');
     });
   }
-};
-
-Blog.prototype.addEvent = function(){
-
 };

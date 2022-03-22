@@ -23,5 +23,7 @@ Single.prototype.responsiveView = function(){
 };
 
 Single.prototype.addEvent = function(){
-
+  $('.blog-pickup-row').on('click', function(){
+    window.location.href = $(this).find('.blog-pickup-title > a').eq(0).attr('href');
+  });
 };

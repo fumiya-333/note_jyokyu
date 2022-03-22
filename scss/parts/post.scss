@@ -40,6 +40,7 @@
         .blog-row {
           display: flex;
           min-height: 110px;
+          cursor: pointer;
           &:not(:last-child) {
             margin-bottom: 31px;
           }
@@ -109,6 +110,7 @@
           font-weight: 500;
           .correct-date {
             font-size: 12px;
+            cursor: pointer;
           }
           .correct-row-title {
             height: 59px;

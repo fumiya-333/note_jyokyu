@@ -75,15 +75,16 @@ header {
         font-weight: 500;
       }
       .phone-number {
-        margin-top: 6px;
+        position: relative;
+        margin-top: 9px;
         font-weight: bold;
         &::before {
           content: "";
-          display: inline-block;
+          position: absolute;
+          left: -15px;
           width: 10px;
           height: 15px;
           margin-top: 2px;
-          padding-right: 5px;
           @include bg-img(url("../img/phone.png"), no-repeat);
         }
       }

@@ -13,7 +13,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/img/footer_logo.png">
         <div class="number-box">
           <div class="phone-number">0123-456-7890</div>
-          <div class="active-time">平日08:00〜20:00</div>
+          <div class="active-time">平日08:00~20:00</div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
           <?php
             echo $bl_helper->execGetWpQuery(
               array(
-                'posts_per_page' => 2,
+                'posts_per_page' => 3,
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'post_type' => 'post'

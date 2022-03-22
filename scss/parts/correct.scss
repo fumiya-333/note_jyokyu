@@ -18,6 +18,12 @@
         padding-top: 23.5px;
         padding-bottom: 24.5px;
         font-weight: 500;
+        &:not(:first-child) {
+          border-bottom: 1px solid #D5D5D5;
+        }
+        &:not(:last-child) {
+          border-top: 1px solid #D5D5D5;
+        }
         .correct-row-title {
           margin-left: 51px;
           a {

@@ -27,10 +27,6 @@
     }
     .article-box-1 {
       display: flex;
-      // TODO:削除予定
-      .wp_social_bookmarking_light {
-        display: flex;
-      }
       .article-date {
         margin-left: auto;
         font-weight: 500;
@@ -42,6 +38,61 @@
     }
     .article-content {
       margin-top: 40px;
+      h2 {
+        margin-bottom: 30px;
+      }
+      h3 {
+        padding: 3px 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-left: 4px solid #000;
+      }
+      p {
+        line-height: 1.7;
+      }
+      blockquote {
+        position: relative;
+        margin: 30px 0;
+        padding: 27px 26px 17px 74px;
+        background-color: #F8F8F8;
+        &::before {
+          content: '“';
+          position: absolute;
+          top: 24px;
+          left: 17px;
+          font-size: 5rem;
+          color: #B4B4B4;
+        }
+        p {
+          max-width: 490px;
+          margin-left: auto;
+        }
+      }
+      .wp-block-image {
+        margin: 0 0 30px 0;
+      }
+      ul {
+        li {
+          position: relative;
+          margin-left: 21px;
+          line-height: 1.5;
+          &::before {
+            content:  "";
+            position: absolute;
+            top: 6px;
+            left: -21px;
+            width: 11px;
+            height: 11px;
+            background-color: #F5A623;
+            border-radius:  50%; 
+          }
+        }
+      }
+      a {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #F5A623;
+      }
     }
   }
 }

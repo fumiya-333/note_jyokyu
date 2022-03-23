@@ -1,6 +1,4 @@
 <?php
-define("HOME_URL", esc_url(home_url()));
-
 class Constants {
   const TITLE = "Engress";
   const CORRECT_URL = HOME_URL . "/correct";
@@ -17,10 +15,6 @@ class Constants {
   const KEY_PRIVACY_POLICY_AGREE = "privacy-policy-agree";
   const KEY_ERROR = "error";
   const KEY_INPUT_ERROR = "input-error";
-
-  const PAGE_ID_PRICE_TABLE = 2149;
-  const PAGE_ID_TOEFL_SUCCESS_STORIES = 2126;
-  const FORM_ID_CONTACT = 2198;
 
   const BREADCLUMB_TITLE_BLOG = "ブログ";
 

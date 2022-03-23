@@ -81,5 +81,4 @@ function error_message($error, $key, $rule){
 
 add_filter("register_post_type_args", "post_has_archive", 10, 2);
 add_action("bcn_after_fill", "my_static_breadcrumb_adder");
-add_filter("mwform_error_message_mw-wp-form-" . Constants::FORM_ID_CONTACT, "error_message", 10, 3);
 add_filter("show_admin_bar","__return_false");

@@ -79,6 +79,11 @@ function error_message($error, $key, $rule){
   return $error;
 }
 
+function theme_setup() {
+  add_theme_support('post-thumbnails');
+}
+
 add_filter("register_post_type_args", "post_has_archive", 10, 2);
 add_action("bcn_after_fill", "my_static_breadcrumb_adder");
 add_filter("show_admin_bar","__return_false");
+add_action('after_setup_theme', 'theme_setup');

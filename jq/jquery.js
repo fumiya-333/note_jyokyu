@@ -7,8 +7,15 @@ const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function(){
   $('#btn-hamburger').on('click', function(){
-    $('#nav').css('display', $('#btn-hamburger, #btn-hamburger-line').hasClass('open') ? 'none' : 'block');
+    if($('#btn-hamburger, #btn-hamburger-line').hasClass('open')){
+      $('#nav').css('display', 'none');
+      $('body').css('overflow', 'visible');
+    }else{
+      $('#nav').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
     $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
+
   });
 
   $('.btn-doc-req, .btn-contact').on('click', function(){

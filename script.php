@@ -9,6 +9,6 @@
 <?php else: ?>
   <script src="<?= bloginfo('template_directory'); ?>/jq/<?= pathinfo($template)["filename"] ?>.js"></script>
 <?php endif; ?>
-<?php if(is_page("price")) : ?> 
+<?php if(is_page(Constants::RATE_PLUN_SLUG)) : ?> 
   <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 <?php endif; ?>

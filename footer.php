@@ -6,7 +6,7 @@
           <li><a href="<?php echo HOME_URL ?>">ホーム</a></li>
           <li><a href="<?php echo Constants::CORRECT_URL ?>">お知らせ</a></li>
           <li><a href="<?php echo Constants::BLOG_URL ?>">ブログ</a></li>
-          <li><a href="<?php echo Constants::PRICE_URL ?>">コース・料金</a></li>
+          <li><a href="<?php echo Constants::RATE_PLUN_URL ?>">コース・料金</a></li>
         </ul>
       </div>
       <div class="inner-contents-right">

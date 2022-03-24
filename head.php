@@ -9,7 +9,7 @@
   <?php else: ?>
     <link rel="stylesheet" href="<?= bloginfo('template_directory') ?>/css/<?= pathinfo($template)["filename"] ?>.css">
   <?php endif; ?>
-  <?php if(is_page("price")) : ?> 
+  <?php if(is_page(Constants::RATE_PLUN_SLUG)) : ?> 
     <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
   <?php endif; ?>
   <title><?= Constants::TITLE ?></title>

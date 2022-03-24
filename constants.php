@@ -1,9 +1,12 @@
 <?php
 class Constants {
   const TITLE = "Engress";
+
+  const RATE_PLUN_SLUG = "rate-plun";
+
   const CORRECT_URL = HOME_URL . "/correct";
   const BLOG_URL = HOME_URL . "/blog";
-  const PRICE_URL = HOME_URL . "/price";
+  const RATE_PLUN_URL = HOME_URL . "/" . RATE_PLUN_SLUG;
   const CONTACT_URL = HOME_URL . "/contact";
 
   const KEY_COMPANY_NAME = "company-name";

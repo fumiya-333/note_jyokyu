@@ -6,6 +6,9 @@
   .article-correct-contents {
     max-width: 900px;
     margin: 0 auto;
+    @include mq(sp) {
+      margin: 0 16px;
+    }
     .article-correct-title {
       font-size: 28px;
       font-weight: bold;

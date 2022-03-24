@@ -13,6 +13,9 @@
       font-weight: bold;
     }
     .correct-list {
+      @include mq(sp) {
+        margin: 0 16px;
+      }
       .correct-row {
         display: flex;
         padding-top: 23.5px;

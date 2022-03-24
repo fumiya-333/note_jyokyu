@@ -57,6 +57,9 @@ footer {
         color: white;
         @include mq(sp) {
           padding-left: 23px;
+          img {
+            margin: 8px 0;
+          }
         }
         .number-box {
           padding-top: 27px;

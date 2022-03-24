@@ -43,8 +43,10 @@ $blog-connection-text-box-margin-left: 17px;
   .category-list {
     margin-top: 30px;
     .category-name {
-      margin-bottom: 16px;
       font-weight: bold;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
       a {
         text-decoration: none;
       }

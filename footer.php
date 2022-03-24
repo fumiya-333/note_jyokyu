@@ -12,7 +12,7 @@
       <div class="inner-contents-right">
         <img src="<?php bloginfo('template_directory'); ?>/img/footer_logo.png">
         <div class="number-box">
-          <a class="phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>
+          <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>
           <div class="active-time">平日08:00~20:00</div>
         </div>
       </div>

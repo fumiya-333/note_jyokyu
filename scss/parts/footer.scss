@@ -69,6 +69,8 @@ footer {
             width: 115px;
             margin-left: auto;
             font-weight: bold;
+            color: white;
+            text-decoration: none;
             @include mq(sp) {
               width: 125px;
               margin-left: 0;

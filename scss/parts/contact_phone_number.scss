@@ -25,17 +25,18 @@
         font-size: 16px;
       }
     }
-    .phone-number-title {
+    .phone-number-link {
       padding-right: 20px;
       font-size: 36px;
       font-weight: bold;
+      text-decoration: none;
       @include mq(sp) {
         padding-top: 12px;
         padding-right: 0;
         font-size: 28px;
       }
     }
-    .phone-number-time {
+    .phone-active-time {
       display: flex;
       font-weight: 500;
       @include mq(sp) {

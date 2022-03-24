@@ -33,6 +33,8 @@ class Constants {
   const SELECT_ERR_MSG = "を選択してください";
   const CHECK_ERR_MSG = "にチェックを入れてください";
 
+  const PHONE_NUMBER_VAL = "0123-456-7890";
+
   /**
    * 定数を配列として全て取得する
    */

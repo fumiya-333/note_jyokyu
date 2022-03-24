@@ -54,10 +54,10 @@ header {
             padding-left: 24px;
           }
           a {
-            color: white;
             text-decoration: none;
             @include mq(sp) {
               font-size: 20px;
+              color: white;
             }
           }
         }

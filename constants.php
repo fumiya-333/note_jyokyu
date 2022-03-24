@@ -6,7 +6,7 @@ class Constants {
 
   const CORRECT_URL = HOME_URL . "/correct";
   const BLOG_URL = HOME_URL . "/blog";
-  const RATE_PLUN_URL = HOME_URL . "/" . RATE_PLUN_SLUG;
+  const RATE_PLUN_URL = HOME_URL . "/rate-plun";
   const CONTACT_URL = HOME_URL . "/contact";
 
   const KEY_COMPANY_NAME = "company-name";

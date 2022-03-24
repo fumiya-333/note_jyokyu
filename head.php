@@ -3,6 +3,7 @@
 ?>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <meta name=”description“ content=“日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール“>
   <?php if(is_category()) : ?> 
     <link rel="stylesheet" href="<?= bloginfo('template_directory') ?>/css/archive.css">

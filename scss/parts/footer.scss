@@ -20,10 +20,10 @@ footer {
       .inner-contents-left {
         padding-left: 23px;
         padding-top: 15px;
+        @include mq(sp) {
+          padding-top: 0;
+        }
         ul {
-          @include mq(sp) {
-            padding-top: 0;
-          }
           li {
             position: relative;
             @include mq(sp) {

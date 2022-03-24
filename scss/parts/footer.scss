@@ -70,6 +70,7 @@ footer {
             margin-left: auto;
             font-weight: bold;
             @include mq(sp) {
+              width: 125px;
               margin-left: 0;
             }
             &::before {
@@ -89,6 +90,7 @@ footer {
             font-size: 12px;
             font-weight: 500;
             @include mq(sp) {
+              width: 103px;
               padding-top: 8px;
               margin-left: 0;
             }

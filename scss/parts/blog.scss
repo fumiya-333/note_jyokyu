@@ -32,8 +32,9 @@
           background-repeat: no-repeat;
           background-size: 100%;
           @include mq(sp) {
-            min-width: auto;
-            max-width: none;
+            width: 100%;
+            height: 240px;
+            margin-bottom: 20px;
           }
           .blog-category {
             position: absolute;

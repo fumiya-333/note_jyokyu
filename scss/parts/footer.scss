@@ -54,6 +54,7 @@ footer {
       }
       .inner-contents-right {
         margin-left: auto;
+        color: white;
         @include mq(sp) {
           padding-left: 23px;
         }
@@ -68,7 +69,6 @@ footer {
             width: 115px;
             margin-left: auto;
             font-weight: bold;
-            color: white;
             @include mq(sp) {
               margin-left: 0;
             }

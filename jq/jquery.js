@@ -42,12 +42,13 @@ function dispHamburger() {
     $('main').find('a,button,input').css('pointer-events', 'auto');
     $('main').off('click');
     $('#li-btn-area').css('display', 'none');
+    $('body').css('overflow', 'visible');
   }else{
     $('#nav').fadeIn();
     $('main').find('a,button,input').css('pointer-events', 'none');
     $('main').on('click', dispHamburger);
     $('#li-btn-area').css('display', 'block');
+    $('body').css('overflow', 'hidden');
   }
   $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
-  $('body').toggleClass('el-fixed');
 }

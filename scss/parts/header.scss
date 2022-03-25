@@ -48,6 +48,17 @@ header {
               padding: 24px!important;
             }
           }
+          .btn-doc-req {
+            @include btn-yellow;
+            @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
+            margin-right: 10px;
+          }
+          .btn-contact {
+            @include btn-navy-blue;
+            background-color: white;
+            color: black;
+            @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
+          }
           &:first-child {
             padding-left: 28px;
           }

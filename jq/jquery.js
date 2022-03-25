@@ -10,9 +10,11 @@ window.onload = function(){
     if($('#btn-hamburger, #btn-hamburger-line').hasClass('open')){
       $('#nav').fadeOut();
       $('main').find('a,button,input').css('pointer-events', 'auto');
+      $('#li-btn-area').css('display', 'none');
     }else{
       $('#nav').fadeIn();
       $('main').find('a,button,input').css('pointer-events', 'none');
+      $('#li-btn-area').css('display', 'block');
     }
     $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
     $('body').toggleClass('el-fixed');

@@ -8,6 +8,9 @@
     max-width: 700px;
     margin: 0 auto;
     font-weight: 500;
+    @include mq(sp) {
+      padding: 0 16px;
+    }
     label, input ,textarea {
       display: inline-block;
     }

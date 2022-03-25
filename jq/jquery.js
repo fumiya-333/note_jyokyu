@@ -6,22 +6,7 @@ const WINDOW_SIZE_SP = 768;
 const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function(){
-  $('main, #btn-hamburger').on('click', function(){
-    if($('#btn-hamburger, #btn-hamburger-line').hasClass('open')){
-      $('#nav').fadeOut();
-      $('main').find('a,button,input').css('pointer-events', 'auto');
-      $('#li-btn-area').css('display', 'none');
-    }else{
-      if($(this).is('main')) {
-        return;
-      }
-      $('#nav').fadeIn();
-      $('main').find('a,button,input').css('pointer-events', 'none');
-      $('#li-btn-area').css('display', 'block');
-    }
-    $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
-    $('body').toggleClass('el-fixed');
-  });
+  $('#btn-hamburger').on('click', dispHamburger);
 
   $('.btn-doc-req, .btn-contact').on('click', function(){
     window.location.href = Constants.CONTACT_URL;
@@ -49,4 +34,20 @@ function getWindowType(){
     // PC
     return WINDOW_TYPE_PC;
   }
+}
+
+function dispHamburger() {
+  if($('#btn-hamburger, #btn-hamburger-line').hasClass('open')){
+    $('#nav').fadeOut();
+    $('main').find('a,button,input').css('pointer-events', 'auto');
+    $('main').off('click');
+    $('#li-btn-area').css('display', 'none');
+  }else{
+    $('#nav').fadeIn();
+    $('main').find('a,button,input').css('pointer-events', 'none');
+    $('main').on('click', dispHamburger);
+    $('#li-btn-area').css('display', 'block');
+  }
+  $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
+  $('body').toggleClass('el-fixed');
 }

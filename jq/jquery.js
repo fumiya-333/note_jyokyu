@@ -12,6 +12,9 @@ window.onload = function(){
       $('main').find('a,button,input').css('pointer-events', 'auto');
       $('#li-btn-area').css('display', 'none');
     }else{
+      if($(this).is('main')) {
+        return;
+      }
       $('#nav').fadeIn();
       $('main').find('a,button,input').css('pointer-events', 'none');
       $('#li-btn-area').css('display', 'block');

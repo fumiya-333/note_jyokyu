@@ -9,30 +9,34 @@
 @import "parts/contact_phone_number.scss";
 @import "parts/footer.scss";
 
-.single {
-  .single-contents {
-    display: flex;
-    max-width: 895px;
-    padding-top: 60px;
-    padding-bottom: 36px;
-    margin: 0 auto;
-    @include mq(sp) {
-      display: block;
-      padding: 58px 16px;
-    }
-    .single-left {
-      width: 100%;
-      max-width: 590px;
-      margin-right: 36px;
+main {
+  margin-top: 80px;
+
+  .single {
+    .single-contents {
+      display: flex;
+      max-width: 895px;
+      padding-top: 60px;
+      padding-bottom: 36px;
+      margin: 0 auto;
       @include mq(sp) {
-        max-width: none;
+        display: block;
+        padding: 58px 16px;
       }
-    }
-    .single-right {
-      width: 100%;
-      max-width: 269px;
-      @include mq(sp) {
-        max-width: none;
+      .single-left {
+        width: 100%;
+        max-width: 590px;
+        margin-right: 36px;
+        @include mq(sp) {
+          max-width: none;
+        }
+      }
+      .single-right {
+        width: 100%;
+        max-width: 269px;
+        @include mq(sp) {
+          max-width: none;
+        }
       }
     }
   }

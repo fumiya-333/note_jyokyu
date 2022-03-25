@@ -10,9 +10,11 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <?php get_template_part('parts/hero_fix', null, $args); ?>
-      <?php get_template_part('parts/breadcrumbs'); ?>
-      <?php get_template_part('parts/contact'); ?>
+      <main>
+        <?php get_template_part('parts/hero_fix', null, $args); ?>
+        <?php get_template_part('parts/breadcrumbs'); ?>
+        <?php get_template_part('parts/contact'); ?>
+      </main>
       <?php get_footer(); ?>
     </div>
     <?php get_template_part('script'); ?>

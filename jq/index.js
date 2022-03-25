@@ -20,6 +20,7 @@ Top.prototype.responsiveView = function(){
     $('#toefl-study-title').html('TOEFL学習で<br>こんな悩みありませんか？');
     $('#toefl-study-sub-title-box').html('<ul><li>・勉強の習慣が身についていない</li><li>・勉強しているはずなのに点数が伸びない</li><li>・正しい勉強方法がわからない</li></ul>');
     $('#toefl-study-box-text').html('完全オーダーメイドで、<br>１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。');
+    $('.toefl-strong-title').html('TOEFL対策に特化した<br>Engress3つの強み');
 
     $('#toefl-optimization-title').html('TOEFLに最適化された無駄のないカリキュラム');
     $('#toefl-teacher-title').html('日本人指導歴10年以上の経験豊富な講師陣');
@@ -29,6 +30,7 @@ Top.prototype.responsiveView = function(){
     $('#toefl-study-title').html('TOEFL学習でこんな悩みありませんか？');
     $('#toefl-study-sub-title-box').html('<ul><li>勉強の習慣が<br>身についていない</li><li>勉強しているはず<br>なのに点数が伸びない</li><li>正しい勉強方法が<br>わからない</li></ul>');
     $('#toefl-study-box-text').html('完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。');
+    $('.toefl-strong-title').html('TOEFL対策に特化したEngress3つの強み');
 
     $('#toefl-optimization-title').html('TOEFLに最適化された<br>無駄のないカリキュラム');
     $('#toefl-teacher-title').html('日本人指導歴10年以上の<br>経験豊富な講師陣');

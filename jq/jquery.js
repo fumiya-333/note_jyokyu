@@ -6,16 +6,16 @@ const WINDOW_SIZE_SP = 768;
 const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function(){
-  $('#btn-hamburger').on('click', function(){
+  $('main, #btn-hamburger').on('click', function(){
     if($('#btn-hamburger, #btn-hamburger-line').hasClass('open')){
-      $('#nav').css('display', 'none');
-      $('body').css('overflow', 'visible');
+      $('#nav').fadeOut();
+      $('main').find('a,button,input').css('pointer-events', 'auto');
     }else{
-      $('#nav').css('display', 'block');
-      $('body').css('overflow', 'hidden');
+      $('#nav').fadeIn();
+      $('main').find('a,button,input').css('pointer-events', 'none');
     }
     $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
-
+    $('body').toggleClass('el-fixed');
   });
 
   $('.btn-doc-req, .btn-contact').on('click', function(){

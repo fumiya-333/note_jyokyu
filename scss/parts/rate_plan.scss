@@ -3,9 +3,6 @@
 
 .rate-plan {
   padding-top: 52px;
-  @include mq(sp) {
-    padding-top: 0;
-  }
   .rate-plan-contents {
     text-align: center;
     width: 906px;
@@ -24,7 +21,6 @@
       font-weight: bold;
       color: white;
       @include mq(sp) {
-        // padding-top: 54px;
         padding-right: 0;
         font-size: 24px;
       }

@@ -1,18 +1,19 @@
 @import "../common/mixin.scss";
-@import "../common/components.scss";
 
 .thanks {
   .thanks-contents {
-    .thanks-explanation {
-      text-align: center;
-      max-width: 900px;
-      margin: 83px auto;
-      font-weight: 500;
-      line-height: 1.7;
-    }
-    .home-link-area {
-      text-align: center;
-      margin-bottom: 80.7px;
+    .mw_wp_form {
+      .thanks-explanation {
+        text-align: center;
+        max-width: 900px;
+        margin: 83px auto;
+        font-weight: 500;
+        line-height: 1.7;
+      }
+      .home-link-area {
+        text-align: center;
+        margin-bottom: 80.7px;
+      }
     }
   }
 }

@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="article-img-box">
-      <img src="<?= has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png" ?>" width="100%"/>
+      <img src="<?= get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png" ?>" width="100%"/>
     </div>
     <div class="article-content">
       <?= get_the_content() ?>

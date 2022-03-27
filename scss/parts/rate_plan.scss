@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/components.scss";
 
 .rate-plan {
   padding-top: 52px;
@@ -31,7 +30,6 @@
         padding-bottom: 48px;
       }
       .btn-more-rate-plan {
-        @include btn-border-white;
         @include el-prop(200px, 50px, 16px, bold, 30px);
       }
     }

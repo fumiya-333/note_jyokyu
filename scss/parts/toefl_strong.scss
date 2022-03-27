@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/components.scss";
 
 $toefl-left-max-width: 500px;
 $toefl-right-padding-left: 50px;
@@ -31,9 +30,8 @@ $tip-yellow-border-radius: 0;
       }
     }
     .tip-lol {
-      @include tip-yellow;
+      @include flexbox(nowrap, center, center);
       @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
-      @include flex-center;
     }
     .toefl-title {
       padding-top: 27px;
@@ -48,7 +46,6 @@ $tip-yellow-border-radius: 0;
     }
     .toefl-text {
       padding-top: 27px;
-      font-weight: 500;
       line-height: 1.7;
       @include mq(sp) {
         padding-top: 18px;

@@ -17,14 +17,12 @@
     .btn-doc-req-area {
       padding-top: 24px;
       .btn-doc-req {
-        @include btn-yellow;
         @include el-prop(280px, 50px, 16px, bold, 25px);
       }
     }
     .contact-link-area {
       padding-top: 22px;
       a {
-        font-weight: 500;
         color: white;
       }
     }

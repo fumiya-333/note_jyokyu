@@ -6,12 +6,12 @@
     padding-top: 30.2px;
   }
   .post-contents {
-    display: flex;
     max-width: 900.5px;
     padding-bottom: 117px;
     margin: 0 auto;
+    @include flexbox;
     @include mq(sp) {
-      @include flex-wrap;
+      @include flexbox(wrap);
       padding: 0 16px;
     }
     .blog-contents {
@@ -55,11 +55,9 @@
               height: 23px;
               padding: 0 9px;
               font-size: 12px;
-              font-weight: 500;
               background-color: #1B224C;
               border: 1px solid #707070;
               color: white;
-              @include flex-center;
             }
           }
           .blog-text-box {
@@ -83,7 +81,6 @@
             .blog-date {
               margin-top: auto;
               font-size: 12px;
-              font-weight: 500;
             }
           }
         }
@@ -107,7 +104,6 @@
         }
         .correct-row {
           padding-bottom: 24px;
-          font-weight: 500;
           .correct-date {
             font-size: 12px;
             cursor: pointer;

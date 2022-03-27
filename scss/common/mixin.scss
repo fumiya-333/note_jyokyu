@@ -27,21 +27,14 @@ $breakpoint: (
   border-radius: $border-radius;
 }
 
-@mixin flex-center {
+@mixin flexbox($wrap: nowrap, $justify: flex-start, $align: stretch, $flow: row nowrap) {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-
-@mixin flex-wrap {
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap    : wrap;
-  flex-wrap        : wrap;
+  -webkit-flex-wrap : $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
 }
 
 @mixin line-clump($line-clump) {
@@ -49,12 +42,4 @@ $breakpoint: (
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line-clump;
   overflow: hidden; 
-}
-
-@mixin border-box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }

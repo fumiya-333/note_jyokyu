@@ -29,7 +29,6 @@
       display: flex;
       .article-date {
         margin-left: auto;
-        font-weight: 500;
         @include mq(sp) {
           font-size: 12px;
         }

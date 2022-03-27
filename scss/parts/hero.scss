@@ -29,7 +29,6 @@
       padding-top: 22px;
       margin: 0 auto;
       font-size: 18px;
-      font-weight: 500;
       line-height: 1.7;
       @include mq(sp) {
         max-width: 258px;
@@ -42,7 +41,6 @@
         padding-top: 20px;
       }
       .btn-doc-req {
-        @include btn-yellow;
         @include el-prop(260px, 60px, 16px, bold, 31px);
       }
     }
@@ -52,7 +50,6 @@
         padding-top: 18px;
       }
       a {
-        font-weight: 500;
         color: white!important;
       }
     }

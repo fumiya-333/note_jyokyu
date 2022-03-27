@@ -15,7 +15,7 @@
       line-height: 1.7;
     }
     .article-correct-date {
-      @include flex-end;
+      @include flexbox(nowrap, flex-end);
     }
     .article-correct-content {
       margin-top: 60px;

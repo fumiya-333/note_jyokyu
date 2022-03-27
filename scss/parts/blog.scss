@@ -42,10 +42,9 @@
             height: 28px;
             padding: 0 9px;
             font-size: 12px;
-            font-weight: 500;
             background-color: #1B224C;
             color: white;
-            @include flex-center;
+            @include flexbox(nowrap, center, center);
           }
         }
         .blog-text-box {
@@ -58,7 +57,6 @@
           }
           .blog-date {
             padding-bottom: 20px;
-            font-weight: 500;
           }
           .blog-row-title {
             padding-bottom: 20px;

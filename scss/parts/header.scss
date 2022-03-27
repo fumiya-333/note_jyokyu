@@ -1,5 +1,4 @@
 @import "../common/mixin.scss";
-@import "../common/components.scss";
 
 $btn-height: 50px;
 $font-size: 14px;
@@ -49,12 +48,10 @@ header {
             }
           }
           .btn-doc-req {
-            @include btn-yellow;
             @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
             margin-right: 10px;
           }
           .btn-contact {
-            @include btn-navy-blue;
             background-color: white;
             color: black;
             @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
@@ -95,7 +92,6 @@ header {
         height: 12px;
         text-align: right;
         font-size: 12px;
-        font-weight: 500;
       }
       .phone-number {
         position: relative;
@@ -113,12 +109,10 @@ header {
       }
     }
     .btn-doc-req {
-      @include btn-yellow;
       @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
       margin-right: 10px;
     }
     .btn-contact {
-      @include btn-navy-blue;
       @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
     }
   }
@@ -133,7 +127,6 @@ header {
       padding-left: 10px;
     }
     .btn-hamburger {
-      @include base-btn;
       width: 48px;
       padding: 0 6px;
       z-index: 10;

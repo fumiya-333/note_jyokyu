@@ -27,14 +27,12 @@
       }
     }
     .toefl-success-content {
-      display: flex;
       max-width: 902px;
       padding-top: 164px;
       margin: 0 auto;
-      @include flex-wrap;
+      @include flexbox(wrap);
       @include mq(sp) {
-        justify-content: center;
-        flex-flow: column;
+        @include flexbox(wrap, center, stretch, column);
         max-width: 330px;
         padding-top: 0;
         padding-bottom: 74px;
@@ -60,12 +58,10 @@
         .toefl-success-individual {
           position: relative;
           .toefl-success-img {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
             height: 171px;
             margin-top: 6px;
             background-color: white;
+            @include flexbox(nowrap, center, flex-end);
             @include mq(sp) {
               justify-content: left;
               height: 241px;
@@ -91,7 +87,6 @@
                 margin-top: 16px;
                 background-color: white;
                 font-size: 16px;
-                font-weight: 500;
                 line-height: 32px;
                 @include mq(sp) {
                   text-align: center;
@@ -119,7 +114,6 @@
               margin-top: 10px;
               background-color: white;
               font-size: 16px;
-              font-weight: 500;
               line-height: 32px;
               @include mq(sp) {
                 text-align: center;

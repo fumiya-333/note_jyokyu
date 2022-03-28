@@ -47,13 +47,19 @@ header {
             }
           }
           .btn-doc-req {
-            @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
+            width: 142px;
+            height: $btn-height;
             margin-right: 10px;
+            font-size: $font-size;
+            border-radius: $border-radius;
           }
           .btn-contact {
+            width: 137px;
+            height: $btn-height;
+            font-size: $font-size;
             background-color: white;
-            color: black;
-            @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
+            color: #1B224C;
+            border-radius: $border-radius;
           }
           &:first-child {
             padding-left: 28px;
@@ -108,11 +114,17 @@ header {
       }
     }
     .btn-doc-req {
-      @include el-prop(142px, $btn-height, $font-size, $font-weight, $border-radius);
+      width: 142px;
+      height: $btn-height;
       margin-right: 10px;
+      font-size: $font-size;
+      border-radius: $border-radius;
     }
     .btn-contact {
-      @include el-prop(137px, $btn-height, $font-size, $font-weight, $border-radius);
+      width: 137px;
+      height: $btn-height;
+      font-size: $font-size;
+      border-radius: $border-radius;
     }
   }
   .hamburger {

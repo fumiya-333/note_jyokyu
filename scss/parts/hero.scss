@@ -42,7 +42,9 @@
         padding-top: 20px;
       }
       .btn-doc-req {
-        @include el-prop(260px, 60px, 16px, bold, 31px);
+        width: 260px;
+        height: 60px;
+        border-radius: 31px;
       }
     }
     .contact-link-area {

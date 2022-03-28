@@ -58,6 +58,7 @@
               background-color: #1B224C;
               border: 1px solid #707070;
               color: white;
+              @include flexbox(nowrap, center, center);
             }
           }
           .blog-text-box {

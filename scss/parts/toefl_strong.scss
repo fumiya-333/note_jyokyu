@@ -1,8 +1,5 @@
 @import "../common/mixin.scss";
 
-$toefl-left-max-width: 500px;
-$toefl-right-padding-left: 50px;
-
 $tip-yellow-width: 90px;
 $tip-yellow-height: 30px;
 $tip-yellow-font-size: 12px;
@@ -43,8 +40,9 @@ $tip-yellow-border-radius: 0;
           //   @include bg-img($bg-img, no-repeat, center, cover);
           // }
           .tip-lol {
+            width: 90px;
+            height: 30px;
             @include flexbox(nowrap, center, center);
-            @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
           }
           .toefl-strong-col-title {
             min-height: 45px;

@@ -30,7 +30,8 @@
         padding-bottom: 48px;
       }
       .btn-more-rate-plan {
-        @include el-prop(200px, 50px, 16px, bold, 30px);
+        width: 200px;
+        height: 50px;
       }
     }
   }

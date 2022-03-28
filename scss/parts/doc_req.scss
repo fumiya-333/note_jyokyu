@@ -17,7 +17,8 @@
     .btn-doc-req-area {
       padding-top: 24px;
       .btn-doc-req {
-        @include el-prop(280px, 50px, 16px, bold, 25px);
+        width: 280px;
+        height: 50px;
       }
     }
     .contact-link-area {

@@ -36,8 +36,7 @@ header {
       }
       ul {
         @include mq(sp) {
-          display: flex;
-          flex-flow: column;
+          @include flexbox(nowrap, center, stretch, column);
         }
         li {
           font-weight: bold;
@@ -103,7 +102,7 @@ header {
           left: -15px;
           width: 10px;
           height: 15px;
-          margin-top: 2px;
+          margin-top: 1px;
           @include bg-img(url("../img/phone.png"), no-repeat);
         }
       }

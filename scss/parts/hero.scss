@@ -20,6 +20,7 @@
     .hero-title {
       font-size: 48px;
       font-weight: bold;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.16);
       @include mq(sp) {
         font-size: 28px;
       }

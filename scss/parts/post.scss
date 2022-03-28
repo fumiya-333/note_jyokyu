@@ -61,10 +61,9 @@
             }
           }
           .blog-text-box {
-            display: flex;
-            flex-flow: column;
             width: 260px;
             margin-left: 20px;
+            @include flexbox(nowrap, center, stretch, column);
             @include mq(sp) {
               width: 183px;
               margin-left: 10px;

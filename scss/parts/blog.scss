@@ -48,10 +48,9 @@
           }
         }
         .blog-text-box {
-          display: flex;
-          flex-flow: column;
           max-width: 609px;
           margin-left: 50.1px;
+          @include flexbox(nowrap, center, stretch, column);
           @include mq(sp) {
             margin-left: 0;
           }

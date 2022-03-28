@@ -12,7 +12,7 @@ $breakpoint: (
   }
 }
 
-@mixin bg-img($bg, $bg-repeat: null, $bg-position: null, $bg-size: null) {
+@mixin bg-img($bg, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: auto) {
   background: $bg;
   background-repeat: $bg-repeat;
   background-position: $bg-position;

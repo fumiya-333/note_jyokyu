@@ -12,16 +12,14 @@ $tip-yellow-border-radius: 0;
 .toefl-strong {
   .toefl-strong-contents {
     max-width: 910px;
-    padding-top: 59px;
+    padding-top: 60px;
     padding-bottom: 39px;
-    padding-left: 5px;
     margin: 0 auto;
     @include mq(sp) {
       padding: 34px 0 0 0;
     }
     .toefl-strong-title {
       text-align: center;
-      margin: 0 16px;
       font-size: 36px;
       font-weight: bold;
       @include mq(sp) {
@@ -29,106 +27,115 @@ $tip-yellow-border-radius: 0;
         line-height: 1.4;
       }
     }
-    .tip-lol {
-      @include flexbox(nowrap, center, center);
-      @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
-    }
-    .toefl-title {
-      padding-top: 27px;
-      font-size: 26px;
-      font-weight: bold;
-      line-height: 1.5;
-      @include mq(sp) {
-        padding-top: 18px;
-        font-size: 24px;
-        color: white;
-      }
-    }
-    .toefl-text {
-      padding-top: 27px;
-      line-height: 1.7;
-      @include mq(sp) {
-        padding-top: 18px;
-        color: white;
-      }
-    }
-    .toefl-optimization {
-      display: flex;
-      padding-top: 59px;
-      @include mq(sp) {
-        padding-top: 34px;
-      }
-      .toefl-optimization-left {
+    .toefl-strong-content {
+      .toefl-strong-row {
+        display: flex;
+        margin: 55px 5px 0 5px;
         @include mq(sp) {
-          padding: 40px 20px;
-          $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg"); 
-          @include bg-img($bg-img, no-repeat, center, cover);
+          padding-top: 34px;
         }
-        @include mq(tab-and-pc) {
-          max-width: $toefl-left-max-width;
-        }
-      }
-      .toefl-optimization-right {
-        flex: 1;
-        padding-left: $toefl-right-padding-left;
-        @include mq(sp) {
-          display: none;
-        }
-      }
-    }
-    .toefl-teacher {
-      display: flex;
-      padding-top: 55px;
-      @include mq(sp) {
-        padding-top: 0;
-      }
-      .toefl-teacher-left {
-        @include mq(sp) {
-          display: none;
-        }
-        @include mq(tab-and-pc) {
-          max-width: $toefl-left-max-width;
-        }
-      }
-      .toefl-teacher-right {
-        flex: 1;
-        padding-left: $toefl-right-padding-left;
-        @include mq(sp) {
-          padding: 40px 20px;
-          $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature02.jpg"); 
-          @include bg-img($bg-img, no-repeat, center, cover);
-        }
-      }
-    }
-    .toefl-grades-up {
-      display: flex;
-      padding-top: 58px;
-      @include mq(sp) {
-        padding-top: 0;
-      }
-      .toefl-grades-left {
-        @include mq(sp) {
-          padding: 40px 20px;
-          $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature03.png"); 
-          @include bg-img($bg-img, no-repeat, center, cover);
-        }
-        @include mq(tab-and-pc) {
-          max-width: $toefl-left-max-width;
-        }
-        #toefl-grades-text {
-          padding-top: 36px!important;
-          @include mq(sp) {
-            padding-top: 18px!important;
+        .toefl-strong-col-left {
+          max-width: 500px;
+          // @include mq(sp) {
+          //   max-width: none;
+          //   padding: 40px 20px;
+          //   $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg"); 
+          //   @include bg-img($bg-img, no-repeat, center, cover);
+          // }
+          .tip-lol {
+            @include flexbox(nowrap, center, center);
+            @include el-prop($tip-yellow-width, $tip-yellow-height, $tip-yellow-font-size, $tip-yellow-font-weight, $tip-yellow-border-radius);
+          }
+          .toefl-strong-col-title {
+            min-height: 45px;
+            margin-top: 29px;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.5;
+            @include mq(sp) {
+              padding-top: 18px;
+              font-size: 24px;
+              color: white;
+            }
+          }
+          .toefl-strong-col-text {
+            margin-top: 28px;
+            line-height: 1.7;
+            @include mq(sp) {
+              padding-top: 18px;
+              color: white;
+            }
           }
         }
-      }
-      .toefl-grades-right {
-        flex: 1;
-        padding-left: $toefl-right-padding-left;
-        @include mq(sp) {
-          display: none;
+        .toefl-strong-col-right {
+          width: 350px;
+          height: 240px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @include mq(sp) {
+            display: none;
+          }
+        }
+        .toefl-strong-margin-left {
+          flex: 1;
+          margin-left: 50px;
         }
       }
     }
+    // .toefl-teacher {
+    //   display: flex;
+    //   padding-top: 55px;
+    //   @include mq(sp) {
+    //     padding-top: 0;
+    //   }
+    //   .toefl-teacher-left {
+    //     @include mq(sp) {
+    //       display: none;
+    //     }
+    //     @include mq(tab-and-pc) {
+    //       max-width: $toefl-left-max-width;
+    //     }
+    //   }
+    //   .toefl-teacher-right {
+    //     flex: 1;
+    //     padding-left: $toefl-right-padding-left;
+    //     @include mq(sp) {
+    //       padding: 40px 20px;
+    //       $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature02.jpg"); 
+    //       @include bg-img($bg-img, no-repeat, center, cover);
+    //     }
+    //   }
+    // }
+    // .toefl-grades-up {
+    //   display: flex;
+    //   padding-top: 58px;
+    //   @include mq(sp) {
+    //     padding-top: 0;
+    //   }
+    //   .toefl-grades-left {
+    //     @include mq(sp) {
+    //       padding: 40px 20px;
+    //       $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature03.png"); 
+    //       @include bg-img($bg-img, no-repeat, center, cover);
+    //     }
+    //     @include mq(tab-and-pc) {
+    //       max-width: $toefl-left-max-width;
+    //     }
+    //     #toefl-grades-text {
+    //       padding-top: 36px!important;
+    //       @include mq(sp) {
+    //         padding-top: 18px!important;
+    //       }
+    //     }
+    //   }
+      // .toefl-grades-right {
+      //   flex: 1;
+      //   padding-left: $toefl-right-padding-left;
+      //   @include mq(sp) {
+      //     display: none;
+      //   }
+      // }
+    // }
   }
 }

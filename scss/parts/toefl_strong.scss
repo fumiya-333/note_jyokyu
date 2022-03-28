@@ -25,13 +25,17 @@
         margin: 55px 5px 0 5px;
         @include mq(sp) {
           margin: 55px 0 0 0;
+          &:not(:first-child) {
+            margin: 0;
+          }
         }
         .toefl-strong-col-left {
           max-width: 500px;
           @include mq(sp) {
+            padding: 16px;
+            z-index: 1;
             $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg");
             @include bg-img($bg-img);
-            z-index: 1;
           }
           .tip-lol {
             width: 90px;
@@ -45,7 +49,6 @@
             font-weight: bold;
             line-height: 1.5;
             @include mq(sp) {
-              padding: 0 16px;
               color: white;
             }
           }
@@ -53,7 +56,6 @@
             margin-top: 28px;
             line-height: 1.7;
             @include mq(sp) {
-              padding: 0 16px 16px 16px;
               color: white;
             }
           }

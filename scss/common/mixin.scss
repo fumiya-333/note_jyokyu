@@ -12,19 +12,11 @@ $breakpoint: (
   }
 }
 
-@mixin bg-img($bg, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: auto) {
+@mixin bg-img($bg, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: cover) {
   background: $bg;
   background-repeat: $bg-repeat;
   background-position: $bg-position;
   background-size: $bg-size;
-}
-
-@mixin el-prop($width, $height, $font-size, $font-wight, $border-radius) {
-  width: $width;
-  height: $height;
-  font-size: $font-size;
-  font-weight: $font-wight;
-  border-radius: $border-radius;
 }
 
 @mixin flexbox($wrap: nowrap, $justify: flex-start, $align: stretch, $flow: row nowrap) {

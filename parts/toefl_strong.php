@@ -14,11 +14,13 @@
             TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。
           </div>
         </div>
-        <div class="toefl-strong-col-right toefl-strong-margin-left" style="background-image: url(<?= bloginfo('template_directory'); ?>/img/feature01.jpg);">
+        <div class="toefl-strong-col-right toefl-strong-margin-left">
+          <img src="<?= bloginfo('template_directory'); ?>/img/feature01.jpg" alt="feature01">
         </div>
       </div>
       <div class="toefl-strong-row">
-        <div class="toefl-strong-col-right" style="background-image: url(<?= bloginfo('template_directory'); ?>/img/feature02.jpg);">
+        <div class="toefl-strong-col-right">
+          <img src="<?= bloginfo('template_directory'); ?>/img/feature02.jpg" alt="feature02">
         </div>
         <div class="toefl-strong-col-left toefl-strong-margin-left">
           <div class="tip-lol tip-yellow" id="tip-lol-2">特長 ２</div>
@@ -36,7 +38,8 @@
             Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。
           </div>
         </div>
-        <div class="toefl-strong-col-right toefl-strong-margin-left" style="background-image: url(<?= bloginfo('template_directory'); ?>/img/feature03.jpg);">
+        <div class="toefl-strong-col-right toefl-strong-margin-left">
+          <img src="<?= bloginfo('template_directory'); ?>/img/feature03.jpg" alt="feature03">
         </div>
       </div>
     </div>

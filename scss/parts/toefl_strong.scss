@@ -1,11 +1,5 @@
 @import "../common/mixin.scss";
 
-$tip-yellow-width: 90px;
-$tip-yellow-height: 30px;
-$tip-yellow-font-size: 12px;
-$tip-yellow-font-weight: 500;
-$tip-yellow-border-radius: 0;
-
 .toefl-strong {
   .toefl-strong-contents {
     max-width: 910px;
@@ -26,19 +20,19 @@ $tip-yellow-border-radius: 0;
     }
     .toefl-strong-content {
       .toefl-strong-row {
+        position: relative;
         display: flex;
         margin: 55px 5px 0 5px;
         @include mq(sp) {
-          padding-top: 34px;
+          margin: 55px 0 0 0;
         }
         .toefl-strong-col-left {
           max-width: 500px;
-          // @include mq(sp) {
-          //   max-width: none;
-          //   padding: 40px 20px;
-          //   $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg"); 
-          //   @include bg-img($bg-img, no-repeat, center, cover);
-          // }
+          @include mq(sp) {
+            $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg");
+            @include bg-img($bg-img);
+            z-index: 1;
+          }
           .tip-lol {
             width: 90px;
             height: 30px;
@@ -51,8 +45,7 @@ $tip-yellow-border-radius: 0;
             font-weight: bold;
             line-height: 1.5;
             @include mq(sp) {
-              padding-top: 18px;
-              font-size: 24px;
+              padding: 0 16px;
               color: white;
             }
           }
@@ -60,7 +53,7 @@ $tip-yellow-border-radius: 0;
             margin-top: 28px;
             line-height: 1.7;
             @include mq(sp) {
-              padding-top: 18px;
+              padding: 0 16px 16px 16px;
               color: white;
             }
           }
@@ -68,72 +61,20 @@ $tip-yellow-border-radius: 0;
         .toefl-strong-col-right {
           width: 350px;
           height: 240px;
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
           @include mq(sp) {
             display: none;
           }
+          img {
+            object-fit: cover;
+          }
         }
         .toefl-strong-margin-left {
-          flex: 1;
-          margin-left: 50px;
+          @include mq(tab-and-pc){
+            flex: 1;
+            margin-left: 50px;
+          }
         }
       }
     }
-    // .toefl-teacher {
-    //   display: flex;
-    //   padding-top: 55px;
-    //   @include mq(sp) {
-    //     padding-top: 0;
-    //   }
-    //   .toefl-teacher-left {
-    //     @include mq(sp) {
-    //       display: none;
-    //     }
-    //     @include mq(tab-and-pc) {
-    //       max-width: $toefl-left-max-width;
-    //     }
-    //   }
-    //   .toefl-teacher-right {
-    //     flex: 1;
-    //     padding-left: $toefl-right-padding-left;
-    //     @include mq(sp) {
-    //       padding: 40px 20px;
-    //       $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature02.jpg"); 
-    //       @include bg-img($bg-img, no-repeat, center, cover);
-    //     }
-    //   }
-    // }
-    // .toefl-grades-up {
-    //   display: flex;
-    //   padding-top: 58px;
-    //   @include mq(sp) {
-    //     padding-top: 0;
-    //   }
-    //   .toefl-grades-left {
-    //     @include mq(sp) {
-    //       padding: 40px 20px;
-    //       $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature03.png"); 
-    //       @include bg-img($bg-img, no-repeat, center, cover);
-    //     }
-    //     @include mq(tab-and-pc) {
-    //       max-width: $toefl-left-max-width;
-    //     }
-    //     #toefl-grades-text {
-    //       padding-top: 36px!important;
-    //       @include mq(sp) {
-    //         padding-top: 18px!important;
-    //       }
-    //     }
-    //   }
-      // .toefl-grades-right {
-      //   flex: 1;
-      //   padding-left: $toefl-right-padding-left;
-      //   @include mq(sp) {
-      //     display: none;
-      //   }
-      // }
-    // }
   }
 }

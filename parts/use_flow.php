@@ -1,5 +1,5 @@
 <section class="use-flow">
-  <div class="use-flow-contents">
+  <div class="use-flow-inner">
     <div class="use-flow-title">ご利用の流れ</div>
     <div class="use-flow-box">
       <div class="use-flow-row">

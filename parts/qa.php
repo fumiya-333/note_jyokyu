@@ -1,5 +1,5 @@
 <section class="qa">
-  <div class="qa-contents">
+  <div class="qa-inner">
     <div class="qa-title">よくある質問</div>
     <div class="qa-accordion">
       <div class="qa-accordion-row">

@@ -2,8 +2,8 @@
   $bl_helper = BlHelper::getInstance();
 ?>
 <section class="post">
-  <div class="post-contents">
-    <div class="blog-contents">
+  <div class="post-inner">
+    <div class="blog-inner">
       <div class="blog-title"><?= Constants::BREADCLUMB_TITLE_BLOG ?></div>
         <div class="blog-list">
           <?php
@@ -33,7 +33,7 @@ RESULT;
         ?>
       </div>
     </div>
-    <div class="correct-contents">
+    <div class="correct-inner">
       <div class="correct-title">お知らせ</div>
       <div class="correct-list">
         <?php

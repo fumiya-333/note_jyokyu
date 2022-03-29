@@ -1,5 +1,5 @@
 <section class="toefl-success-stories">
-  <div class="toefl-success-stories-contents">
+  <div class="toefl-success-stories-inner">
     <div class="toefl-success-stories-title">TOEFL成功事例</div>
     <div class="toefl-success-content">
       <div class="toefl-success-box">

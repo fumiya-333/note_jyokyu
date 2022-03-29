@@ -5,7 +5,7 @@
   @include mq(sp) {
     padding-top: 30.2px;
   }
-  .post-contents {
+  .post-inner {
     display: flex;
     max-width: 900.5px;
     padding-bottom: 117px;
@@ -14,7 +14,7 @@
       @include flexbox(wrap);
       padding: 0 16px;
     }
-    .blog-contents {
+    .blog-inner {
       width: 430px;
       margin-right: 67px;
       @include mq(sp) {
@@ -86,7 +86,7 @@
         }
       }
     }
-    .correct-contents {
+    .correct-inner {
       width: 430px;
       .correct-title {
         margin-bottom: 36px;

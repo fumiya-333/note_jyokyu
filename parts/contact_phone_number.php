@@ -1,5 +1,5 @@
 <section class="contact-phone-number">
-  <div class="contact-phone-number-contents">
+  <div class="contact-phone-number-inner">
     <div class="contact-phone-number-title">
       <span>お電話でのお問い合わせはこちら</span>
     </div>

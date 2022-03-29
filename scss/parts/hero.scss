@@ -3,14 +3,13 @@
 .hero {
   width: 100%;
   height: 476px;
-  // margin-top: 80px;
   @include bg-img(url("../img/fv.jpg"), no-repeat, center, 100%);
   @include mq(sp) {
     height: auto;
     background-position: 80% 20%;
     background-size: cover;
   }
-  .hero-contents {
+  .hero-inner {
     padding-top: 116px;
     text-align: center;
     color: white!important;

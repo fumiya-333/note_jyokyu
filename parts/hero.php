@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="hero-contents">
+  <div class="hero-inner">
     <div class="hero-title">TOEFL対策はEngress</div>
     <div class="hero-sub-title">日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール</div>
     <div class="btn-doc-rea-area">

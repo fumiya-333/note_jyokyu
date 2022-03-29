@@ -1,19 +1,19 @@
 @import "../common/mixin.scss";
 
 .toefl-strong {
-  .toefl-strong-contents {
+  .toefl-strong-inner {
     max-width: 910px;
     padding-top: 60px;
     padding-bottom: 39px;
     margin: 0 auto;
-    @include mq(sp) {
+    @include mq(sp-and-tab) {
       padding: 34px 0 0 0;
     }
     .toefl-strong-title {
       text-align: center;
       font-size: 36px;
       font-weight: bold;
-      @include mq(sp) {
+      @include mq(sp-and-tab) {
         font-size: 28px;
         line-height: 1.4;
       }
@@ -23,19 +23,30 @@
         position: relative;
         display: flex;
         margin: 55px 5px 0 5px;
-        @include mq(sp) {
+        @include mq(sp-and-tab) {
           margin: 55px 0 0 0;
+          &:first-child {
+            $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg");
+            @include bg-img($bg-img);
+          }
+          &:nth-child(2) {
+            $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature02.jpg");
+            @include bg-img($bg-img);
+          }
+          &:last-child {
+            $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature03.jpg");
+            @include bg-img($bg-img);
+          }
           &:not(:first-child) {
             margin: 0;
           }
         }
         .toefl-strong-col-left {
           max-width: 500px;
-          @include mq(sp) {
+          @include mq(sp-and-tab) {
+            max-width: none;
             padding: 16px;
             z-index: 1;
-            $bg-img: linear-gradient(rgba(0, 0, 0, .6),  rgba(0, 0, 0, .6)),  url("../img/feature01.jpg");
-            @include bg-img($bg-img);
           }
           .tip-lol {
             width: 90px;
@@ -48,14 +59,14 @@
             font-size: 26px;
             font-weight: bold;
             line-height: 1.5;
-            @include mq(sp) {
+            @include mq(sp-and-tab) {
               color: white;
             }
           }
           .toefl-strong-col-text {
             margin-top: 28px;
             line-height: 1.7;
-            @include mq(sp) {
+            @include mq(sp-and-tab) {
               color: white;
             }
           }
@@ -63,7 +74,7 @@
         .toefl-strong-col-right {
           width: 350px;
           height: 240px;
-          @include mq(sp) {
+          @include mq(sp-and-tab) {
             display: none;
           }
           img {
@@ -71,7 +82,7 @@
           }
         }
         .toefl-strong-margin-left {
-          @include mq(tab-and-pc){
+          @include mq(pc){
             flex: 1;
             margin-left: 50px;
           }

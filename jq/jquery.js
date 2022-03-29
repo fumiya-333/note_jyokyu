@@ -47,7 +47,12 @@ function dispHamburger() {
     $('#nav').fadeIn();
     $('main').find('a,button,input').css('pointer-events', 'none');
     $('main').on('click', dispHamburger);
-    $('#li-btn-area').css('display', 'block');
+    if(getWindowType() === WINDOW_TYPE_SP){
+      $('#li-btn-area').css('display', 'block');
+    }
+    if(getWindowType() === WINDOW_TYPE_TAB){
+      $('li').eq($('#nav').index('ul > li') - 1).css('padding-bottom', '24px');
+    }
     $('body').css('overflow', 'hidden');
   }
   $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');

@@ -1,9 +1,5 @@
-<?php
-  $toefl_strong_img_width = "350px";
-  $toefl_strong_img_height = "240px";
-?>
 <section class="toefl-strong">
-  <div class="toefl-strong-contents">
+  <div class="toefl-strong-inner">
     <div class="toefl-strong-title">TOEFL対策に特化したEngress3つの強み</div>
     <div class="toefl-strong-content">
       <div class="toefl-strong-row">

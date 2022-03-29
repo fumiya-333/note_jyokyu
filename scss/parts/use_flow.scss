@@ -17,7 +17,7 @@
     }
     .use-flow-box {
       margin-top: 53px;
-      @include mq(sp) {
+      @include mq(sp-and-tab) {
         padding: 0 16px;
       }
       .use-flow-row {

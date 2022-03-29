@@ -41,13 +41,8 @@ Top.prototype.responsiveView = function(){
 
 Top.prototype.addEvent = function(){
   $('.qa-accordion-row').on('click', function(){
-    if($(this).hasClass('qa-accordion-row-active')) {
-      $(this).removeClass('qa-accordion-row-active');
-      $(this).addClass('qa-accordion-row');
-    }else{
-      $(this).removeClass('qa-accordion-row');
-      $(this).addClass('qa-accordion-row-active');
-    }
+    $(this).toggleClass('active');
+    $(this).find('.toggle-btn').eq(0).toggleClass('toggle-open');
     $(this).next().fadeToggle(200);
   });
   $('#btn-more-rate-plan').on('click', function(){

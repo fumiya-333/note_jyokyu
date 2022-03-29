@@ -61,6 +61,9 @@ footer {
             margin: 8px 0;
           }
         }
+        @include mq(tab) {
+          padding-right: 23px;
+        }
         .number-box {
           padding-top: 27px;
           @include mq(sp) {
@@ -115,7 +118,7 @@ footer {
       margin-left: auto;
       font-size: 12px;
       font-weight: bold;
-      @include mq(sp) {
+      @include mq(sp-and-tab) {
         margin: 0 auto;
       }
     }

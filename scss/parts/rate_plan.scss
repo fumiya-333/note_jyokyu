@@ -4,7 +4,7 @@
   padding-top: 52px;
   .rate-plan-inner {
     text-align: center;
-    width: 906px;
+    max-width: 906px;
     height: 217px;
     margin: 0 auto;
     @include bg-img(url("../img/price.png"), no-repeat);

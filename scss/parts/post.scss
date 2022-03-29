@@ -6,32 +6,34 @@
     padding-top: 30.2px;
   }
   .post-inner {
-    display: flex;
     max-width: 900.5px;
     padding-bottom: 117px;
     margin: 0 auto;
-    @include mq(sp) {
+    @include flexbox(nowrap);
+    @include mq(sp-and-tab) {
       @include flexbox(wrap);
       padding: 0 16px;
     }
     .blog-inner {
       width: 430px;
       margin-right: 67px;
-      @include mq(sp) {
-        width: 343px;
+      @include mq(sp-and-tab) {
+        width: 100%;
         margin-right: 0;
       }
       .blog-title {
         margin-bottom: 4px;
         font-size: 32px;
         font-weight: bold;
-        @include mq(sp) {
+        @include mq(sp-and-tab) {
           text-align: center;
+        }
+        @include mq(sp) {
           font-size: 28px;
         }
       }
       .blog-list {
-        @include mq(sp) {
+        @include mq(sp-and-tab) {
           padding-bottom: 60.2px;
         }
         &:not(:first-child) {
@@ -65,8 +67,11 @@
             width: 260px;
             margin-left: 20px;
             @include flexbox(nowrap, center, stretch, column);
+            @include mq(sp-and-tab) {
+              // width: 183px;
+              width: 100%;
+            }
             @include mq(sp) {
-              width: 183px;
               margin-left: 10px;
             }
             .blog-row-title {
@@ -88,6 +93,9 @@
     }
     .correct-inner {
       width: 430px;
+      @include mq(sp-and-tab) {
+        width: 100%;
+      }
       .correct-title {
         margin-bottom: 36px;
         font-size: 32px;

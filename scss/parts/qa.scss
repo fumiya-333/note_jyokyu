@@ -18,14 +18,16 @@ $toggle-btn-top: 17px;
     }
     .qa-accordion {
       margin-top: 30px;
-      border-bottom: 1px solid #1B224C;
-      @include mq(sp) {
+      @include mq(sp-and-tab) {
         padding: 0 16px;
       }
-      @mixin qa-accordion-row {
+      .qa-accordion-row {
         position: relative;
         border-top: 1px solid #1B224C;
         cursor: pointer;
+        &:nth-last-of-type(2) {
+          border-bottom: 1px solid #1B224C;
+        }
         .qa-accordion-row-text {
           height: 74px;
           line-height: 74px;
@@ -50,10 +52,7 @@ $toggle-btn-top: 17px;
             background-color: #1B224C;
           }
         }
-      }
-      .qa-accordion-row {
-        @include qa-accordion-row;
-        .toggle-btn {
+        .toggle-open {
           &::after {
             content: "";
             position: absolute;
@@ -65,8 +64,7 @@ $toggle-btn-top: 17px;
           }
         }
       }
-      .qa-accordion-row-active {
-        @include qa-accordion-row;
+      .active {
         height: 65.5px!important;
       }
       .qa-accordion-row-open {

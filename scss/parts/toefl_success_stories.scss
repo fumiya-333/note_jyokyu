@@ -8,6 +8,7 @@
     height: auto;
   }
   .toefl-success-stories-inner {
+    width: 100%;
     padding-bottom: 59px;
     .toefl-success-stories-title {
       text-align: center;
@@ -31,18 +32,19 @@
       padding-top: 164px;
       margin: 0 auto;
       @include flexbox(wrap);
-      @include mq(sp) {
-        @include flexbox(wrap, center, stretch, column);
-        max-width: 330px;
-        padding-top: 0;
-        padding-bottom: 74px;
+      @include mq(sp-and-tab) {
+        display: block;
+        padding: 74px 20px;
       }
       .toefl-success-box {
         max-width: 280px;
-        @include mq(sp) {
-          max-width: 330px;
-          padding-top: 74px;
+        @include mq(sp-and-tab) {
+          width: 100%;
+          max-width: none;
           margin-right: 0!important;
+          &:not(:first-child) {
+            padding-top: 74px;
+          }
         }
         &:first-child {
           margin-right: 30px;
@@ -51,6 +53,7 @@
           margin-right: 31px;
         }
         .toefl-success-message {
+          font-size: 16px;
           font-weight: bold;
           line-height: 1.8;
           color: white;

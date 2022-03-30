@@ -1,5 +1,5 @@
 <section class="price">
-  <div class="price-contents">
+  <div class="price-inner">
     <div class="price-box">
       <div class="price-system-box">
         <div class="price-system-title">料金体系</div>

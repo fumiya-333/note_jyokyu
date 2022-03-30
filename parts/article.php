@@ -1,5 +1,5 @@
 <article class="article">
-  <div class="article-contents">
+  <div class="article-inner">
     <?php
       foreach(get_the_category() as $category){
         echo "<div class='category-name'>{$category->cat_name}</div>";

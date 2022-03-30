@@ -3,7 +3,7 @@
 .contact {
   padding-top: 58px;
   padding-bottom: 62px;
-  .contact-contents {
+  .contact-inner {
     max-width: 700px;
     margin: 0 auto;
     @include mq(sp) {

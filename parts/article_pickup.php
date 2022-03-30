@@ -2,7 +2,7 @@
   $bl_helper = BlHelper::getInstance();
 ?>
 <div class="article-pickup">
-  <div class="article-pickup-contents">
+  <div class="article-pickup-inner">
     <div class="article-pickup-title">おすすめの記事</div>
     <div class="article-pickup-list">
       <?php

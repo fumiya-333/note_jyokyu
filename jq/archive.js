@@ -27,22 +27,5 @@ Blog.prototype.addEvent = function(){
   $('.blog-row').on('click', function(){
     window.location.href = $(this).find('.blog-row-title > a').eq(0).attr('href');
   });
-  if(getWindowType() !== WINDOW_TYPE_SP) {
-    $('.page-numbers').each(function(idx, el){
-      if(idx == 0){
-        return true;
-      }
-      if($(el).hasClass('dots')){
-        return true;
-      }
-
-      if(idx >= $('.page-numbers').length - 1){
-        if($('.pnavi').children('.page-numbers').hasClass('dots')){
-          return true;
-        }
-      }
-      
-      $(el).css('margin-left', '19px');
-    });
-  }
+  dispPaginate();
 };

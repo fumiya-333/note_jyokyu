@@ -6,7 +6,7 @@
       <main>
         <?php get_template_part('parts/breadcrumbs'); ?>
         <section class="single">
-          <div class="single-contents">
+          <div class="single-inner">
             <div class="single-left">
               <?php get_template_part('parts/article'); ?>
               <?php get_template_part('parts/article_pickup'); ?>

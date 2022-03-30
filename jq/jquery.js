@@ -57,3 +57,24 @@ function dispHamburger() {
   }
   $('#btn-hamburger, #btn-hamburger-line').toggleClass('open');
 }
+
+function dispPaginate() {
+  if(getWindowType() !== WINDOW_TYPE_SP) {
+    $('.page-numbers').each(function(idx, el){
+      if(idx == 0){
+        return true;
+      }
+      if($(el).hasClass('dots')){
+        return true;
+      }
+
+      if(idx >= $('.page-numbers').length - 1){
+        if($('.pnavi').children('.page-numbers').hasClass('dots')){
+          return true;
+        }
+      }
+      
+      $(el).css('margin-left', '14px');
+    });
+  }
+}

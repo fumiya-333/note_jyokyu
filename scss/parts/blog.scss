@@ -1,95 +1,81 @@
 @import "../common/mixin.scss";
 
 .blog {
-  .blog-contents {
+  .blog-inner {
     max-width: 900px;
-    padding: 58px 0 53px 0;
+    padding: 58px 0 45px 0;
     margin: 0 auto;
-    .blog-title {
-      text-align: center;
-      padding-bottom: 60px;
-      font-size: 32px;
-      font-weight: bold;
-    }
-    .blog-list {
-      padding-bottom: 61px;
-      @include mq(sp) {
-        padding: 0 16px 60.2px 16px;
+    // padding-bottom: 45px;
+    .blog-contents {
+      margin-bottom: 53px;
+      .blog-title {
+        text-align: center;
+        padding-bottom: 60px;
+        font-size: 32px;
+        font-weight: bold;
       }
-      .blog-row {
-        display: flex;
-        min-height: 180px;
-        cursor: pointer;
+      .blog-list {
+        padding-bottom: 61px;
         @include mq(sp) {
-          display: block;
+          padding: 0 16px 60.2px 16px;
         }
-        &:not(:last-child) {
-          margin-bottom: 61px;
-        }
-        .blog-img-box {
-          position: relative;
-          width: 240px;
-          background-repeat: no-repeat;
-          background-size: 100%;
+        .blog-row {
+          display: flex;
+          min-height: 180px;
+          cursor: pointer;
           @include mq(sp) {
-            width: 100%;
-            height: 240px;
-            margin-bottom: 20px;
+            display: block;
           }
-          .blog-category {
-            position: absolute;
-            min-width: 80px;
-            height: 28px;
-            padding: 0 9px;
-            font-size: 12px;
-            background-color: #1B224C;
-            color: white;
-            @include flexbox(nowrap, center, center);
+          &:not(:last-child) {
+            margin-bottom: 61px;
           }
-        }
-        .blog-text-box {
-          max-width: 609px;
-          margin-left: 50.1px;
-          @include flexbox(nowrap, center, stretch, column);
-          @include mq(sp) {
-            margin-left: 0;
-          }
-          .blog-date {
-            padding-bottom: 20px;
-          }
-          .blog-row-title {
-            padding-bottom: 20px;
-            a {
-              margin-top: -6px;
-              font-size: 26px;
-              font-weight: bold;
-              color: #1B224C;
-              line-height: 1.7;
-              @include line-clump(3);
+          .blog-img-box {
+            position: relative;
+            width: 240px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            @include mq(sp) {
+              width: 100%;
+              height: 240px;
+              margin-bottom: 20px;
+            }
+            .blog-category {
+              position: absolute;
+              min-width: 80px;
+              height: 28px;
+              padding: 0 9px;
+              font-size: 12px;
+              background-color: #1B224C;
+              color: white;
+              @include flexbox(nowrap, center, center);
             }
           }
-          .blog-content {
-            line-height: 1.5;
+          .blog-text-box {
+            max-width: 609px;
+            margin-left: 50.1px;
+            @include flexbox(nowrap, center, stretch, column);
+            @include mq(sp) {
+              margin-left: 0;
+            }
+            .blog-date {
+              padding-bottom: 20px;
+            }
+            .blog-row-title {
+              padding-bottom: 20px;
+              a {
+                margin-top: -6px;
+                font-size: 26px;
+                font-weight: bold;
+                color: #1B224C;
+                line-height: 1.7;
+                @include line-clump(3);
+              }
+            }
+            .blog-content {
+              line-height: 1.5;
+            }
           }
         }
-      }
-    }
-  }
-  .pagination {
-    .pnavi {
-      text-align: center;
-      padding-bottom: 45px;
-      .page-numbers {
-        padding: 17px 20px;
-        border: 1px solid #1B224C;
-        text-decoration: none;
-      }
-      .page-numbers.current {
-        background-color: #1B224C;
-        color: white;
-      }
-      .page-numbers.dots {
-        border: none;
       }
     }
   }

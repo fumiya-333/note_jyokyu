@@ -2,37 +2,40 @@
 
 .correct {
   padding-top: 58px;
-  padding-bottom: 65.1px;
-  .correct-contents {
+  padding-bottom: 46px;
+  .correct-inner {
     max-width: 900px;
     margin: 0 auto;
     .correct-title {
       text-align: center;
-      padding-bottom: 45px;
+      padding-bottom: 47px;
       font-size: 32px;
       font-weight: bold;
     }
     .correct-list {
-      @include mq(sp) {
-        margin: 0 16px;
+      margin-bottom: 70.1px;
+      @include mq(sp-and-tab) {
+        margin: 0 16px 70.1px 16px;
       }
       .correct-row {
         display: flex;
         padding-top: 23.5px;
-        padding-bottom: 24.5px;
+        padding-bottom: 19.5px;
+        border-top: 1px solid #D5D5D5;
         cursor: pointer;
-        &:not(:first-child) {
+        &:last-child {
           border-bottom: 1px solid #D5D5D5;
         }
-        &:not(:last-child) {
-          border-top: 1px solid #D5D5D5;
+        .correct-date {
+          min-width: 86px;
         }
         .correct-row-title {
           margin-left: 51px;
           a {
-            @include line-clump(3);
+            max-width: 735px;
             margin-top: -4px;
             line-height: 1.5;
+            @include line-clump(1);
           }
         }
       }

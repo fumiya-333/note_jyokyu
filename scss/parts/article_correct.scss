@@ -3,7 +3,7 @@
 .article-correct {
   padding-top: 60px;
   padding-bottom: 53px;
-  .article-correct-contents {
+  .article-correct-inner {
     max-width: 900px;
     margin: 0 auto;
     @include mq(sp) {

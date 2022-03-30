@@ -5,7 +5,6 @@
     max-width: 900px;
     padding: 58px 0 45px 0;
     margin: 0 auto;
-    // padding-bottom: 45px;
     .blog-contents {
       margin-bottom: 53px;
       .blog-title {
@@ -16,14 +15,14 @@
       }
       .blog-list {
         padding-bottom: 61px;
-        @include mq(sp) {
+        @include mq(sp-and-tab) {
           padding: 0 16px 60.2px 16px;
         }
         .blog-row {
           display: flex;
           min-height: 180px;
           cursor: pointer;
-          @include mq(sp) {
+          @include mq(sp-and-tab) {
             display: block;
           }
           &:not(:last-child) {
@@ -34,7 +33,7 @@
             width: 240px;
             background-repeat: no-repeat;
             background-size: 100%;
-            @include mq(sp) {
+            @include mq(sp-and-tab) {
               width: 100%;
               height: 240px;
               margin-bottom: 20px;
@@ -53,21 +52,20 @@
           .blog-text-box {
             max-width: 609px;
             margin-left: 50.1px;
-            @include flexbox(nowrap, center, stretch, column);
-            @include mq(sp) {
+            @include mq(sp-and-tab) {
               margin-left: 0;
             }
             .blog-date {
               padding-bottom: 20px;
             }
             .blog-row-title {
-              padding-bottom: 20px;
+              padding-bottom: 18px;
+              margin-top: -4px;
               a {
-                margin-top: -6px;
                 font-size: 26px;
                 font-weight: bold;
                 color: #1B224C;
-                line-height: 1.7;
+                line-height: 1.5;
                 @include line-clump(3);
               }
             }

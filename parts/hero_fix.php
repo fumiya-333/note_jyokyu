@@ -1,5 +1,5 @@
-<section class="hero-fix" style="background-image: url(<?= $args["hero_fix_bg_img"] ?>);">
-  <div class="hero-fix-inner">
+<section class="hero-fix">
+  <div class="hero-fix-inner" style="background-image: url(<?= $args["hero_fix_bg_img"] ?>);">
     <div class="hero-fix-title">
       <?= $args["hero_fix_title"] ?>
     </div>

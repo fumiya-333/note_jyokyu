@@ -2,11 +2,11 @@
 
 .hero-fix {
   height: 221px;
-  @include bg-img(url("../img/plan.jpeg"), no-repeat, center, 100%);
   @include mq(sp) {
     height: 65px;
   }
   .hero-fix-inner {
+    @include bg-img(url("../img/plan.jpeg"), no-repeat, center, cover);
     .hero-fix-title {
       height: 100%;
       font-size: 32px;

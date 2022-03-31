@@ -4,8 +4,8 @@ function load(){
 }
 
 function resize() {
-  const archive = new Archive();
-  archive.responsiveView();
+  // const archive = new Archive();
+  // archive.responsiveView();
 }
 
 function Archive() {}
@@ -24,8 +24,8 @@ Archive.prototype.init = function(){
 // };
 
 Archive.prototype.addEvent = function(){
-  $('.Archive-row').on('click', function(){
-    window.location.href = $(this).find('.Archive-row-title > a').eq(0).attr('href');
+  $('.blog-row').on('click', function(){
+    window.location.href = $(this).find('.blog-row-title > a').eq(0).attr('href');
   });
   dispPaginate();
 };

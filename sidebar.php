@@ -12,7 +12,7 @@
             'orderby' => 'date',
             'order' => 'DESC',
             'post_type' => 'post',
-            'cat' => $category[0]->cat_name
+            'cat' => $category[0]->cat_ID
           ),
           function(&$result, $category, $thumbnail_url, $permalink, $title, $time, $content) {
             $result .= <<< RESULT

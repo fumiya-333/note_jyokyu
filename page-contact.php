@@ -15,8 +15,8 @@
         <?php get_template_part('parts/breadcrumbs'); ?>
         <?php get_template_part('parts/contact'); ?>
       </main>
+      <?php get_template_part('script'); ?>
       <?php get_footer(); ?>
     </div>
-    <?php get_template_part('script'); ?>
   </body>
 </html>

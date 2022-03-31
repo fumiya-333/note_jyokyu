@@ -17,14 +17,26 @@ $blog-pickup-img-box-margin-right: 16px;
         margin-bottom: 28px;
         cursor: pointer;
         .blog-pickup-img-box {
+          position: relative;
+          min-width: 210px;
+          min-height: 128px;
           margin-right: 32px;
+          background-repeat: no-repeat;
+          background-size: 100%;
           @include mq(sp) {
+            min-width: auto;
+            width: $blog-pickup-img-width;
             margin-right: $blog-pickup-img-box-margin-right;
           }
-          img {
-            @include mq(sp) {
-              width: $blog-pickup-img-width;
-            }
+          .blog-pickup-category {
+            position: absolute;
+            min-width: 80px;
+            height: 28px;
+            padding: 0 9px;
+            font-size: 12px;
+            background-color: #1B224C;
+            color: white;
+            @include flexbox(nowrap, center, center);
           }
         }
         .blog-pickup-text-box {

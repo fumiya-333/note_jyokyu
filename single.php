@@ -19,8 +19,8 @@
         <?php get_template_part('parts/doc_req'); ?>
         <?php get_template_part('parts/contact_phone_number'); ?>
       </main>
+      <?php get_template_part('script'); ?>
       <?php get_footer(); ?>
     </div>
-    <?php get_template_part('script'); ?>
   </body>
 </html>

@@ -1,13 +1,13 @@
 @import "../common/mixin.scss";
 
 .contact {
-  padding-top: 58px;
-  padding-bottom: 62px;
   .contact-inner {
     max-width: 700px;
+    padding-top: 51px;
+    padding-bottom: 62px;
     margin: 0 auto;
     @include mq(sp) {
-      padding: 0 16px;
+      padding: 51px 16px 62px 16px;
     }
     label, input ,textarea {
       display: inline-block;
@@ -15,26 +15,29 @@
     .contact-explanation {
       line-height: 1.7;
     }
-    form {
-      margin-top: 41px;
+    .mw_wp_form {
+      margin-top: 48px;
       .form-label-top {
         margin-top: 20px;
       }
       .form-text {
         width: 100%;
-        padding: 19px 20px 18px 20px;
+        padding: 14px 20px 16px 20px;
         margin-top: 12px;
       }
       .form-label-radio {
         margin-top: 24px;
+        @include mq(sp) {
+          line-height: 1.7;
+        }
       }
       .form-radios {
-        margin-top: 19px;
+        margin-top: 15px;
         .mwform-radio-field {
           display: block;
           margin-left: 0;
           &:not(:last-of-type) {
-            margin-bottom: 14px;
+            margin-bottom: 8px;
           }
           .form-radio {
             display: none;
@@ -49,26 +52,33 @@
         }
       }
       .form-label-contact {
-        margin-top: 24px;
+        margin-top: 19px;
       }
       .textarea-contact {
         width: 100%;
-        height: 218px;
+        height: 241px;
         padding: 22px 23.2px;
         margin-top: 12px;
       }
       .privacy-policy-box {
-        text-align: center;
+        padding-left: 12rem;
         margin-top: 30.6px;
+        @include mq(sp) {
+          text-align: center;
+          padding-left: 0;
+        }
         a {
           color: #F5A623;
         }
       }
       .privacy-policy-agree-label {
-        text-align: center;
         width: 100%;
-        padding-left: 20px;
-        margin-top: 31px;
+        padding-left: 14.9rem;
+        margin-top: 27px;
+        @include mq(sp) {
+          text-align: center;
+          padding-left: 30px;
+        }
         .privacy-policy-agree {
           display: none;
         }
@@ -83,8 +93,12 @@
         margin-top: 14px;
       }
       .btn-send-box {
-        margin-top: 48px;
-        text-align: center;
+        padding-left: 17.2rem;
+        margin-top: 44px;
+        @include mq(sp) {
+          text-align: center;
+          padding-left: 0;
+        }
         .btn-send {
           width: 200px;
           height: 50px;

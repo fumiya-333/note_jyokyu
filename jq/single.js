@@ -4,23 +4,23 @@ function load(){
 }
 
 function resize() {
-  const single = new Single();
-  single.responsiveView();
+  // const single = new Single();
+  // single.responsiveView();
 }
 
 function Single() {}
 
 Single.prototype.init = function(){
-  this.responsiveView();
+  // this.responsiveView();
   this.addEvent();
 }
 
-Single.prototype.responsiveView = function(){
-  if(getWindowType() === WINDOW_TYPE_SP) {
+// Single.prototype.responsiveView = function(){
+//   if(getWindowType() === WINDOW_TYPE_SP) {
 
-  }else{
-  }
-};
+//   }else{
+//   }
+// };
 
 Single.prototype.addEvent = function(){
   $('.blog-pickup-row').on('click', function(){

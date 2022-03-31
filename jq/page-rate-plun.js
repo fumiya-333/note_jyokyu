@@ -1,15 +1,29 @@
 function load(){
-  const price = new Price();
-  price.init();
+  const pageRatePlun = new PageRatePlun();
+  pageRatePlun.init();
 }
 
-function Price() {}
+function resize() {
+  // const pageRatePlun = new PageRatePlun();
+  // pageRatePlun.responsiveView();
+}
 
-Price.prototype.init = function(){
+function PageRatePlun() {}
+
+PageRatePlun.prototype.init = function(){
+  // this.responsiveView();
   this.addEvent();
 }
 
-Price.prototype.addEvent = function(){
+// PageRatePlun.prototype.responsiveView = function(){
+//   if(getWindowType() === WINDOW_TYPE_SP) {
+
+//   }else{
+
+//   }
+// };
+
+PageRatePlun.prototype.addEvent = function(){
   new ScrollHint('.js-scrollable', {
     suggestiveShadow: true
   });

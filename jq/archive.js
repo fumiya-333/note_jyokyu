@@ -1,31 +1,31 @@
 function load(){
-  const blog = new Blog();
-  blog.init();
+  const archive = new Archive();
+  archive.init();
 }
 
 function resize() {
-  const blog = new Blog();
-  blog.responsiveView();
+  const archive = new Archive();
+  archive.responsiveView();
 }
 
-function Blog() {}
+function Archive() {}
 
-Blog.prototype.init = function(){
-  this.responsiveView();
+Archive.prototype.init = function(){
+  // this.responsiveView();
   this.addEvent();
 }
 
-Blog.prototype.responsiveView = function(){
-  if(getWindowType() === WINDOW_TYPE_SP) {
+// Archive.prototype.responsiveView = function(){
+//   if(getWindowType() === WINDOW_TYPE_SP) {
 
-  }else{
+//   }else{
 
-  }
-};
+//   }
+// };
 
-Blog.prototype.addEvent = function(){
-  $('.blog-row').on('click', function(){
-    window.location.href = $(this).find('.blog-row-title > a').eq(0).attr('href');
+Archive.prototype.addEvent = function(){
+  $('.Archive-row').on('click', function(){
+    window.location.href = $(this).find('.Archive-row-title > a').eq(0).attr('href');
   });
   dispPaginate();
 };

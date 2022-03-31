@@ -1,21 +1,21 @@
 function load(){
-  const top = new Top();
-  top.init();
+  const index = new Index();
+  index.init();
 }
 
 function resize() {
-  const top = new Top();
-  top.responsiveView();
+  const index = new Index();
+  index.responsiveView();
 }
 
-function Top() {}
+function Index() {}
 
-Top.prototype.init = function(){
+Index.prototype.init = function(){
   this.responsiveView();
   this.addEvent();
 }
 
-Top.prototype.responsiveView = function(){
+Index.prototype.responsiveView = function(){
   if(getWindowType() === WINDOW_TYPE_SP) {
     $('#toefl-study-title').html('TOEFL学習で<br>こんな悩みありませんか？');
     $('#toefl-study-sub-title-box').html('<ul><li>・勉強の習慣が身についていない</li><li>・勉強しているはずなのに点数が伸びない</li><li>・正しい勉強方法がわからない</li></ul>');
@@ -39,7 +39,7 @@ Top.prototype.responsiveView = function(){
   }
 };
 
-Top.prototype.addEvent = function(){
+Index.prototype.addEvent = function(){
   $('.qa-accordion-row').on('click', function(){
     $(this).toggleClass('active');
     $(this).find('.toggle-btn').eq(0).toggleClass('toggle-open');

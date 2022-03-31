@@ -4,24 +4,24 @@ function load(){
 }
 
 function resize() {
-  const archiveCorrect = new ArchiveCorrect();
-  archiveCorrect.responsiveView();
+  // const archiveCorrect = new ArchiveCorrect();
+  // archiveCorrect.responsiveView();
 }
 
 function ArchiveCorrect() {}
 
 ArchiveCorrect.prototype.init = function(){
-  this.responsiveView();
+  // this.responsiveView();
   this.addEvent();
 }
 
-ArchiveCorrect.prototype.responsiveView = function(){
-  if(getWindowType() === WINDOW_TYPE_SP) {
+// ArchiveCorrect.prototype.responsiveView = function(){
+//   if(getWindowType() === WINDOW_TYPE_SP) {
 
-  }else{
+//   }else{
 
-  }
-};
+//   }
+// };
 
 ArchiveCorrect.prototype.addEvent = function(){
   $('.correct-row').on('click', function(){

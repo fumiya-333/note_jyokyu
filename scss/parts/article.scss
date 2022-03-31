@@ -18,8 +18,8 @@
       }
     }
     .article-title {
-      margin-top: 30px;
-      margin-bottom: 20px;
+      margin-top: 24px;
+      margin-bottom: 22px;
       font-size: 28px;
       font-weight: bold;
       line-height: 1.5;
@@ -41,16 +41,26 @@
     .article-content {
       margin-top: 40px;
       h2 {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+        font-size: 26px;
+        font-weight: bold;
       }
       h3 {
         padding: 3px 10px;
         margin-top: 30px;
         margin-bottom: 30px;
+        font-size: 22px;
+        font-weight: bold;
         border-left: 4px solid #000;
       }
       p {
+        min-height: 63px;
         line-height: 1.5;
+        a {
+          margin-top: 30px;
+          font-size: 18px;
+          color: #F5A623;
+        }
       }
       blockquote {
         position: relative;
@@ -74,27 +84,24 @@
         margin: 0 0 30px 0;
       }
       ul {
+        max-width: 610px;
+        min-height: 120px;
+        padding: 0 36px;
         li {
           position: relative;
           display: block;
-          margin-left: 21px;
           line-height: 1.5;
           &::before {
             content:  "";
             position: absolute;
-            top: 6px;
-            left: -21px;
+            top: 8px;
+            left: -32px;
             width: 11px;
             height: 11px;
             background-color: #F5A623;
             border-radius:  50%; 
           }
         }
-      }
-      a {
-        margin-top: 30px;
-        font-size: 18px;
-        color: #F5A623;
       }
     }
   }

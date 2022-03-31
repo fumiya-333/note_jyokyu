@@ -22,7 +22,7 @@
           display: flex;
           min-height: 180px;
           cursor: pointer;
-          @include mq(sp-and-tab) {
+          @include mq(sp) {
             display: block;
           }
           &:not(:last-child) {
@@ -30,13 +30,16 @@
           }
           .blog-img-box {
             position: relative;
-            width: 240px;
+            min-width: 240px;
+            max-width: 240px;
             background-repeat: no-repeat;
             background-size: 100%;
-            @include mq(sp-and-tab) {
+            @include mq(sp) {
               width: 100%;
+              max-width: none;
               height: 240px;
               margin-bottom: 20px;
+              // background-position: center;
             }
             .blog-category {
               position: absolute;
@@ -52,7 +55,7 @@
           .blog-text-box {
             max-width: 609px;
             margin-left: 50.1px;
-            @include mq(sp-and-tab) {
+            @include mq(sp) {
               margin-left: 0;
             }
             .blog-date {

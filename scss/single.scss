@@ -16,13 +16,16 @@ main {
   .single {
     .single-inner {
       display: flex;
-      max-width: 895px;
+      max-width: 900px;
       padding-top: 60px;
       padding-bottom: 36px;
       margin: 0 auto;
       @include mq(sp) {
         display: block;
         padding: 58px 16px;
+      }
+      @include mq(tab) {
+        padding: 60px 16px 36px 16px;
       }
       .single-left {
         width: 100%;

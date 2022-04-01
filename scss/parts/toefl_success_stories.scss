@@ -69,8 +69,11 @@
               justify-content: left;
               height: 241px;
               img {
-                height: 190px;
+                height: 190px!important;
               }
+            }
+            img {
+              height: 138px;
             }
           }
           .toefl-success-el-wrap {

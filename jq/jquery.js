@@ -51,7 +51,9 @@ function dispHamburger() {
       $('#li-btn-area').css('display', 'block');
     }
     if(getWindowType() === WINDOW_TYPE_TAB){
-      $('li').eq($('#nav').index('ul > li') - 1).css('padding-bottom', '24px');
+      $($('#nav > ul').find('li')[3]).css({'cssText': 'padding-bottom: 24px!important;'});
+    }else{
+      $($('#nav > ul').find('li')[3]).css({'cssText': 'padding-bottom: 12px!important;'});
     }
     $('body').css('overflow', 'hidden');
   }

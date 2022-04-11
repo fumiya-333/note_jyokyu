@@ -33,7 +33,15 @@ class Constants {
   const SELECT_ERR_MSG = "を選択してください";
   const CHECK_ERR_MSG = "にチェックを入れてください";
 
+  /** 電話番号 */
   const PHONE_NUMBER_VAL = "0123-456-7890";
+
+  /** 料金表ページID */
+  const PAGE_ID_PRICE_TABLE = 2149;
+  /** TOEFL成功事例ページID */
+  const PAGE_ID_TOEFL_SUCCESS_STORIES = 2126;
+  /** お問い合わせフォームID */
+  const FORM_ID_CONTACT = 2198;
 
   /**
    * 定数を配列として全て取得する

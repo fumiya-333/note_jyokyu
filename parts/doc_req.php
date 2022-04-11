@@ -5,7 +5,7 @@
       <button class="btn-warning btn-doc-req">資料請求</button>
     </div>
     <div class="contact-link-area">
-      <a href="">お問い合わせ</a>
+      <a href="<?= Constants::CONTACT_URL ?>">お問い合わせ</a>
     </div>
   </div>
 </section>

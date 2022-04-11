@@ -19,7 +19,7 @@ footer {
       }
       .footer-inner-top-left {
         padding-left: 23px;
-        padding-top: 15px;
+        padding-top: 13px;
         @include mq(sp) {
           padding-top: 0;
         }
@@ -57,12 +57,18 @@ footer {
         color: white;
         @include mq(sp) {
           padding-left: 23px;
-          img {
-            margin: 8px 0;
-          }
         }
         @include mq(tab) {
           padding-right: 23px;
+        }
+        .footer-inner-top-right-img {
+          width: 197px;
+          height: 57px;
+          padding: 14px 19px 13px 19px;
+          background-color: white;
+          img {
+            width: 159px;
+          }
         }
         .number-box {
           padding-top: 27px;
@@ -114,7 +120,7 @@ footer {
     height: 36px;
     margin: 0 auto;
     .copy-right {
-      padding-top: 14px;
+      padding-top: 13px;
       margin-left: auto;
       font-size: 12px;
       font-weight: bold;

@@ -28,7 +28,7 @@ Index.prototype.responsiveView = function(){
     $('#doc-req-title').html('お気軽にお問い合わせください');
   }else{
     $('#toefl-study-title').html('TOEFL学習でこんな悩みありませんか？');
-    $('#toefl-study-sub-title-box').html('<ul><li>勉強の習慣が<br>身についていない</li><li>勉強しているはず<br>なのに点数が伸びない</li><li>正しい勉強方法が<br>わからない</li></ul>');
+    $('#toefl-study-sub-title-box').html('<ul><li><p class="toefl-study-sub-title-top">勉強の習慣が</p><p>身についていない</p></li><li><p class="toefl-study-sub-title-top">勉強しているはず</p><p>なのに点数が伸びない</p></li><li><p class="toefl-study-sub-title-top">正しい勉強方法が</p><p>わからない</p></li></ul>');
     $('#toefl-study-box-text').html('完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。');
     $('.toefl-strong-title').html('TOEFL対策に特化したEngress3つの強み');
 

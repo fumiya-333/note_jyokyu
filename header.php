@@ -2,7 +2,7 @@
   <div class="header-inner">
     <div class="wrap-left">
       <div class="logo">
-        <a href="<?php echo HOME_URL ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+        <a href="<?php echo HOME_URL ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg"></a>
       </div>
       <nav class="nav" id="nav">
         <ul>

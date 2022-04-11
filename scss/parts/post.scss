@@ -7,7 +7,7 @@
   }
   .post-inner {
     max-width: 900.5px;
-    padding-bottom: 117px;
+    padding-bottom: 119px;
     margin: 0 auto;
     @include flexbox(nowrap);
     @include mq(sp-and-tab) {
@@ -50,7 +50,11 @@
             position: relative;
             width: 150px;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: contain;
+            @include mq(sp-and-tab) {
+              width: 240px;
+              background-size: cover;
+            }
             .blog-category {
               position: absolute;
               min-width: 78px;
@@ -68,7 +72,6 @@
             margin-left: 20px;
             @include flexbox(nowrap, center, stretch, column);
             @include mq(sp-and-tab) {
-              // width: 183px;
               width: 100%;
             }
             @include mq(sp) {

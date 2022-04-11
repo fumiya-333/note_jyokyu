@@ -3,9 +3,9 @@
     <div class="toefl-study-title" id="toefl-study-title">TOEFL学習でこんな悩みありませんか？</div>
     <div class="toefl-study-sub-title-box" id="toefl-study-sub-title-box">
       <ul>
-        <li>勉強の習慣が<br>身についていない</li>
-        <li>勉強しているはず<br>なのに点数が伸びない</li>
-        <li>正しい勉強方法が<br>わからない</li>
+        <li><p class="toefl-study-sub-title-top">勉強の習慣が</p><p>身についていない</p></li>
+        <li><p class="toefl-study-sub-title-top">勉強しているはず</p><p>なのに点数が伸びない</p></li>
+        <li><p class="toefl-study-sub-title-top">正しい勉強方法が</p><p>わからない</p></li>
       </ul>
     </div>
     <div class="toefl-study-box">

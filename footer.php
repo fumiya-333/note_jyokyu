@@ -10,7 +10,9 @@
         </ul>
       </div>
       <div class="footer-inner-top-right">
-        <img src="<?php bloginfo('template_directory'); ?>/img/footer_logo.png">
+        <div class="footer-inner-top-right-img">
+          <img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg">
+        </div>
         <div class="number-box">
           <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>
           <div class="active-time">平日08:00~20:00</div>

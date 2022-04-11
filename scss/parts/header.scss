@@ -21,6 +21,11 @@ header {
       .logo {
         padding-top: 12px;
         padding-bottom: 11px;
+        a {
+          img {
+            width: 136px;
+          }
+        }
       }
       .nav {
         display: flex;

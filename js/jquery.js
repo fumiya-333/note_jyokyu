@@ -8,7 +8,7 @@ const WINDOW_SIZE_TAB = 1025;
 window.onload = function () {
   $("#btn-hamburger").on("click", dispHamburger);
 
-  $(".btn-doc-req, .btn-contact").on("click", function () {
+  $("[class$='btn-doc-req'], [class$='btn-contact']").on("click", function () {
     window.location.href = Constants.CONTACT_URL;
   });
 
@@ -39,16 +39,16 @@ function getWindowType() {
 function dispHamburger() {
   if ($("#btn-hamburger, #btn-hamburger-line").hasClass("open")) {
     $("#nav").fadeOut();
-    $("main").find("a,button,input").css("pointer-events", "auto");
-    $("main").off("click");
-    $("#li-btn-area").css("display", "none");
+    $(".main").find("a,button,input").css("pointer-events", "auto");
+    $(".main").off("click");
+    $("#l-header__inner__left__nav__list__row-last").css("display", "none");
     $("body").css("overflow", "visible");
   } else {
     $("#nav").fadeIn();
-    $("main").find("a,button,input").css("pointer-events", "none");
-    $("main").on("click", dispHamburger);
+    $(".main").find("a,button,input").css("pointer-events", "none");
+    $(".main").on("click", dispHamburger);
     if (getWindowType() === WINDOW_TYPE_SP) {
-      $("#li-btn-area").css("display", "block");
+      $("#l-header__inner__left__nav__list__row-last").css("display", "block");
     }
     if (getWindowType() === WINDOW_TYPE_TAB) {
       $($("#nav > ul").find("li")[3]).css({

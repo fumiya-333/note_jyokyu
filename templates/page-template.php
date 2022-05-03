@@ -3,7 +3,7 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <main>
+      <main class="main">
         <?php
           if (!is_singular(mb_substr(Constants::FILE_PATH_CORRECT, 1)) && !is_page(mb_substr(Constants::FILE_PATH_THANKS, 1))) {
               get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_HERO), null, $args);

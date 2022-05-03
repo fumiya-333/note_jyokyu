@@ -70,12 +70,24 @@
           padding-top: 16px;
           margin-left: 23px;
         }
-        &-phone-number {
+        &__phone-number {
           width: 115px;
           margin-left: auto;
+          color: white;
+          @include flexbox(nowrap, flex-end);
           @include mq(sp) {
+            display: inline-block;
             width: 125px;
             margin-left: 0;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: -18px;
+            top: 3px;
+            width: 10px;
+            height: 15px;
+            @include bg-img(url("../img/footer_phone.png"), no-repeat);
           }
         }
         &__active-time {

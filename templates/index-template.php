@@ -3,7 +3,7 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <main>
+      <main class="main">
         <?php
           get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_HERO), null, $args);
           foreach ($args["component_names"] as $file_name) {

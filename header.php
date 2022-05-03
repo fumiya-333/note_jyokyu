@@ -1,33 +1,33 @@
-<header>
-  <div class="header-inner">
-    <div class="wrap-left">
-      <div class="logo">
+<header class="l-header">
+  <div class="l-header__inner">
+    <div class="l-header__inner__left">
+      <div class="l-header__inner__left__logo-box">
         <a href="<?= HOME_URL ?>"><img src="<?= Constants::TEMP_DIR_IMG ?>/logo.jpg"></a>
       </div>
-      <nav class="nav" id="nav">
-        <ul>
-          <li><a href="<?= HOME_URL ?>">ホーム</a></li>
-          <li><a href="<?= Constants::CORRECT_URL  ?>">お知らせ</a></li>
-          <li><a href="<?= Constants::BLOG_URL ?>"><?= Constants::BREADCLUMB_TITLE_BLOG ?></a></li>
-          <li><a href="<?= Constants::PRICE_TABLE_URL ?>">コース・料金</a></li>
-          <li id="li-btn-area" style="display: none;">
-            <button class="btn-warning btn-doc-req">資料請求</button>
-            <button class="btn-navy-blue btn-contact">お問い合わせ</button>
+      <nav class="l-header__inner__left__nav" id="nav">
+        <ul class="l-header__inner__left__nav__list">
+          <li class="l-header__inner__left__nav__list__row"><a href="<?= HOME_URL ?>">ホーム</a></li>
+          <li class="l-header__inner__left__nav__list__row"><a href="<?= Constants::CORRECT_URL  ?>">お知らせ</a></li>
+          <li class="l-header__inner__left__nav__list__row"><a href="<?= Constants::BLOG_URL ?>"><?= Constants::BREADCLUMB_TITLE_BLOG ?></a></li>
+          <li class="l-header__inner__left__nav__list__row"><a href="<?= Constants::PRICE_TABLE_URL ?>">コース・料金</a></li>
+          <li class="l-header__inner__left__nav__list__row" id="l-header__inner__left__nav__list__row-last" style="display: none;">
+            <button class="btn-warning l-header__inner__left__nav__list__row-btn-doc-req">資料請求</button>
+            <button class="btn-navy-blue l-header__inner__left__nav__list__row-btn-contact">お問い合わせ</button>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="wrap-right">
-      <div class="text-area">
-        <div class="active-time">平日08:00〜20:00</div>
-        <div class="phone-number">0123-456-7890</div>
+    <div class="l-header__inner__right">
+      <div class="l-header__inner__right__active-contact">
+        <div class="l-header__inner__right__active-contact__active-time">平日08:00〜20:00</div>
+        <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-number l-header__inner__right__active-contact__phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>
       </div>
-      <button class="btn-warning btn-doc-req">資料請求</button>
-      <button class="btn-navy-blue btn-contact">お問い合わせ</button>
+      <button class="btn-warning l-header__inner__right-btn-doc-req">資料請求</button>
+      <button class="btn-navy-blue l-header__inner__right-btn-contact">お問い合わせ</button>
     </div>
-    <div class="hamburger">
-      <button class="btn-hamburger" id="btn-hamburger">
-        <span class="btn-hamburger-line" id="btn-hamburger-line"></span>
+    <div class="c-hamburger">
+      <button class="c-hamburger-btn" id="btn-hamburger">
+        <span class="c-hamburger-btn-line" id="btn-hamburger-line"></span>
       </button>
     </div>
   </div>

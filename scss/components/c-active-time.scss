@@ -1,0 +1,11 @@
+.c-active-time {
+  width: 93px;
+  padding-top: 14px;
+  margin-left: auto;
+  font-size: 12px;
+  @include mq(sp) {
+    width: 103px;
+    padding-top: 8px;
+    margin-left: 0;
+  }
+}

@@ -1,17 +1,3 @@
-$breakpoint: (
-  sp: 'screen and (max-width: 767px)',
-  sp-and-tab: 'screen and (max-width: 1024px)',
-  tab: 'screen and (min-width: 768px) and (max-width: 1024px)',
-  tab-and-pc: 'screen and (min-width: 768px)',
-  pc: 'screen and (min-width: 1025px)'
-);
-
-@mixin mq($bp) {
-  @media #{map-get($breakpoint, $bp)} {
-    @content;
-  }
-}
-
 @mixin bg-img($bg, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: cover) {
   background: $bg;
   background-repeat: $bg-repeat;
@@ -33,5 +19,5 @@ $breakpoint: (
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $line-clump;
-  overflow: hidden; 
+  overflow: hidden;
 }

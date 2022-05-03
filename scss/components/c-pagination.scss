@@ -1,0 +1,19 @@
+.pagination {
+  .pnavi {
+    text-align: center;
+    .page-numbers {
+      padding: 17px 20px;
+      font-weight: bold;
+      border: 1px solid #1B224C;
+      text-decoration: none;
+    }
+    .page-numbers.current {
+      background-color: #1B224C;
+      color: white;
+    }
+    .page-numbers.dots {
+      border: none;
+      margin: 0 11px;
+    }
+  }
+}

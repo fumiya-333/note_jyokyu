@@ -1,0 +1,19 @@
+.c-phone-number {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  @include flexbox(nowrap, flex-end);
+  @include mq(sp) {
+    display: inline-block;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 3px;
+    width: 10px;
+    height: 15px;
+    @include bg-img(url("../img/footer_phone.png"), no-repeat);
+  }
+}

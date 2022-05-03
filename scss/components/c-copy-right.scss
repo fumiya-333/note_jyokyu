@@ -1,0 +1,9 @@
+.c-copy-right {
+  padding-top: 13px;
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: bold;
+  @include mq(sp-and-tab) {
+    margin: 0 auto;
+  }
+}

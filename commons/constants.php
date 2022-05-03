@@ -22,7 +22,7 @@ class Constants
     /** ファイルパス 資料請求背景画像 */
     const FILE_PATH_DOC_REQ = "/doc-req";
     /** ファイルパス 電話番号 */
-    const FILE_PATH_PHONE_NUMBER = "/phone-number";
+    const FILE_PATH_PHONE_LINK = "/phone-link";
     /** ファイルパス TOEFL学習特化 */
     const FILE_PATH_TOEFL_STUDY = "/toefl-study";
     /** ファイルパス TOEFL強み */

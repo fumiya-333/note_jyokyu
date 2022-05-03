@@ -3,7 +3,7 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <main class="main">
+      <main class="l-main">
         <?php
           if (!is_singular(mb_substr(Constants::FILE_PATH_CORRECT, 1)) && !is_page(mb_substr(Constants::FILE_PATH_THANKS, 1))) {
               get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_HERO), null, $args);
@@ -14,7 +14,7 @@
           }
           if (!is_page(mb_substr(Constants::FILE_PATH_CONTACT, 1)) && !is_page(mb_substr(Constants::FILE_PATH_THANKS, 1))) {
               get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_DOC_REQ));
-              get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_PHONE_NUMBER));
+              get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_PHONE_LINK));
           }
         ?>
       </main>

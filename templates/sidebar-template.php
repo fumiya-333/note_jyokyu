@@ -3,7 +3,7 @@
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
-      <main class="main">
+      <main class="l-main">
         <?php get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
         <section class="single">
           <div class="single-inner">
@@ -21,7 +21,7 @@
         </section>
         <?php
           get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_DOC_REQ));
-          get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_PHONE_NUMBER));
+          get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_PHONE_LINK));
         ?>
       </main>
       <?php

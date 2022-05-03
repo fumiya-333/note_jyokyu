@@ -1,9 +1,7 @@
-@import "../common/mixin.scss";
-
-.contact-phone-number {
+.phone-link {
   padding-top: 20.3px;
   padding-bottom: 23.7px;
-  .contact-phone-number-inner {
+  &__inner {
     display: flex;
     max-width: 778px;
     margin: 0 auto;
@@ -11,7 +9,7 @@
       display: block;
       text-align: center;
     }
-    .contact-phone-number-title {
+    &__title {
       display: flex;
       padding-right: 20px;
       font-weight: bold;
@@ -25,7 +23,7 @@
         font-size: 16px;
       }
     }
-    .phone-number-link {
+    &__link {
       padding-right: 20px;
       font-size: 36px;
       font-weight: bold;
@@ -36,7 +34,7 @@
         font-size: 28px;
       }
     }
-    .phone-active-time {
+    &__active-time {
       display: flex;
       @include mq(sp) {
         display: block;

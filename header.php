@@ -20,7 +20,7 @@
     <div class="l-header__inner__right">
       <div class="l-header__inner__right__active-contact">
         <div class="l-header__inner__right__active-contact__active-time">平日08:00〜20:00</div>
-        <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-number l-header__inner__right__active-contact__phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>
+        <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-link l-header__inner__right__active-contact__phone-link"><?= Constants::PHONE_NUMBER_VAL ?></a>
       </div>
       <button class="btn-warning l-header__inner__right-btn-doc-req">資料請求</button>
       <button class="btn-navy-blue l-header__inner__right-btn-contact">お問い合わせ</button>

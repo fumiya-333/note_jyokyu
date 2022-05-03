@@ -1,8 +1,8 @@
 @import "../common/mixin.scss";
 
-.rate-plan {
+.price {
   padding-top: 52px;
-  .rate-plan-inner {
+  .price-inner {
     text-align: center;
     max-width: 906px;
     height: 217px;
@@ -13,7 +13,7 @@
       height: auto;
       @include bg-img(url("../img/price.png"), no-repeat, 80% 20%, cover);
     }
-    .rate-plan-title {
+    .price-title {
       padding-top: 62px;
       padding-right: 14px;
       font-size: 26px;
@@ -24,12 +24,12 @@
         font-size: 24px;
       }
     }
-    .btn-more-rate-plan-area {
+    .btn-more-price-area {
       padding-top: 25px;
       @include mq(sp) {
         padding-bottom: 48px;
       }
-      .btn-more-rate-plan {
+      .btn-more-price {
         width: 200px;
         height: 50px;
       }

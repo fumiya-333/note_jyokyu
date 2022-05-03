@@ -1,23 +1,10 @@
 <?php
-  $args = [
-    "hero_fix_title" => "ブログ",
-    "hero_fix_bg_img" => get_template_directory_uri() . "/img/blog.png",
-  ];
-?>
-<html>
-  <?php get_template_part('head'); ?>
-  <body>
-    <div class="wrapper">
-      <?php get_header(); ?>
-      <main>
-        <?php get_template_part('parts/hero_fix', null, $args); ?>
-        <?php get_template_part('parts/breadcrumbs'); ?>
-        <?php get_template_part('parts/blog'); ?>
-        <?php get_template_part('parts/doc_req'); ?>
-        <?php get_template_part('parts/contact_phone_number'); ?>
-      </main>
-      <?php get_footer(); ?>
-    </div>
-    <?php get_template_part('script'); ?>
-  </body>
-</html>
+$args = [
+  "component_names" => [
+    CommonUtil::joinDirPathConponents(Constants::FILE_PATH_BLOG),
+  ],
+  "hero_fix_title" => "ブログ",
+  "hero_fix_bg_img" => Constants::TEMP_DIR_IMG . "/blog.png",
+];
+
+get_template_part(CommonUtil::joinDirPathTemplates(Constants::FILE_PATH_PAGE_TEMPLATE), null, $args);

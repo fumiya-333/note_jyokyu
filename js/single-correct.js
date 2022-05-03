@@ -1,4 +1,4 @@
-function load(){
+function load() {
   // const singleCorrect = new SingleCorrect();
   // singleCorrect.init();
 }

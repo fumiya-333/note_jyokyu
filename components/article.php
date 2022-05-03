@@ -1,8 +1,8 @@
 <article class="article">
   <div class="article-inner">
     <?php
-      foreach(get_the_category() as $category){
-        echo "<div class='category-name'>{$category->cat_name}</div>";
+      foreach (get_the_category() as $category) {
+          echo "<div class='category-name'>{$category->cat_name}</div>";
       }
     ?>
     <h1 class="article-title">
@@ -10,8 +10,8 @@
     </h1>
     <div class="article-box-1">
       <?php
-        if(function_exists("wp_social_bookmarking_light_output_e")) {
-          wp_social_bookmarking_light_output_e();
+        if (function_exists("wp_social_bookmarking_light_output_e")) {
+            wp_social_bookmarking_light_output_e();
         }
       ?>
       <div class="article-date">
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="article-img-box">
-      <img src="<?= get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . "/img/noimage.png" ?>" width="100%"/>
+      <img src="<?= get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png" ?>" width="100%"/>
     </div>
     <div class="article-content">
       <?= get_the_content() ?>

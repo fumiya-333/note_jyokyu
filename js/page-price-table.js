@@ -1,4 +1,4 @@
-function load(){
+function load() {
   const pageRatePlun = new PageRatePlun();
   pageRatePlun.init();
 }
@@ -10,10 +10,10 @@ function resize() {
 
 function PageRatePlun() {}
 
-PageRatePlun.prototype.init = function(){
+PageRatePlun.prototype.init = function () {
   // this.responsiveView();
   this.addEvent();
-}
+};
 
 // PageRatePlun.prototype.responsiveView = function(){
 //   if(getWindowType() === WINDOW_TYPE_SP) {
@@ -23,8 +23,8 @@ PageRatePlun.prototype.init = function(){
 //   }
 // };
 
-PageRatePlun.prototype.addEvent = function(){
-  new ScrollHint('.js-scrollable', {
-    suggestiveShadow: true
+PageRatePlun.prototype.addEvent = function () {
+  new ScrollHint(".js-scrollable", {
+    suggestiveShadow: true,
   });
 };

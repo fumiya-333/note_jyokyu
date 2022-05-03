@@ -11,12 +11,12 @@
           </div>
         </div>
         <div class="toefl-strong-col-right toefl-strong-margin-left">
-          <img src="<?= bloginfo('template_directory'); ?>/img/feature01.jpg" alt="feature01">
+          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature01.jpg" alt="feature01">
         </div>
       </div>
       <div class="toefl-strong-row">
         <div class="toefl-strong-col-right">
-          <img src="<?= bloginfo('template_directory'); ?>/img/feature02.jpg" alt="feature02">
+          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature02.jpg" alt="feature02">
         </div>
         <div class="toefl-strong-col-left toefl-strong-margin-left">
           <div class="tip-lol tip-yellow" id="tip-lol-2">特長 ２</div>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="toefl-strong-col-right toefl-strong-margin-left">
-          <img src="<?= bloginfo('template_directory'); ?>/img/feature03.jpg" alt="feature03">
+          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature03.jpg" alt="feature03">
         </div>
       </div>
     </div>

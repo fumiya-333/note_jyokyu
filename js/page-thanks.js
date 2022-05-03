@@ -1,4 +1,4 @@
-function load(){
+function load() {
   // const pageThanks = new PageThanks();
   // pageThanks.init();
 }

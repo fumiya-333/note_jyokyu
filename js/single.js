@@ -1,4 +1,4 @@
-function load(){
+function load() {
   const single = new Single();
   single.init();
 }
@@ -10,10 +10,10 @@ function resize() {
 
 function Single() {}
 
-Single.prototype.init = function(){
+Single.prototype.init = function () {
   // this.responsiveView();
   this.addEvent();
-}
+};
 
 // Single.prototype.responsiveView = function(){
 //   if(getWindowType() === WINDOW_TYPE_SP) {
@@ -22,8 +22,11 @@ Single.prototype.init = function(){
 //   }
 // };
 
-Single.prototype.addEvent = function(){
-  $('.blog-pickup-row').on('click', function(){
-    window.location.href = $(this).find('.blog-pickup-title > a').eq(0).attr('href');
+Single.prototype.addEvent = function () {
+  $(".blog-pickup-row").on("click", function () {
+    window.location.href = $(this)
+      .find(".blog-pickup-title > a")
+      .eq(0)
+      .attr("href");
   });
 };

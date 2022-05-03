@@ -1,4 +1,4 @@
-function load(){
+function load() {
   const archiveCorrect = new ArchiveCorrect();
   archiveCorrect.init();
 }
@@ -10,10 +10,10 @@ function resize() {
 
 function ArchiveCorrect() {}
 
-ArchiveCorrect.prototype.init = function(){
+ArchiveCorrect.prototype.init = function () {
   // this.responsiveView();
   this.addEvent();
-}
+};
 
 // ArchiveCorrect.prototype.responsiveView = function(){
 //   if(getWindowType() === WINDOW_TYPE_SP) {
@@ -23,9 +23,12 @@ ArchiveCorrect.prototype.init = function(){
 //   }
 // };
 
-ArchiveCorrect.prototype.addEvent = function(){
-  $('.correct-row').on('click', function(){
-    window.location.href = $(this).find('.correct-row-title > a').eq(0).attr('href');
+ArchiveCorrect.prototype.addEvent = function () {
+  $(".correct-row").on("click", function () {
+    window.location.href = $(this)
+      .find(".correct-row-title > a")
+      .eq(0)
+      .attr("href");
   });
   dispPaginate();
 };

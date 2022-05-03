@@ -3,15 +3,15 @@
     <div class="footer-inner-top-contents">
       <div class="footer-inner-top-left">
         <ul>
-          <li><a href="<?php echo HOME_URL ?>">ホーム</a></li>
-          <li><a href="<?php echo Constants::CORRECT_URL ?>">お知らせ</a></li>
-          <li><a href="<?php echo Constants::BLOG_URL ?>">ブログ</a></li>
-          <li><a href="<?php echo Constants::RATE_PLUN_URL ?>">コース・料金</a></li>
+          <li><a href="<?= HOME_URL ?>">ホーム</a></li>
+          <li><a href="<?= Constants::CORRECT_URL ?>">お知らせ</a></li>
+          <li><a href="<?= Constants::BLOG_URL ?>">ブログ</a></li>
+          <li><a href="<?= Constants::PRICE_TABLE_URL ?>">コース・料金</a></li>
         </ul>
       </div>
       <div class="footer-inner-top-right">
         <div class="footer-inner-top-right-img">
-          <img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg">
+          <img src="<?= Constants::TEMP_DIR_IMG ?>/logo.jpg">
         </div>
         <div class="number-box">
           <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="phone-number"><?= Constants::PHONE_NUMBER_VAL ?></a>

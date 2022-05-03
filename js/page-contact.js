@@ -1,4 +1,4 @@
-function load(){
+function load() {
   // const pageContact = new PageContact();
   // pageContact.init();
 }
@@ -36,8 +36,8 @@ function resize() {
 
 // /**
 //  * 入力チェック・エラー表示
-//  * 
-//  * @returns 
+//  *
+//  * @returns
 //  */
 // PageContact.prototype.inputCheckWithShowError = function(){
 //   var retFlg = false;
@@ -96,10 +96,10 @@ function resize() {
 
 // /**
 //  * 入力チェックとエラー表示実行
-//  * 
+//  *
 //  * @param {*} selector セレクタ
 //  * @param {*} msg エラーメッセージ
-//  * @returns 
+//  * @returns
 //  */
 // PageContact.prototype.execInputCheckWithShowError = function(selector, msg){
 //   if(!$(selector).val()){
@@ -119,11 +119,11 @@ function resize() {
 
 // /**
 //  * 入力チェックとエラー表示実行（ラジオボタン・チェックボックス）
-//  * 
+//  *
 //  * @param {*} selector セレクタ
 //  * @param {*} msg エラーメッセージ
 //  * @param {*} target 親要素のセレクタ
-//  * @returns 
+//  * @returns
 //  */
 // PageContact.prototype.execCheckWithShowError = function(selector, msg, target){
 //   if(!$(selector).val()){

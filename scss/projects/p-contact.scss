@@ -1,7 +1,5 @@
-@import "../common/mixin.scss";
-
-.contact {
-  .contact-inner {
+.p-contact {
+  &__inner {
     max-width: 700px;
     padding-top: 51px;
     padding-bottom: 62px;
@@ -9,10 +7,7 @@
     @include mq(sp) {
       padding: 51px 16px 62px 16px;
     }
-    label, input ,textarea {
-      display: inline-block;
-    }
-    .contact-explanation {
+    &__title {
       line-height: 1.7;
     }
     .mw_wp_form {

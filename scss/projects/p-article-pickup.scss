@@ -1,22 +1,20 @@
-@import "../common/mixin.scss";
-
 $blog-pickup-img-width: 150px;
 $blog-pickup-img-box-margin-right: 16px;
 
-.article-pickup {
-  .article-pickup-inner {
-    .article-pickup-title {
+.p-article-pickup {
+  &__inner {
+    &__title {
       margin-top: 60px;
       font-size: 26px;
       font-weight: bold;
     }
-    .article-pickup-list {
+    &__list {
       margin-top: 30px;
-      .blog-pickup-row {
+      &__row {
         display: flex;
         margin-bottom: 28px;
         cursor: pointer;
-        .blog-pickup-img-box {
+        &__bg-img {
           position: relative;
           min-width: 210px;
           min-height: 128px;
@@ -28,7 +26,7 @@ $blog-pickup-img-box-margin-right: 16px;
             width: $blog-pickup-img-width;
             margin-right: $blog-pickup-img-box-margin-right;
           }
-          .blog-pickup-category {
+          &__category {
             position: absolute;
             min-width: 80px;
             height: 28px;
@@ -39,15 +37,15 @@ $blog-pickup-img-box-margin-right: 16px;
             @include flexbox(nowrap, center, center);
           }
         }
-        .blog-pickup-text-box {
+        &__wrapper {
           max-width: 348px;
           @include mq(sp) {
             max-width: calc(100% - #{$blog-pickup-img-width} - #{$blog-pickup-img-box-margin-right});
           }
-          .blog-pickup-date {
+          &__date {
             margin-bottom: 29px;
           }
-          .blog-pickup-title {
+          &__title {
             a {
               font-weight: bold;
               line-height: 1.5;

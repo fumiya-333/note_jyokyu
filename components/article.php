@@ -1,27 +1,27 @@
-<article class="article">
-  <div class="article-inner">
+<article class="p-article">
+  <div class="p-article__inner">
     <?php
       foreach (get_the_category() as $category) {
-          echo "<div class='category-name'>{$category->cat_name}</div>";
+          echo "<div class='p-article__inner__category-name'>{$category->cat_name}</div>";
       }
     ?>
-    <h1 class="article-title">
+    <h1 class="p-article__inner__title">
       <?= get_the_title() ?>
     </h1>
-    <div class="article-box-1">
+    <div class="p-article__inner__flex">
       <?php
         if (function_exists("wp_social_bookmarking_light_output_e")) {
             wp_social_bookmarking_light_output_e();
         }
       ?>
-      <div class="article-date">
+      <div class="p-article__inner__flex__date">
         <?= get_the_time(get_option('date_format')) ?>
       </div>
     </div>
-    <div class="article-img-box">
+    <div class="p-article__inner__img">
       <img src="<?= get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png" ?>" width="100%"/>
     </div>
-    <div class="article-content">
+    <div class="p-article__inner__content">
       <?= get_the_content() ?>
     </div>
   </div>

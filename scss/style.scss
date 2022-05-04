@@ -8,6 +8,7 @@
 @import "foundations/reset";
 
 @import "layouts/l-breadcrumbs";
+@import "layouts/l-contents";
 @import "layouts/l-footer";
 @import "layouts/l-header";
 @import "layouts/l-main";
@@ -20,6 +21,9 @@
 @import "components/c-pagination";
 
 @import "projects/p-article-correct";
+@import "projects/p-article-pickup";
+@import "projects/p-article-wrapper";
+@import "projects/p-article";
 @import "projects/p-blog";
 @import "projects/p-correct";
 @import "projects/p-doc-req";

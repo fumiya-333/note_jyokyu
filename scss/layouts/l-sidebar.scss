@@ -2,6 +2,11 @@ $blog-connection-img-box-width: 100px;
 $blog-connection-text-box-margin-left: 17px;
 
 .l-sidebar {
+  width: 100%;
+  max-width: 269px;
+  @include mq(sp) {
+    max-width: none;
+  }
   &__title {
     height: 63px;
     font-size: 21px;

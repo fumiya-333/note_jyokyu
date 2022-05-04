@@ -58,7 +58,7 @@ class Constants
     /** ファイルパス ページテンプレート */
     const FILE_PATH_PAGE_TEMPLATE = "/page-template";
     /** ファイルパス サイドバーありテンプレート */
-    const FILE_PATH_SIDEBAR_TEMPLATE = "/sidebar-template";
+    const FILE_PATH_BLOG_TEMPLATE = "/blog-template";
 
     /** お知らせ画面 URL */
     const CORRECT_URL = HOME_URL . self::FILE_PATH_CORRECT;

@@ -1,8 +1,8 @@
 <html>
-  <?php get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
+  <?= get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
   <body>
     <div class="wrapper">
-      <?php get_header(); ?>
+      <?= get_header(); ?>
       <main class="l-main">
         <?php
           if (!is_singular(mb_substr(Constants::FILE_PATH_CORRECT, 1)) && !is_page(mb_substr(Constants::FILE_PATH_THANKS, 1))) {

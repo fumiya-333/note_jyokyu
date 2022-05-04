@@ -6,4 +6,4 @@ $args = [
   ]
 ];
 
-get_template_part(CommonUtil::joinDirPathTemplates(Constants::FILE_PATH_SIDEBAR_TEMPLATE), null, $args);
+get_template_part(CommonUtil::joinDirPathTemplates(Constants::FILE_PATH_BLOG_TEMPLATE), null, $args);

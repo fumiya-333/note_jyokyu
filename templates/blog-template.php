@@ -1,22 +1,20 @@
 <html>
-  <?php get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
+  <?= get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
   <body>
     <div class="wrapper">
-      <?php get_header(); ?>
+      <?= get_header(); ?>
       <main class="l-main">
-        <?php get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
-        <section class="single">
-          <div class="single-inner">
-            <div class="single-left">
+        <?= get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
+        <section class="l-contents">
+          <div class="l-contents__inner">
+            <article class="p-article-wrapper">
               <?php
                 foreach ($args["component_names"] as $file_name) {
                     get_template_part($file_name, null, $args);
                 }
               ?>
-            </div>
-            <div class="single-right">
-              <?php get_sidebar(); ?>
-            </div>
+            </article>
+            <?= get_sidebar(); ?>
           </div>
         </section>
         <?php

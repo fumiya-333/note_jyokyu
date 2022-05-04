@@ -1,10 +1,8 @@
-@import "../common/mixin.scss";
-
-.article {
-  .article-inner {
+.p-article {
+  &__inner {
     display: inline-block;
     width: 100%;
-    .category-name {
+    &__category-name {
       display: inline-block;
       text-align: center;
       min-width: 110px;
@@ -17,7 +15,7 @@
         margin-left: 8px;
       }
     }
-    .article-title {
+    &__title {
       margin-top: 24px;
       margin-bottom: 22px;
       font-size: 28px;
@@ -25,20 +23,20 @@
       line-height: 1.5;
       @include line-clump(3);
     }
-    .article-box-1 {
+    &__flex {
       display: flex;
-      .article-date {
+      &__date {
         margin-left: auto;
         @include mq(sp) {
           font-size: 12px;
         }
       }
     }
-    .article-img-box {
+    &__img {
       width: 100%;
       margin-top: 22px;
     }
-    .article-content {
+    &__content {
       margin-top: 40px;
       h2 {
         margin-bottom: 28px;
@@ -102,7 +100,7 @@
             width: 11px;
             height: 11px;
             background-color: #F5A623;
-            border-radius:  50%; 
+            border-radius:  50%;
           }
         }
       }

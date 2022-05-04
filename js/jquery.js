@@ -8,7 +8,7 @@ const WINDOW_SIZE_TAB = 1025;
 window.onload = function () {
   $("#btn-hamburger").on("click", dispHamburger);
 
-  $("[class$='btn-doc-req'], [class$='btn-contact']").on("click", function () {
+  $(".c-btn-doc-req, .c-btn-contact").on("click", function () {
     window.location.href = Constants.CONTACT_URL;
   });
 

@@ -1,6 +1,4 @@
-@import "../common/mixin.scss";
-
-.hero {
+.p-hero {
   width: 100%;
   height: 476px;
   @include bg-img(url("../img/fv.jpg"), no-repeat, center, 100%);
@@ -9,14 +7,14 @@
     background-position: 80% 20%;
     background-size: cover;
   }
-  .hero-inner {
+  &__inner {
     padding-top: 116px;
     text-align: center;
     color: white!important;
     @include mq(sp) {
       padding: 66px 0;
     }
-    .hero-title {
+    &__title {
       font-size: 48px;
       font-weight: bold;
       text-shadow: 0 3px 6px rgba(0,0,0,0.16);
@@ -24,7 +22,7 @@
         font-size: 28px;
       }
     }
-    .hero-sub-title {
+    &__sub-title {
       max-width: 328px;
       padding-top: 22px;
       margin: 0 auto;
@@ -35,24 +33,45 @@
         font-size: 14px;
       }
     }
-    .btn-doc-rea-area {
+    &__btn-area {
       padding-top: 45px;
       @include mq(sp) {
         padding-top: 20px;
       }
-      .btn-doc-req {
+      &-btn-doc-req {
         width: 260px;
         height: 60px;
         border-radius: 31px;
+        font-size: 16px;
       }
     }
-    .contact-link-area {
+    &__link-area {
       padding-top: 22px;
       @include mq(sp) {
         padding-top: 18px;
       }
       a {
         color: white!important;
+      }
+    }
+  }
+}
+
+.p-hero-fix {
+  height: 221px;
+  @include mq(sp) {
+    height: 65px;
+  }
+  &__inner {
+    @include bg-img(url("../img/plan.jpeg"), no-repeat, center, cover);
+    &__title {
+      height: 100%;
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      @include flexbox(nowrap, center, center);
+      @include mq(sp) {
+        font-size: 24px;
       }
     }
   }

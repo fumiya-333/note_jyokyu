@@ -20,6 +20,20 @@
   border-radius: 30px;
 }
 
+.c-btn-doc-req {
+  height: 50px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.c-btn-contact {
+  height: 50px;
+  font-size: 14px;
+  background-color: white;
+  color: #1B224C;
+  border-radius: 5px;
+}
+
 .c-hamburger {
   display: none;
   @include mq(sp) {

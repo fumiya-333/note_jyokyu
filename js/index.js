@@ -17,11 +17,13 @@ Index.prototype.init = function () {
 
 Index.prototype.responsiveView = function () {
   if (getWindowType() === WINDOW_TYPE_SP) {
-    $("#toefl-study-title").html("TOEFL学習で<br>こんな悩みありませんか？");
-    $("#toefl-study-sub-title-box").html(
-      "<ul><li>・勉強の習慣が身についていない</li><li>・勉強しているはずなのに点数が伸びない</li><li>・正しい勉強方法がわからない</li></ul>"
+    $(".p-toefl-study__inner__title").html(
+      "TOEFL学習で<br>こんな悩みありませんか？"
     );
-    $("#toefl-study-box-text").html(
+    $(".p-toefl-study__inner__wrapper-top__list").html(
+      '<ul><li class="p-toefl-study__inner__wrapper-top__list__row">・勉強の習慣が身についていない</li><li class="p-toefl-study__inner__wrapper-top__list__row">・勉強しているはずなのに点数が伸びない</li><li class="p-toefl-study__inner__wrapper-top__list__row">・正しい勉強方法がわからない</li></ul>'
+    );
+    $(".p-toefl-study__inner__wrapper-bottom__border__text").html(
       "完全オーダーメイドで、<br>１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。"
     );
     $(".toefl-strong-title").html("TOEFL対策に特化した<br>Engress3つの強み");
@@ -33,11 +35,13 @@ Index.prototype.responsiveView = function () {
 
     $("#doc-req-title").html("お気軽にお問い合わせください");
   } else {
-    $("#toefl-study-title").html("TOEFL学習でこんな悩みありませんか？");
-    $("#toefl-study-sub-title-box").html(
-      '<ul><li><p class="toefl-study-sub-title-top">勉強の習慣が</p><p>身についていない</p></li><li><p class="toefl-study-sub-title-top">勉強しているはず</p><p>なのに点数が伸びない</p></li><li><p class="toefl-study-sub-title-top">正しい勉強方法が</p><p>わからない</p></li></ul>'
+    $(".p-toefl-study__inner__title").html(
+      "TOEFL学習でこんな悩みありませんか？"
     );
-    $("#toefl-study-box-text").html(
+    $(".p-toefl-study__inner__wrapper-top__list").html(
+      '<li class="p-toefl-study__inner__wrapper-top__list__row"><p>勉強の習慣が</p><p>身についていない</p></li><li class="p-toefl-study__inner__wrapper-top__list__row"><p>勉強しているはず</p><p>なのに点数が伸びない</p></li><li class="p-toefl-study__inner__wrapper-top__list__row"><p>正しい勉強方法が</p><p>わからない</p></li>'
+    );
+    $(".p-toefl-study__inner__wrapper-bottom__border__text").html(
       "完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。"
     );
     $(".toefl-strong-title").html("TOEFL対策に特化したEngress3つの強み");

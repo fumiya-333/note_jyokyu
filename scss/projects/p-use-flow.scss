@@ -1,11 +1,9 @@
-@import "../common/mixin.scss";
-
-.use-flow {
-  .use-flow-inner {
+.p-use-flow {
+  &__inner {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 58px;
-    .use-flow-title {
+    &__title {
       height: 34px;
       text-align: center;
       font-size: 36px;
@@ -15,17 +13,17 @@
         font-size: 28px;
       }
     }
-    .use-flow-box {
+    &__list {
       margin-top: 53px;
       @include mq(sp-and-tab) {
         padding: 0 16px;
       }
-      .use-flow-row {
+      &__row {
         display: flex;
         &:not(:first-child){
           padding-top: 8px;
         }
-        .use-flow-no {
+        &__no {
           display: inline-block;
           padding: 24px 23px;
           font-weight: bold;
@@ -36,7 +34,7 @@
             align-items: center;
           }
         }
-        .use-flow-col-1 {
+        &__contact {
           width: 214.5px;
           padding-left: 21px;
           font-size: 18px;
@@ -48,7 +46,7 @@
             @include flexbox(nowrap, flex-start, inherit, column);
             padding: 24px 0 22px 21px;
           }
-          .use-flow-col-1-text {
+          &__text-sp {
             display: none;
             font-size: 15px;
             font-weight: 500;
@@ -60,7 +58,7 @@
             }
           }
         }
-        .use-flow-col-2 {
+        &__text {
           display: flex;
           align-items: center;
           position: relative;

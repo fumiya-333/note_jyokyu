@@ -30,12 +30,12 @@ Index.prototype.responsiveView = function () {
       "TOEFL対策に特化した<br>Engress3つの強み"
     );
 
-    $(".p-toefl-strong__inner__content__row__left__title")[0].html(
-      "TOEFLに最適化された無駄のないカリキュラム"
-    );
-    $(".p-toefl-strong__inner__content__row__left__title")[1].html(
-      "日本人指導歴10年以上の経験豊富な講師陣"
-    );
+    $(".p-toefl-strong__inner__content__row__left__title")
+      .eq(0)
+      .html("TOEFLに最適化された無駄のないカリキュラム");
+    $(".p-toefl-strong__inner__content__row__left__title")
+      .eq(1)
+      .html("日本人指導歴10年以上の経験豊富な講師陣");
 
     $("#doc-req-title").html("お気軽にお問い合わせください");
   } else {
@@ -52,12 +52,12 @@ Index.prototype.responsiveView = function () {
       "TOEFL対策に特化したEngress3つの強み"
     );
 
-    $(".p-toefl-strong__inner__content__row__left__title")[0].html(
-      "TOEFLに最適化された<br>無駄のないカリキュラム"
-    );
-    $(".p-toefl-strong__inner__content__row__left__title")[1].html(
-      "日本人指導歴10年以上の<br>経験豊富な講師陣"
-    );
+    $(".p-toefl-strong__inner__content__row__left__title")
+      .eq(0)
+      .html("TOEFLに最適化された<br>無駄のないカリキュラム");
+    $(".p-toefl-strong__inner__content__row__left__title")
+      .eq(1)
+      .html("日本人指導歴10年以上の<br>経験豊富な講師陣");
 
     $("#doc-req-title").html("まずは無料で資料請求から");
   }
@@ -69,7 +69,7 @@ Index.prototype.addEvent = function () {
     $(this).find(".toggle-btn").eq(0).toggleClass("toggle-open");
     $(this).next().fadeToggle(200);
   });
-  $("#btn-more-price").on("click", function () {
+  $("#p-price__inner__btn-area__btn-price").on("click", function () {
     window.location.href = Constants.PRICE_TABLE_URL;
   });
   $(".blog-row").on("click", function () {

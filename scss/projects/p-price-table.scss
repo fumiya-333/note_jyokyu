@@ -1,0 +1,172 @@
+$toggle-btn-top: 50%;
+
+.p-price-table {
+  &__inner {
+    max-width: 900px;
+    padding-top: 58px;
+    padding-bottom: 61.6px;
+    margin: 0 auto;
+    @include mq(sp) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &__wrapper-top {
+      &__title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      &__contents {
+        display: flex;
+        max-width: 669px;
+        padding-top: 62.2px;
+        margin: 0 auto;
+        @include mq(sp) {
+          display: block;
+          padding-top: 42.2px;
+        }
+        &__price {
+          width: 280px;
+          height: 90px;
+          background-color: #1B224C;
+          color: white;
+          border: 1px solid #1B224C;
+          font-size: 22px;
+          font-weight: bold;
+          @include flexbox(nowrap, center, center);
+          @include mq(sp) {
+            margin: 0 auto;
+          }
+        }
+        &__icon {
+          position: relative;
+          width: 26px;
+          margin-top: 3px;
+          margin-left: 35.7px;
+          margin-right: 35.5px;
+          @include mq(sp) {
+            margin: 32px auto 64px auto;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: $toggle-btn-top;
+            width: 26px;
+            height: 3px;
+            background-color: #1B224C;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: $toggle-btn-top;
+            width: 26px;
+            height: 3px;
+            background-color: #1B224C;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      &__text {
+        padding-top: 39.8px;
+        line-height: 1.7;
+      }
+    }
+    &__wrapper-bottom {
+      &__title {
+        text-align: center;
+        padding-top: 97px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      &__contents {
+        display: flex;
+        padding-top: 70px;
+        overflow-x: auto;
+        @include mq(sp) {
+          padding-top: 60px;
+        }
+        &__content {
+          width: 220px;
+          &:first-child {
+            margin-right: 9px;
+          }
+          &:nth-child(2) {
+            margin-right: 7px;
+          }
+          &:nth-child(3) {
+            margin-right: 8px;
+          }
+          &__head {
+            height: 60px;
+            margin-top: 36px;
+            font-weight: bold;
+            background-color: #1B224C;
+            color: white;
+            @include flexbox(nowrap, center, center);
+          }
+          &__head&__recommendation {
+            text-align: center;
+            height: 96px;
+            margin-top: 0;
+            background-color: #F5A623!important;
+          }
+          &__body {
+            height: 414px;
+            padding-top: 31px;
+            border-bottom: .5px solid #1B224C;
+            border-left: .5px solid #1B224C;
+            border-right: .5px solid #1B224C;
+            &__price {
+              text-align: center;
+              width: 180px;
+              height: 25px;
+              margin: 0 auto;
+              font-size: 25px;
+              font-weight: bold;
+            }
+            &__recommendation {
+              color: #F5A623;
+            }
+            &__monthly {
+              text-align: center;
+              width: 180px;
+              height: 19px;
+              margin: 14px auto 0 auto;
+            }
+            &__texts {
+              text-align: center;
+              padding-top: 48px;
+              &__text, &__text-off {
+                position: relative;
+                display: inline-block;
+                br {
+                  content: "";
+                  display: block;
+                  margin: 10px 0;
+                }
+                &:not(:first-child) {
+                  margin-top: 23px;
+                }
+              }
+              &__text {
+                padding-left: 26.5px;
+                &::after {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  top: 2px;
+                  left: 1.5px;
+                  width: 15px;
+                  height: 9px;
+                  border-left: 3px solid #1B224C;
+                  border-bottom: 3px solid #1B224C;
+                  transform: rotate(-45deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

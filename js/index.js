@@ -26,12 +26,16 @@ Index.prototype.responsiveView = function () {
     $(".p-toefl-study__inner__wrapper-bottom__border__text").html(
       "完全オーダーメイドで、<br>１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。"
     );
-    $(".toefl-strong-title").html("TOEFL対策に特化した<br>Engress3つの強み");
+    $(".p-toefl-strong__inner__title").html(
+      "TOEFL対策に特化した<br>Engress3つの強み"
+    );
 
-    $("#toefl-optimization-title").html(
+    $(".p-toefl-strong__inner__content__row__left__title")[0].html(
       "TOEFLに最適化された無駄のないカリキュラム"
     );
-    $("#toefl-teacher-title").html("日本人指導歴10年以上の経験豊富な講師陣");
+    $(".p-toefl-strong__inner__content__row__left__title")[1].html(
+      "日本人指導歴10年以上の経験豊富な講師陣"
+    );
 
     $("#doc-req-title").html("お気軽にお問い合わせください");
   } else {
@@ -44,12 +48,14 @@ Index.prototype.responsiveView = function () {
     $(".p-toefl-study__inner__wrapper-bottom__border__text").html(
       "完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br>TOEFLの苦手分野を克服します。"
     );
-    $(".toefl-strong-title").html("TOEFL対策に特化したEngress3つの強み");
+    $(".p-toefl-strong__inner__title").html(
+      "TOEFL対策に特化したEngress3つの強み"
+    );
 
-    $("#toefl-optimization-title").html(
+    $(".p-toefl-strong__inner__content__row__left__title")[0].html(
       "TOEFLに最適化された<br>無駄のないカリキュラム"
     );
-    $("#toefl-teacher-title").html(
+    $(".p-toefl-strong__inner__content__row__left__title")[1].html(
       "日本人指導歴10年以上の<br>経験豊富な講師陣"
     );
 

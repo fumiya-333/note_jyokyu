@@ -1,5 +1,5 @@
-.toefl-strong {
-  .toefl-strong-inner {
+.p-toefl-strong {
+  &__inner {
     max-width: 910px;
     padding-top: 60px;
     padding-bottom: 39px;
@@ -7,7 +7,7 @@
     @include mq(sp-and-tab) {
       padding: 34px 0 0 0;
     }
-    .toefl-strong-title {
+    &__title {
       text-align: center;
       font-size: 36px;
       font-weight: bold;
@@ -17,9 +17,9 @@
         line-height: 1.4;
       }
     }
-    .toefl-strong-content {
+    &__content {
       margin-top: 34px;
-      .toefl-strong-row {
+      &__row {
         position: relative;
         display: flex;
         margin: 55px 5px 0 5px;
@@ -38,19 +38,19 @@
             @include bg-img($bg-img);
           }
         }
-        .toefl-strong-col-left {
+        &__left {
           max-width: 500px;
           @include mq(sp-and-tab) {
             max-width: none;
             padding: 16px;
             z-index: 1;
           }
-          .tip-lol {
+          &__tip-lol {
             width: 90px;
             height: 30px;
             @include flexbox(nowrap, center, center);
           }
-          .toefl-strong-col-title {
+          &__title {
             min-height: 45px;
             margin-top: 29px;
             font-size: 26px;
@@ -60,7 +60,7 @@
               color: white;
             }
           }
-          .toefl-strong-col-text {
+          &__text {
             margin-top: 28px;
             line-height: 1.7;
             @include mq(sp-and-tab) {
@@ -68,7 +68,7 @@
             }
           }
         }
-        .toefl-strong-col-right {
+        &__right {
           width: 350px;
           height: 240px;
           @include mq(sp-and-tab) {
@@ -79,7 +79,7 @@
             width: 350px;
           }
         }
-        .toefl-strong-margin-left {
+        &__margin-left {
           @include mq(pc){
             flex: 1;
             margin-left: 50px;

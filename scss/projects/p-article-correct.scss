@@ -1,23 +1,21 @@
-@import "../common/mixin.scss";
-
-.article-correct {
-  .article-correct-inner {
+.p-article-correct {
+  &__inner {
     max-width: 900px;
     padding-top: 51px;
     margin: 0 auto;
     @include mq(sp-and-tab) {
       margin: 0 16px;
     }
-    .article-correct-title {
+    &__title {
       margin-bottom: 39px;
       font-size: 28px;
       font-weight: bold;
       line-height: 1.7;
     }
-    .article-correct-date {
+    &__date {
       @include flexbox(nowrap, flex-end);
     }
-    .article-correct-content {
+    &__content {
       margin: 60px 0;
       h1 {
         margin-bottom: 29px;
@@ -75,7 +73,7 @@
             width: 11px;
             height: 11px;
             background-color: #F5A623;
-            border-radius:  50%; 
+            border-radius:  50%;
           }
         }
       }

@@ -14,3 +14,30 @@
   font-size: 12px;
   font-weight: 500;
 }
+
+.c-toggle-horizontal {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    width: 25px;
+    height: 3px;
+    background-color: #1B224C;
+  }
+}
+
+.c-toggle-vertical {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    width: 25px;
+    height: 3px;
+    background-color: #1B224C;
+    transform: rotate(90deg);
+  }
+}

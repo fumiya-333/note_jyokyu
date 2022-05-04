@@ -1,24 +1,22 @@
-@import "../common/mixin.scss";
-
-.blog {
-  .blog-inner {
+.p-blog {
+  &__inner {
     max-width: 900px;
     padding: 58px 0 45px 0;
     margin: 0 auto;
-    .blog-contents {
+    &__contents {
       margin-bottom: 53px;
-      .blog-title {
+      &__title {
         text-align: center;
         padding-bottom: 60px;
         font-size: 32px;
         font-weight: bold;
       }
-      .blog-list {
+      &__list {
         padding-bottom: 61px;
         @include mq(sp-and-tab) {
           padding: 0 16px 60.2px 16px;
         }
-        .blog-row {
+        &__row {
           display: flex;
           min-height: 180px;
           cursor: pointer;
@@ -28,7 +26,7 @@
           &:not(:last-child) {
             margin-bottom: 61px;
           }
-          .blog-img-box {
+          &__bg-img {
             position: relative;
             min-width: 240px;
             max-width: 240px;
@@ -40,7 +38,7 @@
               height: 240px;
               margin-bottom: 20px;
             }
-            .blog-category {
+            &__category {
               position: absolute;
               min-width: 80px;
               height: 28px;
@@ -51,16 +49,16 @@
               @include flexbox(nowrap, center, center);
             }
           }
-          .blog-text-box {
+          &__wrapper {
             max-width: 609px;
             margin-left: 50.1px;
             @include mq(sp) {
               margin-left: 0;
             }
-            .blog-date {
+            &__date {
               padding-bottom: 20px;
             }
-            .blog-row-title {
+            &__title {
               padding-bottom: 18px;
               margin-top: -4px;
               a {
@@ -71,7 +69,7 @@
                 @include line-clump(3);
               }
             }
-            .blog-content {
+            &__content {
               line-height: 1.5;
             }
           }

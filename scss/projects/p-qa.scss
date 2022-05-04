@@ -1,14 +1,10 @@
-@import "../common/mixin.scss";
-
-$toggle-btn-top: 17px;
-
-.qa {
+.p-qa {
   padding-top: 75px;
   padding-bottom: 30.2px;
-  .qa-inner {
+  &__inner {
     max-width: 900.5px;
     margin: 0 auto;
-    .qa-title {
+    &__title {
       text-align: center;
       font-size: 36px;
       font-weight: bold;
@@ -16,19 +12,19 @@ $toggle-btn-top: 17px;
         font-size: 28px;
       }
     }
-    .qa-accordion {
+    &__accordion {
       margin-top: 30px;
       @include mq(sp-and-tab) {
         padding: 0 16px;
       }
-      .qa-accordion-row {
+      &__row {
         position: relative;
         border-top: 1px solid #1B224C;
         cursor: pointer;
         &:nth-last-of-type(2) {
           border-bottom: 1px solid #1B224C;
         }
-        .qa-accordion-row-text {
+        &__text {
           height: 74px;
           line-height: 74px;
           @include mq(sp) {
@@ -38,36 +34,11 @@ $toggle-btn-top: 17px;
             align-items: center;
           }
         }
-        .toggle-btn {
-          position: absolute;
-          top: $toggle-btn-top;
-          right: 20px;
-          width: 25px;
-          &::before {
-            content: "";
-            position: absolute;
-            top: $toggle-btn-top;
-            width: 25px;
-            height: 3px;
-            background-color: #1B224C;
-          }
-        }
-        .toggle-open {
-          &::after {
-            content: "";
-            position: absolute;
-            top: $toggle-btn-top;
-            width: 25px;
-            height: 3px;
-            background-color: #1B224C;
-            transform: rotate(90deg);
-          }
-        }
       }
-      .active {
+      &__row.active {
         height: 65.5px!important;
       }
-      .qa-accordion-row-open {
+      &__row-open {
         display: none;
         height: 65px;
         padding-top: 23px;

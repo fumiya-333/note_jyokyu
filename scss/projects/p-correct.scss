@@ -1,23 +1,21 @@
-@import "../common/mixin.scss";
-
-.correct {
+.p-correct {
   padding-top: 58px;
   padding-bottom: 46px;
-  .correct-inner {
+  &__inner {
     max-width: 900px;
     margin: 0 auto;
-    .correct-title {
+    &__title {
       text-align: center;
       padding-bottom: 47px;
       font-size: 32px;
       font-weight: bold;
     }
-    .correct-list {
+    &__list {
       margin-bottom: 70.1px;
       @include mq(sp-and-tab) {
         margin: 0 16px 70.1px 16px;
       }
-      .correct-row {
+      &__row {
         display: flex;
         padding-top: 23.5px;
         padding-bottom: 19.5px;
@@ -26,10 +24,10 @@
         &:last-child {
           border-bottom: 1px solid #D5D5D5;
         }
-        .correct-date {
+        &__date {
           min-width: 86px;
         }
-        .correct-row-title {
+        &__title {
           margin-left: 51px;
           a {
             max-width: 735px;

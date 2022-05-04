@@ -1,11 +1,9 @@
-@import "../common/mixin.scss";
-
-.post {
+.p-post {
   padding-top: 57.2px;
   @include mq(sp) {
     padding-top: 30.2px;
   }
-  .post-inner {
+  &__inner {
     max-width: 900.5px;
     padding-bottom: 119px;
     margin: 0 auto;
@@ -14,14 +12,14 @@
       @include flexbox(wrap);
       padding: 0 16px;
     }
-    .blog-inner {
+    &__blog {
       width: 430px;
       margin-right: 67px;
       @include mq(sp-and-tab) {
         width: 100%;
         margin-right: 0;
       }
-      .blog-title {
+      &__title {
         margin-bottom: 4px;
         font-size: 32px;
         font-weight: bold;
@@ -32,21 +30,21 @@
           font-size: 28px;
         }
       }
-      .blog-list {
+      &__list {
         @include mq(sp-and-tab) {
           padding-bottom: 60.2px;
         }
         &:not(:first-child) {
           padding-top: 32px;
         }
-        .blog-row {
+        &__row {
           display: flex;
           min-height: 110px;
           cursor: pointer;
           &:not(:last-child) {
             margin-bottom: 31px;
           }
-          .blog-img-box {
+          &__bg-img {
             position: relative;
             width: 150px;
             background-repeat: no-repeat;
@@ -55,7 +53,7 @@
               width: 240px;
               background-size: cover;
             }
-            .blog-category {
+            &__category {
               position: absolute;
               min-width: 78px;
               height: 23px;
@@ -67,7 +65,7 @@
               @include flexbox(nowrap, center, center);
             }
           }
-          .blog-text-box {
+          &__wrapper {
             width: 260px;
             margin-left: 20px;
             @include flexbox(nowrap, center, stretch, column);
@@ -77,7 +75,7 @@
             @include mq(sp) {
               margin-left: 10px;
             }
-            .blog-row-title {
+            &__title {
               a {
                 margin-top: -6px;
                 font-weight: bold;
@@ -86,7 +84,7 @@
                 @include line-clump(3);
               }
             }
-            .blog-date {
+            &__date {
               margin-top: auto;
               font-size: 12px;
             }
@@ -94,12 +92,12 @@
         }
       }
     }
-    .correct-inner {
+    &__correct {
       width: 430px;
       @include mq(sp-and-tab) {
         width: 100%;
       }
-      .correct-title {
+      &__title {
         margin-bottom: 36px;
         font-size: 32px;
         font-weight: bold;
@@ -108,18 +106,18 @@
           font-size: 28px;
         }
       }
-      .correct-list {
+      &__list {
         width: 402px;
         @include mq(sp) {
           width: auto;
         }
-        .correct-row {
+        &__row {
           padding-bottom: 24px;
-          .correct-date {
+          &__date {
             font-size: 12px;
             cursor: pointer;
           }
-          .correct-row-title {
+          &__title {
             min-height: 59px;
             margin-top: 16px;
             a {

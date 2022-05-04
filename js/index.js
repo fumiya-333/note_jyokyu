@@ -64,9 +64,9 @@ Index.prototype.responsiveView = function () {
 };
 
 Index.prototype.addEvent = function () {
-  $(".qa-accordion-row").on("click", function () {
+  $(".p-qa__inner__accordion__row").on("click", function () {
     $(this).toggleClass("active");
-    $(this).find(".toggle-btn").eq(0).toggleClass("toggle-open");
+    $(this).find(".c-toggle-horizontal").eq(0).toggleClass("c-toggle-vertical");
     $(this).next().fadeToggle(200);
   });
   $("#p-price__inner__btn-area__btn-price").on("click", function () {

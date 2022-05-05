@@ -11,8 +11,8 @@
           <li class="l-header__inner__left__nav__list__row"><a href="<?= Constants::BLOG_URL ?>"><?= Constants::BREADCLUMB_TITLE_BLOG ?></a></li>
           <li class="l-header__inner__left__nav__list__row"><a href="<?= Constants::PRICE_TABLE_URL ?>">コース・料金</a></li>
           <li class="l-header__inner__left__nav__list__row" id="l-header__inner__left__nav__list__row-last" style="display: none;">
-            <button class="btn-warning c-btn-doc-req l-header__inner__left__nav__list__row-btn-doc-req">資料請求</button>
-            <button class="btn-navy-blue c-btn-contact l-header__inner__left__nav__list__row-bubtntton-contact">お問い合わせ</button>
+            <button class="c-btn-doc-req l-header__inner__left__nav__list__row-btn-doc-req">資料請求</button>
+            <button class="c-btn-contact l-header__inner__left__nav__list__row-btn-contact">お問い合わせ</button>
           </li>
         </ul>
       </nav>
@@ -22,8 +22,8 @@
         <div class="l-header__inner__right__active-contact__active-time">平日08:00〜20:00</div>
         <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-link l-header__inner__right__active-contact__phone-link"><?= Constants::PHONE_NUMBER_VAL ?></a>
       </div>
-      <button class="btn-warning c-btn-doc-req l-header__inner__right-btn-doc-req">資料請求</button>
-      <button class="btn-navy-blue c-btn-contact l-header__inner__right-btn-contact">お問い合わせ</button>
+      <button class="c-btn-doc-req l-header__inner__right-btn-doc-req">資料請求</button>
+      <button class="c-btn-contact l-header__inner__right-btn-contact">お問い合わせ</button>
     </div>
     <div class="c-hamburger">
       <button class="c-hamburger-btn" id="btn-hamburger">

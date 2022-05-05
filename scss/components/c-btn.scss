@@ -1,37 +1,25 @@
-.btn-warning {
+.c-btn-doc-req {
+  font-size: 14px;
+  font-weight: bold;
   background-color: #F5A623;
   color: white;
-  font-weight: bold;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
-.btn-navy-blue {
+.c-btn-contact, .c-btn-send {
+  font-size: 14px;
+  font-weight: bold;
   background-color: #1B224C;
   color: white;
-  font-weight: bold;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
-.btn-border-white {
+.c-btn-price {
   background-color: transparent;
   color: white;
   border: 1px solid white;
   font-weight: bold;
   border-radius: 30px;
-}
-
-.c-btn-doc-req {
-  height: 50px;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-.c-btn-contact {
-  height: 50px;
-  font-size: 14px;
-  background-color: white;
-  color: #1B224C;
-  border-radius: 5px;
 }
 
 .c-hamburger {

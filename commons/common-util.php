@@ -98,9 +98,20 @@ class CommonUtil
      * @param [type] $file_path ファイルパス
      * @return ファイルパス（コンポーネントフォルダパス結合）
      */
-    public static function joinDirPathConponents($file_path)
+    public static function joinDirPathComponents($file_path)
     {
         return Constants::DIR_PATH_COMPONENTS . $file_path;
+    }
+
+    /**
+     * ファイルパスとプロジェクトフォルダパスを結合
+     *
+     * @param [type] $file_path ファイルパス
+     * @return ファイルパス（プロジェクトフォルダパス結合）
+     */
+    public static function joinDirPathProjects($file_path)
+    {
+        return Constants::DIR_PATH_PROJECTS . $file_path;
     }
 
     /**

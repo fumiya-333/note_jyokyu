@@ -1,7 +1,7 @@
 <?php
 $args = [
   "component_names" => [
-    CommonUtil::joinDirPathConponents(Constants::FILE_PATH_THANKS),
+    CommonUtil::joinDirPathProjects(Constants::FILE_PATH_THANKS),
   ]
 ];
 

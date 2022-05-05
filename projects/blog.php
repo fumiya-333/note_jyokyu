@@ -39,11 +39,11 @@
       </div>
     </div>
     <?php
-      echo ViewHelper::getPaginate(array(
-          'total' => $bl_helper->getWpQuery()->max_num_pages,
-          'mid_size' => 2,
-          'current' => ($paged ? $paged : 1),
-          'prev_next' => false,
+      get_template_part(CommonUtil::joinDirPathComponents(Constants::FILE_PATH_PAGINATE), null, array(
+        'total' => $bl_helper->getWpQuery()->max_num_pages,
+        'mid_size' => 2,
+        'current' => ($paged ? $paged : 1),
+        'prev_next' => false,
       ));
     ?>
   </div>

@@ -1,8 +1,8 @@
 <?php
 $args = [
   "component_names" => [
-    CommonUtil::joinDirPathConponents(Constants::FILE_PATH_ARTICLE),
-    CommonUtil::joinDirPathConponents(Constants::FILE_PATH_ARTICLE_PICKUP),
+    CommonUtil::joinDirPathProjects(Constants::FILE_PATH_ARTICLE),
+    CommonUtil::joinDirPathProjects(Constants::FILE_PATH_ARTICLE_PICKUP),
   ]
 ];
 

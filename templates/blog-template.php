@@ -4,7 +4,7 @@
     <div class="l-wrapper">
       <?= get_header(); ?>
       <main class="l-main">
-        <?= get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
+        <?= get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
         <section class="l-contents">
           <div class="l-contents__inner">
             <article class="p-article-wrapper">
@@ -18,8 +18,8 @@
           </div>
         </section>
         <?php
-          get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_DOC_REQ));
-          get_template_part(CommonUtil::joinDirPathConponents(Constants::FILE_PATH_PHONE_LINK));
+          get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_DOC_REQ));
+          get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_PHONE_LINK));
         ?>
       </main>
       <?php

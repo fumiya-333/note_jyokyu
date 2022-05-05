@@ -1,7 +1,7 @@
 <?php
 $args = [
   "component_names" => [
-    CommonUtil::joinDirPathConponents(Constants::FILE_PATH_CONTACT),
+    CommonUtil::joinDirPathProjects(Constants::FILE_PATH_CONTACT),
   ],
   "hero_fix_title" => "お問い合わせ・資料請求",
   "hero_fix_bg_img" => Constants::TEMP_DIR_IMG . "/cta.jpeg"

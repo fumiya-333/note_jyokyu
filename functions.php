@@ -5,7 +5,6 @@ remove_filter("the_content", "wpautop");
 require_once get_theme_file_path("commons/constants.php");
 require_once get_theme_file_path("commons/common-util.php");
 require_once get_theme_file_path("commons/bl-helper.php");
-require_once get_theme_file_path("commons/view-helper.php");
 
 function theme_setup()
 {

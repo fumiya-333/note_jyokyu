@@ -6,6 +6,8 @@ class Constants
 
     /** フォルダパス コンポーネント */
     const DIR_PATH_COMPONENTS = "/components";
+    /** フォルダパス プロジェクト */
+    const DIR_PATH_PROJECTS = "/projects";
     /** フォルダパス テンプレート */
     const DIR_PATH_TEMPLATES = "/templates";
     /** フォルダパス ライブラリ */
@@ -53,6 +55,8 @@ class Constants
     const FILE_PATH_CONTACT = "/contact";
     /** ファイルパス お問い合わせ完了 */
     const FILE_PATH_THANKS = "/thanks";
+    /** ファイルパス ページネーション */
+    const FILE_PATH_PAGINATE = "/paginate";
     /** ファイルパス インデックステンプレート */
     const FILE_PATH_INDEX_TEMPLATE = "/index-template";
     /** ファイルパス ページテンプレート */

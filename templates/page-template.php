@@ -1,7 +1,7 @@
 <html>
   <?= get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
   <body>
-    <div class="wrapper">
+    <div class="l-wrapper">
       <?= get_header(); ?>
       <main class="l-main">
         <?php

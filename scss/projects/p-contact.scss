@@ -10,52 +10,52 @@
     &__title {
       line-height: 1.7;
     }
-    .mw_wp_form {
+    &__form {
       margin-top: 48px;
-      .form-label-top {
+      &__label {
         margin-top: 20px;
       }
-      .form-text {
+      &__text {
         width: 100%;
         padding: 14px 20px 16px 20px;
         margin-top: 12px;
       }
-      .form-label-radio {
+      &__label-radio {
         margin-top: 24px;
         @include mq(sp) {
           line-height: 1.7;
         }
       }
-      .form-radios {
+      &__radios {
         margin-top: 15px;
-        .mwform-radio-field {
+        &__radio-field {
           display: block;
           margin-left: 0;
           &:not(:last-of-type) {
             margin-bottom: 8px;
           }
-          .form-radio {
+          &__radio {
             display: none;
           }
-          .mwform-radio-field-text {
+          &__radio-field-text {
             display: block!important;
             padding: 5px 39px;
           }
-          .form-radio:checked + .mwform-radio-field-text::after {
+          &__radio:checked + &__radio-field-text::after {
             opacity: 1;
           }
         }
       }
-      .form-label-contact {
+      &__label-contact {
         margin-top: 19px;
       }
-      .textarea-contact {
+      &__textarea {
         width: 100%;
         height: 241px;
         padding: 22px 23.2px;
         margin-top: 12px;
       }
-      .privacy-policy-box {
+      &__privacy-policy-agree-message {
         padding-left: 12rem;
         margin-top: 30.6px;
         @include mq(sp) {
@@ -66,7 +66,7 @@
           color: #F5A623;
         }
       }
-      .privacy-policy-agree-label {
+      &__privacy-policy-agree-checkbox-area {
         width: 100%;
         padding-left: 14.9rem;
         margin-top: 27px;
@@ -74,27 +74,26 @@
           text-align: center;
           padding-left: 30px;
         }
-        .privacy-policy-agree {
-          display: none;
-        }
-        .mwform-checkbox-field-text {
-          padding: 5px 35px;
-        }
-        .privacy-policy-agree:checked + .mwform-checkbox-field-text::after {
-          opacity: 1;
+        &__checkbox-field {
+          &__privacy-policy-agree-checkbox {
+            display: none;
+          }
+          &__checkbox-field-text {
+            padding: 5px 35px;
+          }
+          &__privacy-policy-agree-checkbox:checked + &__checkbox-field-text::after {
+            opacity: 1;
+          }
         }
       }
-      .error {
-        margin-top: 14px;
-      }
-      .btn-send-box {
+      &__btn-area {
         padding-left: 17.2rem;
         margin-top: 44px;
         @include mq(sp) {
           text-align: center;
           padding-left: 0;
         }
-        .btn-send {
+        &__btn-send {
           width: 200px;
           height: 50px;
           font-weight: bold;

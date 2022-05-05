@@ -1,34 +1,22 @@
-label, input ,textarea {
+.c-label, .c-textbox, .c-textarea {
   display: inline-block;
 }
 
-textarea {
-  resize: none;
-  border: 0.5px solid #1B224C;
-}
-
-input[type=text] {
+.c-textbox {
   font-size: 12px;
   border: 0.5px solid #1B224C;
 }
 
-input[type=submit], button {
-  padding: 0;
-  margin: 0;
-  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
+.c-textarea {
+  resize: none;
+  border: 0.5px solid #1B224C;
 }
 
-input[type=checkbox] + span {
-  cursor: pointer;
+.c-checkbox-field-text {
+  width: auto;
   display: inline-block;
   position: relative;
-  width: auto;
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;
@@ -57,17 +45,17 @@ input[type=checkbox] + span {
   }
 }
 
-input[type=radio] + span {
-  cursor: pointer;
+.c-radio-field-text {
+  width: auto;
   display: inline-block;
   position: relative;
-  width: auto;
+  cursor: pointer;
   &::before {
     content: "";
+    display: block;
     position: absolute;
     top: 50%;
     left: 0px;
-    display: block;
     width: 20px;
     height: 20px;
     margin-top: -9px;
@@ -77,10 +65,10 @@ input[type=radio] + span {
   }
   &::after {
     content: "";
+    display: block;
     position: absolute;
     top: 50%;
     left: 2.8px;
-    display: block;
     width: 14px;
     height: 14px;
     margin-top: -6px;
@@ -88,9 +76,4 @@ input[type=radio] + span {
     border-radius: 50%;
     opacity: 0;
   }
-}
-
-.input-error {
-  border: 1px solid red;
-  background-color: #ffd9e1;
 }

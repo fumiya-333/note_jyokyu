@@ -84,3 +84,11 @@ function dispPaginate() {
     });
   }
 }
+
+function dispInputError() {
+  if ($("form .error").length > 0) {
+    $("form .error").each(function (idx, el) {
+      $(el).prev().addClass("c-input-error");
+    });
+  }
+}

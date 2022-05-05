@@ -1,7 +1,7 @@
 <?php
   global $template;
 ?>
-<script><?= CommonUtil::getAllConstants(); ?></script>
+<script><?= CommonUtil::getAllJsConstants(); ?></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="<?= Constants::TEMP_DIR_JS ?>/jquery.js"></script>
 <?php if (is_category()) : ?>

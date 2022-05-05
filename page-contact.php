@@ -1,5 +1,4 @@
 <?php
-add_filter("mwform_error_message_mw-wp-form-" . Constants::FORM_ID_CONTACT, "error_message", 10, 3);
 $args = [
   "component_names" => [
     CommonUtil::joinDirPathConponents(Constants::FILE_PATH_CONTACT),

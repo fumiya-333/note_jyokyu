@@ -96,7 +96,7 @@ class Constants
     /** 入力エラー キー */
     const KEY_INPUT_ERROR = "input-error";
 
-    /** ブログ パンくずリスト */
+    /** ブログタイトル パンくずリスト */
     const BREADCLUMB_TITLE_BLOG = "ブログ";
 
     /** 会社名 名称 */

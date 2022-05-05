@@ -24,9 +24,9 @@ ArchiveCorrect.prototype.init = function () {
 // };
 
 ArchiveCorrect.prototype.addEvent = function () {
-  $(".correct-row").on("click", function () {
+  $(".p-correct__inner__list__row").on("click", function () {
     window.location.href = $(this)
-      .find(".correct-row-title > a")
+      .find(".p-correct__inner__list__row__title > a")
       .eq(0)
       .attr("href");
   });

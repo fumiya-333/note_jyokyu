@@ -13,6 +13,7 @@ function Archive() {}
 Archive.prototype.init = function () {
   // this.responsiveView();
   this.addEvent();
+  dispPaginate();
 };
 
 // Archive.prototype.responsiveView = function(){
@@ -24,11 +25,10 @@ Archive.prototype.init = function () {
 // };
 
 Archive.prototype.addEvent = function () {
-  $(".blog-row").on("click", function () {
+  $(".p-blog__inner__contents__list__row").on("click", function () {
     window.location.href = $(this)
-      .find(".blog-row-title > a")
+      .find(".p-blog__inner__contents__list__row__wrapper__title > a")
       .eq(0)
       .attr("href");
   });
-  dispPaginate();
 };

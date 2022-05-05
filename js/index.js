@@ -37,7 +37,7 @@ Index.prototype.responsiveView = function () {
       .eq(1)
       .html("日本人指導歴10年以上の経験豊富な講師陣");
 
-    $("#doc-req-title").html("お気軽にお問い合わせください");
+    $(".p-doc-req__inner__title").html("お気軽にお問い合わせください");
   } else {
     $(".p-toefl-study__inner__title").html(
       "TOEFL学習でこんな悩みありませんか？"
@@ -59,7 +59,7 @@ Index.prototype.responsiveView = function () {
       .eq(1)
       .html("日本人指導歴10年以上の<br>経験豊富な講師陣");
 
-    $("#doc-req-title").html("まずは無料で資料請求から");
+    $(".p-doc-req__inner__title").html("まずは無料で資料請求から");
   }
 };
 

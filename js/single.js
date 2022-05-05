@@ -23,9 +23,9 @@ Single.prototype.init = function () {
 // };
 
 Single.prototype.addEvent = function () {
-  $(".blog-pickup-row").on("click", function () {
+  $(".p-article-pickup__inner__list__row").on("click", function () {
     window.location.href = $(this)
-      .find(".blog-pickup-title > a")
+      .find(".p-article-pickup__inner__list__row__wrapper__title > a")
       .eq(0)
       .attr("href");
   });

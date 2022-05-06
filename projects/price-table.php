@@ -20,7 +20,7 @@
           </div>
           <div class="p-price-table__inner__wrapper-bottom__contents__content__body">
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__price">
-              <?php the_field("price_1", Constants::PAGE_ID_PRICE_TABLE); ?>
+              <?= the_field("price_1", Constants::PAGE_ID_PRICE_TABLE); ?>
             </div>
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__monthly">
               *月額（税抜価格）
@@ -38,7 +38,7 @@
           </div>
           <div class="p-price-table__inner__wrapper-bottom__contents__content__body">
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__price">
-              <?php the_field("price_2", Constants::PAGE_ID_PRICE_TABLE); ?>
+              <?= the_field("price_2", Constants::PAGE_ID_PRICE_TABLE); ?>
             </div>
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__monthly">
               *月額（税抜価格）
@@ -58,7 +58,7 @@
           </div>
           <div class="p-price-table__inner__wrapper-bottom__contents__content__body">
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__price p-price-table__inner__wrapper-bottom__contents__content__body__recommendation">
-              <?php the_field("price_3", Constants::PAGE_ID_PRICE_TABLE); ?>
+              <?= the_field("price_3", Constants::PAGE_ID_PRICE_TABLE); ?>
             </div>
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__monthly">
               *月額（税抜価格）
@@ -78,7 +78,7 @@
           </div>
           <div class="p-price-table__inner__wrapper-bottom__contents__content__body">
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__price">
-              <?php the_field("price_4", Constants::PAGE_ID_PRICE_TABLE); ?>
+              <?= the_field("price_4", Constants::PAGE_ID_PRICE_TABLE); ?>
             </div>
             <div class="p-price-table__inner__wrapper-bottom__contents__content__body__monthly">
               *月額（税抜価格）

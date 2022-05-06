@@ -24,4 +24,4 @@
     <div class="c-copy-right">© 2020 Engress. </div>
   </div>
 </footer>
-<?php wp_footer(); ?>
+<?= wp_footer(); ?>

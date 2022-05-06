@@ -63,7 +63,6 @@
     height: 65px;
   }
   &__inner {
-    @include bg-img(url("../img/plan.jpeg"), no-repeat, center, cover);
     &__title {
       height: 100%;
       font-size: 32px;

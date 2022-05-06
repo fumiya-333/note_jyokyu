@@ -1,7 +1,6 @@
 <?php
-global $wp_rewrite;
 $paginate_base = get_pagenum_link(1);
-if (strpos($paginate_base, '?') || !$wp_rewrite->using_permalinks()) {
+if (strpos($paginate_base, '?') || !$GLOBALS["wp_rewrite"]->using_permalinks()) {
     $paginate_format = '';
     $paginate_base = add_query_arg('paged', '%#%');
 } else {
@@ -14,8 +13,8 @@ $args["base"] = $paginate_base;
 $args["format"] = $paginate_format;
 ?>
 
-<div class="c-pagination">
-  <div class="c-pnavi">
+<div class="l-pagination">
+  <div class="l-pnavi">
     <?= paginate_links($args) ?>
   </div>
 </div>

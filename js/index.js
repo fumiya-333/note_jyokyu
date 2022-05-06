@@ -72,13 +72,13 @@ Index.prototype.addEvent = function () {
   $("#p-price__inner__btn-area__btn-price").on("click", function () {
     window.location.href = Constants.PRICE_TABLE_URL;
   });
-  $(".blog-row").on("click", function () {
+  $(".p-post__inner__blog__list__row").on("click", function () {
     window.location.href = $(this)
-      .find(".blog-row-title > a")
+      .find(".p-post__inner__blog__list__row__wrapper__title > a")
       .eq(0)
       .attr("href");
   });
-  $(".correct-date").on("click", function () {
+  $(".p-post__inner__correct__list__row__date").on("click", function () {
     window.location.href = $(this).next().find("a").eq(0).attr("href");
   });
 };

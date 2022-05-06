@@ -33,29 +33,19 @@ class BlHelper
     /**
      * 投稿一覧取得処理実行
      *
-     * @param string $args 検索条件
+     * @param string $sch_args 検索条件
      * @param callable $callback コールバック
      * @return void
      */
-    public function execGetWpQuery(array $args, callable $callback)
+    public function execGetWpQuery(array $sch_args, callable $callback)
     {
-        $result = "";
-        $this->wp_query = new WP_Query($args);
+        $this->wp_query = new WP_Query($sch_args);
         if ($this->wp_query->have_posts()) {
             while ($this->wp_query->have_posts()) {
                 $this->wp_query->the_post();
-                $callback(
-                    $result,
-                    get_the_category(),
-                    get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png",
-                    get_the_permalink(),
-                    get_the_title(),
-                    get_the_time(get_option('date_format')),
-                    get_the_excerpt()
-                );
+                $callback($sch_args);
             }
         }
         wp_reset_postdata();
-        return $result;
     }
 }

@@ -137,6 +137,16 @@ class CommonUtil
     }
 
     /**
+     * サムネイルURLを取得
+     *
+     * @return サムネイルURL
+     */
+    public static function getPostThumbnailUrl()
+    {
+        return get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png";
+    }
+
+    /**
      * パンくずリスト 投稿要素削除・ブログ要素追加
      *
      * @param [type] $breadcrumb_trail パンくずリスト

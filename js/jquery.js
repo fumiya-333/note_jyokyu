@@ -39,14 +39,14 @@ function getWindowType() {
 function dispHamburger() {
   if ($("#btn-hamburger, #btn-hamburger-line").hasClass("open")) {
     $("#nav").fadeOut();
-    $(".main").find("a,button,input").css("pointer-events", "auto");
-    $(".main").off("click");
+    $(".l-main").find("a,button,input").css("pointer-events", "auto");
+    $(".l-main").off("click");
     $("#l-header__inner__left__nav__list__row-last").css("display", "none");
     $("body").css("overflow", "visible");
   } else {
     $("#nav").fadeIn();
-    $(".main").find("a,button,input").css("pointer-events", "none");
-    $(".main").on("click", dispHamburger);
+    $(".l-main").find("a,button,input").css("pointer-events", "none");
+    $(".l-main").on("click", dispHamburger);
     if (getWindowType() === WINDOW_TYPE_SP) {
       $("#l-header__inner__left__nav__list__row-last").css("display", "block");
     }

@@ -19,7 +19,7 @@ function theme_setup()
 
 function variable_setup()
 {
-    $GLOBALS["bl_helper"] = BlHelper::getInstance();
+    $GLOBALS["BL_HELPER"] = BlHelper::getInstance();
 
     /**
      * ヒアドキュメント内関数展開用変数
@@ -27,7 +27,7 @@ function variable_setup()
      * @param $expression
      * @return $expression
      */
-    $GLOBALS["call_hear_doc_deploy_func"] = function ($expression) {
+    $GLOBALS["CALL_HEAR_DOC_DEPLOY_FUNC"] = function ($expression) {
         return $expression;
     };
 }

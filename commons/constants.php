@@ -4,8 +4,8 @@ class Constants
     /** タイトル */
     const TITLE = "Engress";
 
-    /** フォルダパス コンポーネント */
-    const DIR_PATH_COMPONENTS = "/components";
+    /** フォルダパス レイアウト */
+    const DIR_PATH_LAYOUTS = "/layouts";
     /** フォルダパス プロジェクト */
     const DIR_PATH_PROJECTS = "/projects";
     /** フォルダパス テンプレート */

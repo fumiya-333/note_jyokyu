@@ -93,14 +93,14 @@ class CommonUtil
     }
 
     /**
-     * ファイルパスとコンポーネントフォルダパスを結合
+     * ファイルパスとレイアウトフォルダパスを結合
      *
      * @param [type] $file_path ファイルパス
-     * @return ファイルパス（コンポーネントフォルダパス結合）
+     * @return ファイルパス（レイアウトフォルダパス結合）
      */
-    public static function joinDirPathComponents($file_path)
+    public static function joinDirPathLayouts($file_path)
     {
-        return Constants::DIR_PATH_COMPONENTS . $file_path;
+        return Constants::DIR_PATH_LAYOUTS . $file_path;
     }
 
     /**

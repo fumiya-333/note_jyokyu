@@ -127,6 +127,8 @@ class Constants
 
     /** 電話番号 */
     const PHONE_NUMBER_VAL = "0123-456-7890";
+    /** 営業時間 */
+    const ACTIVE_TIME = "平日08:00~20:00";
 
     /** 料金表ページID */
     const PAGE_ID_PRICE_TABLE = 2149;

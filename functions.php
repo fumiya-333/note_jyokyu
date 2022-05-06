@@ -20,6 +20,8 @@ function theme_setup()
 function variable_setup()
 {
     $GLOBALS["BL_HELPER"] = BlHelper::getInstance();
+    $GLOBALS["WP_PAGED"] = get_query_var("paged") ? get_query_var("paged") : 1;
+    $GLOBALS["WP_CATEGORY"] = is_category() ? get_category(get_query_var("cat")) : "";
 
     /**
      * ヒアドキュメント内関数展開用変数

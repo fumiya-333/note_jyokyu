@@ -6,7 +6,7 @@ const WINDOW_SIZE_SP = 768;
 const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function () {
-  $("#btn-hamburger").on("click", dispHamburger);
+  $(".c-hamburger-btn").on("click", dispHamburger);
 
   $(".c-btn-doc-req, .c-btn-contact").on("click", function () {
     window.location.href = Constants.CONTACT_URL;
@@ -37,7 +37,7 @@ function getWindowType() {
 }
 
 function dispHamburger() {
-  if ($("#btn-hamburger, #btn-hamburger-line").hasClass("open")) {
+  if ($(".c-hamburger-btn, .c-hamburger-btn-line").hasClass("open")) {
     $("#nav").fadeOut();
     $(".l-main").find("a,button,input").css("pointer-events", "auto");
     $(".l-main").off("click");
@@ -61,7 +61,7 @@ function dispHamburger() {
     }
     $("body").css("overflow", "hidden");
   }
-  $("#btn-hamburger, #btn-hamburger-line").toggleClass("open");
+  $(".c-hamburger-btn, .c-hamburger-btn-line").toggleClass("open");
 }
 
 function dispPaginate() {

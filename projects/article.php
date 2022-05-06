@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="p-article__inner__img">
-      <img src="<?= get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png" ?>" width="100%"/>
+      <img src="<?= CommonUtil::getPostThumbnailUrl() ?>" width="100%"/>
     </div>
     <div class="p-article__inner__content">
       <?= get_the_content() ?>

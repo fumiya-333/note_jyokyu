@@ -26,8 +26,8 @@
       <button class="c-btn-contact l-header__inner__right-btn-contact">お問い合わせ</button>
     </div>
     <div class="c-hamburger">
-      <button class="c-hamburger-btn" id="btn-hamburger">
-        <span class="c-hamburger-btn-line" id="btn-hamburger-line"></span>
+      <button class="c-hamburger-btn">
+        <span class="c-hamburger-btn-line"></span>
       </button>
     </div>
   </div>

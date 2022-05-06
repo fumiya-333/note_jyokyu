@@ -1,22 +1,18 @@
-<?php
-  $paged = get_query_var("paged") ? get_query_var("paged") : 1;
-  $cat = is_category() ? get_category(get_query_var("cat")) : "";
-?>
 <section class="p-blog">
   <div class="p-blog__inner">
     <div class="p-blog__inner__contents">
-      <div class="p-blog__inner__contents__title"><?= !empty($cat) ? $cat->cat_name : "新着" ?>一覧</div>
+      <div class="p-blog__inner__contents__title"><?= !empty($GLOBALS["WP_CATEGORY"]) ? $GLOBALS["WP_CATEGORY"]->cat_name : "新着" ?>一覧</div>
       <div class="p-blog__inner__contents__list">
         <?php
           $GLOBALS["BL_HELPER"]
           ->execGetWpQuery(
               array(
-                "paged" => $paged,
+                "paged" => $GLOBALS["WP_PAGED"],
                 "posts_per_page" => 10,
                 "orderby" => "date",
                 "order" => "DESC",
                 "post_type" => "post",
-                "cat" => !empty($cat) ? $cat->cat_ID : "新着",
+                "cat" => !empty($GLOBALS["WP_CATEGORY"]) ? $GLOBALS["WP_CATEGORY"]->cat_ID : "新着",
               ),
               function (array $sch_args) {
                   echo <<< RESULT
@@ -48,7 +44,7 @@
       get_template_part(CommonUtil::joinDirPathLayouts(Constants::FILE_PATH_PAGINATE), null, array(
         "total" => $GLOBALS["BL_HELPER"]->getWpQuery()->max_num_pages,
         "mid_size" => 2,
-        "current" => ($paged ? $paged : 1),
+        "current" => ($GLOBALS["WP_PAGED"] ? $GLOBALS["WP_PAGED"] : 1),
         "prev_next" => false,
       ));
     ?>

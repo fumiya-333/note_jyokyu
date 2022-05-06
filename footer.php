@@ -14,7 +14,7 @@
       </div>
       <div class="l-footer-top__inner__right__number-box">
         <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-link l-footer-top__inner__right__number-box__phone-link"><?= Constants::PHONE_NUMBER_VAL ?></a>
-        <div class="l-footer-top__inner__right__number-box__active-time">平日08:00~20:00</div>
+        <div class="l-footer-top__inner__right__number-box__active-time"><?= Constants::ACTIVE_TIME ?></div>
       </div>
     </div>
   </div>

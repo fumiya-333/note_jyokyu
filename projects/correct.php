@@ -1,6 +1,3 @@
-<?php
-  $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-?>
 <section class="p-correct">
   <div class="p-correct__inner">
     <div class="p-correct__inner__title">お知らせ一覧</div>
@@ -33,7 +30,7 @@ RESULT;
       get_template_part(CommonUtil::joinDirPathLayouts(Constants::FILE_PATH_PAGINATE), null, array(
         "total" => $GLOBALS["BL_HELPER"]->getWpQuery()->max_num_pages,
         "mid_size" => 2,
-        "current" => ($paged ? $paged : 1),
+        "current" => ($GLOBALS["WP_PAGED"] ? $GLOBALS["WP_PAGED"] : 1),
         "prev_next" => false,
       ));
     ?>

@@ -7,7 +7,7 @@
       <?= Constants::PHONE_NUMBER_VAL ?>
     </a>
     <div class="p-phone-link__inner__active-time">
-      <span>平日&nbsp;&nbsp;08:00~20:00</span>
+      <span><?= Constants::ACTIVE_TIME ?></span>
     </div>
   </div>
 </section>

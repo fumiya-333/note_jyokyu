@@ -3,15 +3,15 @@
     <div class="p-correct__inner__title">お知らせ一覧</div>
     <div class="p-correct__inner__list">
       <?php
-        $GLOBALS["BL_HELPER"]
-        ->execGetWpQuery(
+        $wp_query = $GLOBALS["BL_HELPER"]->
+        execWpQuery(
             array(
               "posts_per_page" => 10,
               "orderby" => "date",
               "order" => "DESC",
               "post_type" => "correct",
             ),
-            function (array $sch_args) {
+            function () {
                 echo <<< RESULT
                   <article class="p-correct__inner__list__row">
                     <div class="p-correct__inner__list__row__date">
@@ -27,8 +27,8 @@ RESULT;
       ?>
     </div>
     <?php
-      get_template_part(CommonUtil::joinDirPathLayouts(Constants::FILE_PATH_PAGINATE), null, array(
-        "total" => $GLOBALS["BL_HELPER"]->getWpQuery()->max_num_pages,
+      get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_PAGINATE), null, array(
+        "total" => $wp_query->max_num_pages,
         "mid_size" => 2,
         "current" => ($GLOBALS["WP_PAGED"] ? $GLOBALS["WP_PAGED"] : 1),
         "prev_next" => false,

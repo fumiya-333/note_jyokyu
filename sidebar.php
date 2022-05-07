@@ -3,7 +3,7 @@
   <div class="l-sidebar__connection-article-list">
     <?php
       $GLOBALS["BL_HELPER"]
-      ->execGetWpQuery(
+      ->execWpQuery(
           array(
             "posts_per_page" => 3,
             "orderby" => "date",
@@ -11,7 +11,7 @@
             "post_type" => "post",
             "cat" => get_the_category()[0]->cat_ID
           ),
-          function (array $sch_args) {
+          function () {
               echo <<< RESULT
                 <article class="l-sidebar__connection-article-list__row">
                   <div class="l-sidebar__connection-article-list__row__img">

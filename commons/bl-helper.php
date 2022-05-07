@@ -2,10 +2,8 @@
 class BlHelper
 {
 
-  /** インスタンス */
+    /** インスタンス */
     private static $instance = false;
-    /** クエリオブジェクト */
-    private $wp_query;
 
     /**
      * インスタンス取得
@@ -21,31 +19,23 @@ class BlHelper
     }
 
     /**
-     * クエリオブジェクト取得
-     *
-     * @return void
-     */
-    public function getWpQuery()
-    {
-        return $this->wp_query;
-    }
-
-    /**
      * 投稿一覧取得処理実行
      *
-     * @param string $sch_args 検索条件
+     * @param string $args 検索条件
      * @param callable $callback コールバック
      * @return void
      */
-    public function execGetWpQuery(array $sch_args, callable $callback)
+    public function execWpQuery(array $args, callable $callback)
     {
-        $this->wp_query = new WP_Query($sch_args);
-        if ($this->wp_query->have_posts()) {
-            while ($this->wp_query->have_posts()) {
-                $this->wp_query->the_post();
-                $callback($sch_args);
+        $wp_query = new WP_Query($args);
+        if ($wp_query->have_posts()) {
+            while ($wp_query->have_posts()) {
+                $wp_query->the_post();
+                $callback();
             }
         }
         wp_reset_postdata();
+
+        return $wp_query;
     }
 }

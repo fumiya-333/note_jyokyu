@@ -4,8 +4,8 @@
       <div class="p-blog__inner__contents__title"><?= !empty($GLOBALS["WP_CATEGORY"]) ? $GLOBALS["WP_CATEGORY"]->cat_name : "新着" ?>一覧</div>
       <div class="p-blog__inner__contents__list">
         <?php
-          $GLOBALS["BL_HELPER"]
-          ->execGetWpQuery(
+          $wp_query = $GLOBALS["BL_HELPER"]
+          ->execWpQuery(
               array(
                 "paged" => $GLOBALS["WP_PAGED"],
                 "posts_per_page" => 10,
@@ -14,7 +14,7 @@
                 "post_type" => "post",
                 "cat" => !empty($GLOBALS["WP_CATEGORY"]) ? $GLOBALS["WP_CATEGORY"]->cat_ID : "新着",
               ),
-              function (array $sch_args) {
+              function () {
                   echo <<< RESULT
                     <article class="p-blog__inner__contents__list__row">
                       <div class="p-blog__inner__contents__list__row__bg-img" style="background-image: url({$GLOBALS["CALL_HEAR_DOC_DEPLOY_FUNC"](CommonUtil::getPostThumbnailUrl())});">
@@ -41,8 +41,8 @@
       </div>
     </div>
     <?php
-      get_template_part(CommonUtil::joinDirPathLayouts(Constants::FILE_PATH_PAGINATE), null, array(
-        "total" => $GLOBALS["BL_HELPER"]->getWpQuery()->max_num_pages,
+      get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_PAGINATE), null, array(
+        "total" => $wp_query->max_num_pages,
         "mid_size" => 2,
         "current" => ($GLOBALS["WP_PAGED"] ? $GLOBALS["WP_PAGED"] : 1),
         "prev_next" => false,

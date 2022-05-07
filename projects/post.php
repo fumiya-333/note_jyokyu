@@ -7,14 +7,14 @@
       <div class="p-post__inner__blog__list">
         <?php
           $GLOBALS["BL_HELPER"]
-          ->execGetWpQuery(
+          ->execWpQuery(
               array(
                 "posts_per_page" => 3,
                 "orderby" => "date",
                 "order" => "DESC",
                 "post_type" => "post"
               ),
-              function (array $sch_args) {
+              function () {
                   echo <<< RESULT
                     <article class="p-post__inner__blog__list__row">
                       <div class="p-post__inner__blog__list__row__bg-img" style="background-image: url({$GLOBALS["CALL_HEAR_DOC_DEPLOY_FUNC"](CommonUtil::getPostThumbnailUrl())});">
@@ -41,14 +41,14 @@ RESULT;
       <div class="p-post__inner__correct__list">
         <?php
           $GLOBALS["BL_HELPER"]
-          ->execGetWpQuery(
+          ->execWpQuery(
               array(
                 "posts_per_page" => 3,
                 "orderby" => "date",
                 "order" => "DESC",
                 "post_type" => "correct",
               ),
-              function (array $sch_args) {
+              function () {
                   echo <<< RESULT
                     <article class="p-post__inner__correct__list__row">
                       <div class="p-post__inner__correct__list__row__date">{$GLOBALS["CALL_HEAR_DOC_DEPLOY_FUNC"](get_the_time(get_option("date_format")))}</div>

@@ -4,7 +4,7 @@
     <div class="p-article-pickup__inner__list">
       <?php
         $GLOBALS["BL_HELPER"]
-        ->execGetWpQuery(
+        ->execWpQuery(
             array(
               "posts_per_page" => 3,
               "orderby" => "date",
@@ -12,7 +12,7 @@
               "post_type" => "post",
               "tag" => "pickup"
             ),
-            function (array $sch_args) {
+            function () {
                 echo <<< RESULT
                   <article class="p-article-pickup__inner__list__row">
                     <div class="p-article-pickup__inner__list__row__bg-img" style="background-image: url({$GLOBALS["CALL_HEAR_DOC_DEPLOY_FUNC"](CommonUtil::getPostThumbnailUrl())});">

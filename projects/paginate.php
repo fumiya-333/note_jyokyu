@@ -13,8 +13,8 @@ $args["base"] = $paginate_base;
 $args["format"] = $paginate_format;
 ?>
 
-<div class="l-pagination">
-  <div class="l-pnavi">
+<div class="p-pagination">
+  <div class="p-pnavi">
     <?= paginate_links($args) ?>
   </div>
 </div>

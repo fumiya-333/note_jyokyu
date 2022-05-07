@@ -3,24 +3,13 @@ function load() {
   single.init();
 }
 
-function resize() {
-  // const single = new Single();
-  // single.responsiveView();
-}
+function resize() {}
 
 function Single() {}
 
 Single.prototype.init = function () {
-  // this.responsiveView();
   this.addEvent();
 };
-
-// Single.prototype.responsiveView = function(){
-//   if(getWindowType() === WINDOW_TYPE_SP) {
-
-//   }else{
-//   }
-// };
 
 Single.prototype.addEvent = function () {
   $(".p-article-pickup__inner__list__row").on("click", function () {

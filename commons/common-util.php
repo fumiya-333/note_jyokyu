@@ -57,4 +57,24 @@ class CommonUtil
     {
         return get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png";
     }
+
+    /**
+     * 選択しているカテゴリを取得
+     *
+     * @return カテゴリ
+     */
+    public static function getCurrentCategory()
+    {
+        return is_category() ? get_category(get_query_var("cat")) : "";
+    }
+
+    /**
+     * ページ番号を取得
+     *
+     * @return ページ番号
+     */
+    public static function getQueryPaged()
+    {
+        return get_query_var("paged") ? get_query_var("paged") : 1;
+    }
 }

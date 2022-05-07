@@ -6,6 +6,7 @@
         $wp_query = $GLOBALS["BL_HELPER"]->
         execWpQuery(
             array(
+              "paged" => CommonUtil::getQueryPaged(),
               "posts_per_page" => 10,
               "orderby" => "date",
               "order" => "DESC",
@@ -30,7 +31,7 @@ RESULT;
       get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_PAGINATE), null, array(
         "total" => $wp_query->max_num_pages,
         "mid_size" => 2,
-        "current" => ($GLOBALS["WP_PAGED"] ? $GLOBALS["WP_PAGED"] : 1),
+        "current" => (CommonUtil::getQueryPaged() ? CommonUtil::getQueryPaged() : 1),
         "prev_next" => false,
       ));
     ?>

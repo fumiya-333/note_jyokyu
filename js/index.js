@@ -16,7 +16,7 @@ Index.prototype.init = function () {
 };
 
 Index.prototype.responsiveView = function () {
-  if (getWindowType() === WINDOW_TYPE_SP) {
+  if (getWindowType() === this.WINDOW_TYPE_SP) {
     $(".p-toefl-study__inner__title").html(
       "TOEFL学習で<br>こんな悩みありませんか？"
     );

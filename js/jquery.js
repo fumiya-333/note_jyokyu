@@ -6,12 +6,7 @@ const WINDOW_SIZE_SP = 768;
 const WINDOW_SIZE_TAB = 1025;
 
 window.onload = function () {
-  $(".c-hamburger-btn").on("click", dispHamburger);
-
-  $(".c-btn-doc-req, .c-btn-contact").on("click", function () {
-    window.location.href = Constants.CONTACT_URL;
-  });
-
+  init();
   if (typeof load == "function") {
     load();
   }
@@ -22,6 +17,14 @@ $(window).on("resize", function () {
     resize();
   }
 });
+
+function init() {
+  $(".c-hamburger-btn").on("click", dispHamburger);
+
+  $(".c-btn-doc-req, .c-btn-contact").on("click", function () {
+    window.location.href = Constants.CONTACT_URL;
+  });
+}
 
 function getWindowType() {
   if ($(window).outerWidth() < WINDOW_SIZE_SP) {

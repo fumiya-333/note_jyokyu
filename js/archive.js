@@ -3,26 +3,14 @@ function load() {
   archive.init();
 }
 
-function resize() {
-  // const archive = new Archive();
-  // archive.responsiveView();
-}
+function resize() {}
 
 function Archive() {}
 
 Archive.prototype.init = function () {
-  // this.responsiveView();
   this.addEvent();
   dispPaginate();
 };
-
-// Archive.prototype.responsiveView = function(){
-//   if(getWindowType() === WINDOW_TYPE_SP) {
-
-//   }else{
-
-//   }
-// };
 
 Archive.prototype.addEvent = function () {
   $(".p-blog__inner__contents__list__row").on("click", function () {

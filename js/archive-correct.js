@@ -3,25 +3,14 @@ function load() {
   archiveCorrect.init();
 }
 
-function resize() {
-  // const archiveCorrect = new ArchiveCorrect();
-  // archiveCorrect.responsiveView();
-}
+function resize() {}
 
 function ArchiveCorrect() {}
 
 ArchiveCorrect.prototype.init = function () {
-  // this.responsiveView();
   this.addEvent();
+  dispPaginate();
 };
-
-// ArchiveCorrect.prototype.responsiveView = function(){
-//   if(getWindowType() === WINDOW_TYPE_SP) {
-
-//   }else{
-
-//   }
-// };
 
 ArchiveCorrect.prototype.addEvent = function () {
   $(".p-correct__inner__list__row").on("click", function () {
@@ -30,5 +19,4 @@ ArchiveCorrect.prototype.addEvent = function () {
       .eq(0)
       .attr("href");
   });
-  dispPaginate();
 };

@@ -1,4 +1,4 @@
-<section class="p-blog">
+<section class="c-block-center p-blog">
   <div class="p-blog__inner">
     <div class="p-blog__inner__contents">
       <div class="p-blog__inner__contents__title"><?= !empty(CommonUtil::getCurrentCategory()) ? CommonUtil::getCurrentCategory()->cat_name : "新着" ?>一覧</div>

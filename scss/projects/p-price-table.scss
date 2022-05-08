@@ -2,10 +2,8 @@ $toggle-btn-top: 50%;
 
 .p-price-table {
   &__inner {
-    max-width: 900px;
     padding-top: 58px;
     padding-bottom: 61.6px;
-    margin: 0 auto;
     @include mq(sp) {
       padding-left: 16px;
       padding-right: 16px;

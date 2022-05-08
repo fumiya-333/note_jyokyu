@@ -1,8 +1,6 @@
 .p-article-correct {
   &__inner {
-    max-width: 900px;
     padding-top: 51px;
-    margin: 0 auto;
     @include mq(sp-and-tab) {
       margin: 0 16px;
     }

@@ -1,4 +1,4 @@
-<section class="p-use-flow">
+<section class="c-block-center p-use-flow">
   <div class="p-use-flow__inner">
     <div class="p-use-flow__inner__title">ご利用の流れ</div>
     <div class="p-use-flow__inner__list">

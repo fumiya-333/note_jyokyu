@@ -1,4 +1,4 @@
-<section class="p-correct">
+<section class="c-block-center p-correct">
   <div class="p-correct__inner">
     <div class="p-correct__inner__title">お知らせ一覧</div>
     <div class="p-correct__inner__list">

@@ -1,4 +1,4 @@
-<section class="p-price-table">
+<section class="c-block-center p-price-table">
   <div class="p-price-table__inner">
     <div class="p-price-table__inner__wrapper-top">
       <div class="p-price-table__inner__wrapper-top__title">料金体系</div>

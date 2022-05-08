@@ -1,6 +1,6 @@
 <section class="p-toefl-success-stories">
   <div class="p-toefl-success-stories__inner">
-    <div class="p-toefl-success-stories__inner__title">TOEFL成功事例</div>
+    <div class="c-block-center p-toefl-success-stories__inner__title">TOEFL成功事例</div>
     <div class="p-toefl-success-stories__inner__contents">
       <div class="p-toefl-success-stories__inner__contents__content">
         <div class="p-toefl-success-stories__inner__contents__content__message">

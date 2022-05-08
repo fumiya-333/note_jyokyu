@@ -5,7 +5,7 @@
       <?= get_header(); ?>
       <main class="l-main">
         <?= get_template_part(CommonUtil::joinDirPathProjects(Constants::FILE_PATH_BREADCRUMBS), null, $args); ?>
-        <section class="l-contents">
+        <section class="c-block-center l-contents">
           <div class="l-contents__inner">
             <article class="p-article-wrapper">
               <?php

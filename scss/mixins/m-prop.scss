@@ -1,5 +1,7 @@
-@mixin bg-img($bg, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: cover) {
-  background: $bg;
+@mixin bg-img($bg: null, $bg-repeat: no-repeat, $bg-position: 0% 0%, $bg-size: cover) {
+  @if bg != null {
+    background: $bg;
+  }
   background-repeat: $bg-repeat;
   background-position: $bg-position;
   background-size: $bg-size;

@@ -78,7 +78,9 @@ function dispPaginate() {
       }
 
       if (idx >= $(".page-numbers").length - 1) {
-        if ($(".pnavi").children(".page-numbers").hasClass("dots")) {
+        if (
+          $(".p-pagination .p-pnavi").children(".page-numbers").hasClass("dots")
+        ) {
           return true;
         }
       }

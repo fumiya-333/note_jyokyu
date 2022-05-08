@@ -63,6 +63,7 @@
     height: 65px;
   }
   &__inner {
+    @include bg-img;
     &__title {
       height: 100%;
       font-size: 32px;

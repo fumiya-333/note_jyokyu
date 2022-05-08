@@ -17,6 +17,9 @@
     &__left {
       padding-left: 23px;
       padding-top: 13px;
+      @include mq(sp){
+        padding-top: 0;
+      }
       ul {
         li {
           position: relative;

@@ -11,12 +11,12 @@
           </div>
         </div>
         <div class="p-toefl-strong__inner__content__row__right p-toefl-strong__inner__content__row__margin-left">
-          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature01.jpg" alt="feature01">
+          <img src="<?= Constants::TMP_DIR_URI_IMG ?>/feature01.jpg" alt="feature01">
         </div>
       </div>
       <div class="p-toefl-strong__inner__content__row">
         <div class="p-toefl-strong__inner__content__row__right">
-          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature02.jpg" alt="feature02">
+          <img src="<?= Constants::TMP_DIR_URI_IMG ?>/feature02.jpg" alt="feature02">
         </div>
         <div class="p-toefl-strong__inner__content__row__left p-toefl-strong__inner__content__row__margin-left">
           <div class="c-tip-yellow p-toefl-strong__inner__content__row__left__tip-lol">特長 ２</div>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="p-toefl-strong__inner__content__row__right p-toefl-strong__inner__content__row__margin-left">
-          <img src="<?= Constants::TEMP_DIR_IMG ?>/feature03.jpg" alt="feature03">
+          <img src="<?= Constants::TMP_DIR_URI_IMG ?>/feature03.jpg" alt="feature03">
         </div>
       </div>
     </div>

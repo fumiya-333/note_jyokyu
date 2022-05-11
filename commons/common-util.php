@@ -55,7 +55,7 @@ class CommonUtil
      */
     public static function getPostThumbnailUrl()
     {
-        return get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TEMP_DIR_IMG . "/noimage.png";
+        return get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Constants::TMP_DIR_URI_IMG . "/noimage.png";
     }
 
     /**

@@ -10,7 +10,7 @@
     </div>
     <div class="l-footer-top__inner__right">
       <div class="l-footer-top__inner__right__img-box">
-        <img src="<?= Constants::TEMP_DIR_IMG ?>/logo.jpg">
+        <img src="<?= Constants::TMP_DIR_URI_IMG ?>/logo.jpg">
       </div>
       <div class="l-footer-top__inner__right__number-box">
         <a href="tel:<?= Constants::PHONE_NUMBER_VAL ?>" class="c-phone-link l-footer-top__inner__right__number-box__phone-link"><?= Constants::PHONE_NUMBER_VAL ?></a>

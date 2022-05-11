@@ -2,7 +2,7 @@
   <div class="l-header__inner">
     <div class="l-header__inner__left">
       <div class="l-header__inner__left__logo-box">
-        <a href="<?= HOME_URL ?>"><img src="<?= Constants::TEMP_DIR_IMG ?>/logo.jpg"></a>
+        <a href="<?= HOME_URL ?>"><img src="<?= Constants::TMP_DIR_URI_IMG ?>/logo.jpg"></a>
       </div>
       <nav class="l-header__inner__left__nav" id="nav">
         <ul class="l-header__inner__left__nav__list">

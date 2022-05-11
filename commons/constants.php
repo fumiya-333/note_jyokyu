@@ -74,11 +74,11 @@ class Constants
     const CONTACT_URL = HOME_URL . self::FILE_PATH_CONTACT;
 
     /** cssディレクトリパス */
-    const TEMP_DIR_CSS = TEMP_DIR . "/css";
+    const TMP_DIR_URI_CSS = TMP_DIR_URI . "/css";
     /** imgディレクトリパス */
-    const TEMP_DIR_IMG = TEMP_DIR . "/img";
+    const TMP_DIR_URI_IMG = TMP_DIR_URI . "/img";
     /** jsディレクトリパス */
-    const TEMP_DIR_JS = TEMP_DIR . "/js";
+    const TMP_DIR_URI_JS = TMP_DIR_URI . "/js";
 
     /** 会社名 キー */
     const KEY_COMPANY_NAME = "company-name";

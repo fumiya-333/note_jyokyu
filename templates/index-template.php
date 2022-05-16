@@ -1,5 +1,5 @@
 <html>
-  <?= get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_HEAD)); ?>
+  <?= get_template_part(Constants::FILE_PATH_HEAD); ?>
   <body>
     <div class="l-wrapper">
       <?= get_header(); ?>
@@ -14,7 +14,7 @@
         ?>
       </main>
       <?php
-        get_template_part(CommonUtil::joinDirPathLibs(Constants::FILE_PATH_SCRIPT));
+        get_template_part(Constants::FILE_PATH_SCRIPT);
         get_footer();
       ?>
     </div>

@@ -4,7 +4,7 @@ read_files();
 
 function read_files()
 {
-    $file_names = glob(get_template_directory() . "/commons/*");
+    $file_names = glob(get_template_directory() . "/libs/*");
     foreach ($file_names as $file_name) {
         require_once $file_name;
     }

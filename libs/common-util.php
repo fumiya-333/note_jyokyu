@@ -38,17 +38,6 @@ class CommonUtil
     }
 
     /**
-     * ファイルパスとライブラリフォルダパスを結合
-     *
-     * @param [type] $file_path ファイルパス
-     * @return ファイルパス（ライブラリフォルダパス結合）
-     */
-    public static function joinDirPathLibs($file_path)
-    {
-        return Constants::DIR_PATH_LIBS . $file_path;
-    }
-
-    /**
      * サムネイルURLを取得
      *
      * @return サムネイルURL

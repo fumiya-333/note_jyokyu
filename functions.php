@@ -6,7 +6,9 @@ function read_files()
 {
     $file_names = glob(get_template_directory() . "/libs/*");
     foreach ($file_names as $file_name) {
-        require_once $file_name;
+        if(preg_match('/\.php$/i', basename($file_name))){
+            require_once $file_name;
+        }
     }
 }
 
